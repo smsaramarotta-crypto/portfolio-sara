@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+</head>
+
+<body class="home-page">
+    <a class="home-skip-link" href="#main-content">Vai al contenuto principale</a>
+   <header class="header">
+        <a class="logo" href="index.html" aria-label="Home">
+            <img src="logo.svg" alt="Logo di Sara Marotta">
+        </a>
+        <input class="menu-btn" id="menu-btn" type="checkbox" aria-label="Apri o chiudi il menu di navigazione">
+        <label for="menu-btn" class="menu-icon">
+            <span class="navicon"></span>
+        </label>
+    
+        <ul class="menu">
+
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li class="has-submenu">
+
+            <input
+                class="submenu-btn"
+                type="checkbox"
+                id="submenu-progetti"
+            >
+
+            <label
+                class="submenu-label"
+                for="submenu-progetti"
+            > Progetti    
+             <span class="submenu-arrow"></span>            
+            </label>
+
+            <ul class="submenu">
+                <li>
+                    <a href="ILS.html">Italian Language Studio (ILS)</a>
+                </li>
+
+                <li>
+                    <a href="iVegan.html">iVegan</a>
+                </li>
+
+                <li>
+                    <a href="visual.html">Visual & Content Design</a>
+                </li>
+            </ul>
+
+        </li>
+
+        <li>
+            <a href="cv.html">CV</a>
+        </li>
+
+        <li>
+            <a href="contatti.html">Contatti</a>
+        </li>
+
+        </ul>
+    </header>
+
+    <main id="main-content">
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-left">
+
+
+            <div class="hero-content">
+
+                <p class="case-label">
+                    UX/UI · WEB DESIGN · ACCESSIBILITY
+                </p>
+
+                <h1>Sara Marotta</h1>
+
+                <p class="hero-role">
+                    UX/UI Designer &amp; Web Designer
+                </p>
+
+                <h2 class="hero-statement">
+                    Progetto esperienze digitali chiare,
+                    accessibili e con uno scopo.
+                </h2>
+
+                <p>
+                    Unisco ricerca UX, architettura dell’informazione,
+                    visual design e sviluppo web per creare progetti
+                    digitali pensati per persone reali.
+                </p>
+
+            </div>
+
+
+            <div class="hero-buttons">
+
+                    <a href="#progetti" class="hero-button">
+                        Vedi i progetti
+                    </a>
+
+                    <a href="cv.html" class="hero-button hero-button--secondary">
+                        Vedi il CV
+                    </a>
+
+            </div>
+
+        </div>
+
+
+            <!-- TAG E BOTTONI: figli diretti della griglia hero -->
+            <div class="hero-tags">
+
+                    <span>Accessibilità</span>
+                    <span>Design inclusivo</span>
+                    <span>UX Research</span>
+                    <span>Web Design</span>
+
+            </div>
+
+            
+
+            
+
+            <!-- MOCKUP: immagine composita, un solo file -->
+            <div class="hero-media">
+                <img
+                    src="hero.png"
+                    alt="Composizione di interfacce del progetto Italian Language Studio"
+                >
+            </div>
+
+        </section>
+
+        
+
+
+        <!-- =========================
+            PROJECTS
+        ========================== -->
+
+        <section
+            class="home-progetti"
+            id="progetti"
+        >
+
+            <div class="home-progetti-header">
+
+                <p class="case-label">
+                    PROGETTI
+                </p>
+
+                <h2>
+                    Progetti in evidenza
+                </h2>
+
+                <p>
+                    Una selezione di progetti tra UX/UI,
+                    web design e content design.
+                </p>
+
+            </div>
+
+
+            <div class="home-progetti-grid">
+
+            <article class="progetto-card-wrap" aria-labelledby="titolo-progetto-ils">
+
+                <!-- Il titolo resta un heading per la navigazione degli screen reader -->
+                <h3 id="titolo-progetto-ils" class="home-visually-hidden">Italian Language Studio</h3>
+
+                <details class="progetto-card">
+                    <!-- Il summary copre tutta la card: si apre e si richiude con clic, Invio o Spazio -->
+                    <summary class="progetto-card-toggle"
+                             aria-label="Apri o chiudi la sintesi di Italian Language Studio">
+                        <span class="progetto-card-inner" aria-hidden="true">
+
+                            <!-- FRONTE -->
+                            <span class="progetto-card-front">
+                                <span class="progetto-card-image">
+                                    <img src="ILS/ILS.jpg" alt="">
+                                </span>
+                                <span class="progetto-overlay">
+                                    <span class="progetto-overlay__top">
+                                        <span class="progetto-numero">01</span>
+                                        <span class="progetto-titolo">Italian Language Studio</span>
+                                    </span>
+                                </span>
+                                <span class="flip-control flip-control--open">
+                                    <span class="flip-control__label">Apri sintesi</span> <span class="flip-control__arrow">↻</span>
+                                </span>
+                            </span>
+
+                            <!-- RETRO VISIVO: parte del summary per il flip bidirezionale -->
+                            <span class="progetto-card-back-visual">
+                                <span class="progetto-back-description">Redesign UX/UI e sviluppo web per una scuola di italiano a Sydney.</span>
+                                <span class="progetto-back-points">
+                            <span class="progetto-back-point">Information Architecture e user flow</span>
+                            <span class="progetto-back-point">UI design, responsive layout e HTML/CSS</span>
+                            <span class="progetto-back-point">Accessibility, automazioni e tracking</span>
+                                </span>
+                                <span class="project-tags">
+                        <span class="project-tags__row"><span>UX/UI</span><span>Web Design</span><span>HTML/CSS</span></span>
+                        <span class="project-tags__row"><span>Accessibility</span><span>LearnWorlds</span><span>GA4/GTM</span></span>
+                                </span>
+                                <span class="flip-control flip-control--close">
+                                    <span class="flip-control__arrow">↶</span> <span class="flip-control__label">Torna</span>
+                                </span>
+                            </span>
+                        </span>
+                    </summary>
+
+                    <!-- Testo semantico, disponibile ai lettori di schermo solo quando details è aperto -->
+                    <div class="home-visually-hidden progetto-card-description" aria-label="Dettagli del progetto">
+                        <p>Redesign UX/UI e sviluppo web per una scuola di italiano a Sydney.</p>
+                        <ul>
+                        <li>Information Architecture e user flow</li>
+                        <li>UI design, responsive layout e HTML/CSS</li>
+                        <li>Accessibility, automazioni e tracking</li>
+                        </ul>
+                        <p>Competenze e strumenti: UX/UI, Web Design, HTML/CSS, Accessibility, LearnWorlds, GA4/GTM.</p>
+                    </div>
+                </details>
+
+                
+                <a href="ILS.html"
+                   class="progetto-card-direct"
+                   aria-label="Vedi il progetto Italian Language Studio">
+                    Vedi progetto
+                </a>
+
+            </article>
+
+            <article class="progetto-card-wrap" aria-labelledby="titolo-progetto-ivegan">
+
+                <!-- Il titolo resta un heading per la navigazione degli screen reader -->
+                <h3 id="titolo-progetto-ivegan" class="home-visually-hidden">iVegan</h3>
+
+                <details class="progetto-card">
+                    <!-- Il summary copre tutta la card: si apre e si richiude con clic, Invio o Spazio -->
+                    <summary class="progetto-card-toggle"
+                             aria-label="Apri o chiudi la sintesi di iVegan">
+                        <span class="progetto-card-inner" aria-hidden="true">
+
+                            <!-- FRONTE -->
+                            <span class="progetto-card-front">
+                                <span class="progetto-card-image">
+                                    <img src="ivegan.jpg" alt="">
+                                </span>
+                                <span class="progetto-overlay">
+                                    <span class="progetto-overlay__top">
+                                        <span class="progetto-numero">02</span>
+                                        <span class="progetto-titolo">iVegan</span>
+                                    </span>
+                                </span>
+                                <span class="flip-control flip-control--open">
+                                    <span class="flip-control__label">Apri sintesi</span> <span class="flip-control__arrow">↻</span>
+                                </span>
+                            </span>
+
+                            <!-- RETRO VISIVO: parte del summary per il flip bidirezionale -->
+                            <span class="progetto-card-back-visual">
+                                <span class="progetto-back-description">Redesign UX/UI di un e-commerce vegano, con focus su chiarezza, fiducia e accessibilità.</span>
+                                <span class="progetto-back-points">
+                            <span class="progetto-back-point">Analisi euristica, competitor e survey</span>
+                            <span class="progetto-back-point">Personas, user journey e accessibilità</span>
+                            <span class="progetto-back-point">Sitemap, wireframe e flussi responsive</span>
+                                </span>
+                                <span class="project-tags">
+                        <span class="project-tags__row"><span>UX Research</span><span>UX/UI</span><span>Accessibility</span></span>
+                        <span class="project-tags__row"><span>Wireframing</span><span>E-commerce</span><span>Figma</span></span>
+                                </span>
+                                <span class="flip-control flip-control--close">
+                                    <span class="flip-control__arrow">↶</span> <span class="flip-control__label">Torna</span>
+                                </span>
+                            </span>
+                        </span>
+                    </summary>
+
+                    <!-- Testo semantico, disponibile ai lettori di schermo solo quando details è aperto -->
+                    <div class="home-visually-hidden progetto-card-description" aria-label="Dettagli del progetto">
+                        <p>Redesign UX/UI di un e-commerce vegano, con focus su chiarezza, fiducia e accessibilità.</p>
+                        <ul>
+                        <li>Analisi euristica, competitor e survey</li>
+                        <li>Personas, user journey e accessibilità</li>
+                        <li>Sitemap, wireframe e flussi responsive</li>
+                        </ul>
+                        <p>Competenze e strumenti: UX Research, UX/UI, Accessibility, Wireframing, E-commerce, Figma.</p>
+                    </div>
+                </details>
+
+                
+                <a href="iVegan.html"
+                   class="progetto-card-direct"
+                   aria-label="Vedi il progetto iVegan">
+                    Vedi progetto
+                </a>
+
+            </article>
+
+            <article class="progetto-card-wrap" aria-labelledby="titolo-progetto-visual">
+
+                <!-- Il titolo resta un heading per la navigazione degli screen reader -->
+                <h3 id="titolo-progetto-visual" class="home-visually-hidden">Visual &amp; Content Design</h3>
+
+                <details class="progetto-card">
+                    <!-- Il summary copre tutta la card: si apre e si richiude con clic, Invio o Spazio -->
+                    <summary class="progetto-card-toggle"
+                             aria-label="Apri o chiudi la sintesi di Visual &amp; Content Design">
+                        <span class="progetto-card-inner" aria-hidden="true">
+
+                            <!-- FRONTE -->
+                            <span class="progetto-card-front">
+                                <span class="progetto-card-image">
+                                    <img src="elefante.jpg" alt="">
+                                </span>
+                                <span class="progetto-overlay">
+                                    <span class="progetto-overlay__top">
+                                        <span class="progetto-numero">03</span>
+                                        <span class="progetto-titolo">Visual &amp; Content Design</span>
+                                    </span>
+                                </span>
+                                <span class="flip-control flip-control--open">
+                                    <span class="flip-control__label">Apri sintesi</span> <span class="flip-control__arrow">↻</span>
+                                </span>
+                            </span>
+
+                            <!-- RETRO VISIVO: parte del summary per il flip bidirezionale -->
+                            <span class="progetto-card-back-visual">
+                                <span class="progetto-back-description">Raccolta di progetti visuali e contenutistici tra branding, copywriting e comunicazione social.</span>
+                                <span class="progetto-back-points">
+                            <span class="progetto-back-point">Logo concept e identità visiva</span>
+                            <span class="progetto-back-point">Copywriting e contenuti editoriali</span>
+                            <span class="progetto-back-point">Template e contenuti per social media</span>
+                                </span>
+                                <span class="project-tags">
+                        <span class="project-tags__row"><span>Visual Design</span><span>Copywriting</span><span>Logo Design</span></span>
+                        <span class="project-tags__row"><span>Social Media</span><span>Content Design</span></span>
+                                </span>
+                                <span class="flip-control flip-control--close">
+                                    <span class="flip-control__arrow">↶</span> <span class="flip-control__label">Torna</span>
+                                </span>
+                            </span>
+                        </span>
+                    </summary>
+
+                    <!-- Testo semantico, disponibile ai lettori di schermo solo quando details è aperto -->
+                    <div class="home-visually-hidden progetto-card-description" aria-label="Dettagli del progetto">
+                        <p>Raccolta di progetti visuali e contenutistici tra branding, copywriting e comunicazione social.</p>
+                        <ul>
+                        <li>Logo concept e identità visiva</li>
+                        <li>Copywriting e contenuti editoriali</li>
+                        <li>Template e contenuti per social media</li>
+                        </ul>
+                        <p>Competenze e strumenti: Visual Design, Copywriting, Logo Design, Social Media, Content Design.</p>
+                    </div>
+                </details>
+
+                <a href="visual.html"
+                   class="progetto-card-direct"
+                   aria-label="Vedi il progetto Visual e Content Design">
+                    Vedi progetto
+                </a>
+
+            </article>
+
+            </div>
+
+        </section>
+
+        <section class="contact-preview">
+            <div class="contact-preview-inner">
+
+                <div class="contact-preview-content">
+                    <p class="section-kicker">Contatti</p>
+                    <h2>UX/UI design con attenzione alle persone</h2>                
+                    <p>
+                        Vorrei entrare in un contesto più solido, come azienda o agenzia,
+                        dove poter crescere come UX/UI designer e lavorare su progetti digitali
+                        chiari, accessibili e pensati davvero per le persone. Mi interessano realtà
+                        attente alla qualità, alla responsabilità e al modo in cui il design può
+                        rendere le esperienze più semplici e più inclusive.
+                    </p>
+                    <a href="contatti.html" class="hero-button">Contattami</a>
+                </div>
+
+                <div class="contact-preview-links">
+                    <h3>Link utili</h3>
+
+                    <ul>
+                        <li><a href="cv.html">CV in HTML</a></li>
+                        <li><a href="https://www.linkedin.com/in/sara-marotta" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+    <p>© 2026 Sara Marotta · Portfolio UX/UI realizzato in HTML e CSS</p>
+    </footer>
+
+</body>
+
+</html> 

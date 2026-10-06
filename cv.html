@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum vitae di Sara Marotta, UX/UI Designer, Web Designer e Digital Marketing specialist.">
+
+    <title>CV | Sara Marotta</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo" href="index.html" aria-label="Home">
+            <img src="logo.svg" alt="Logo di Sara Marotta">
+        </a>
+
+        <nav aria-label="Navigazione principale">
+            <input
+                class="menu-btn"
+                id="menu-btn"
+                type="checkbox"
+                aria-label="Apri o chiudi il menu di navigazione"
+            >
+
+            <label for="menu-btn" class="menu-icon">
+                <span class="navicon"></span>
+            </label>
+
+            <ul class="menu">
+
+                <li>
+                <a href="index.html">Home</a>
+                </li>
+
+                <li class="has-submenu">
+                    <input
+                        class="submenu-btn"
+                        type="checkbox"
+                        id="submenu-progetti"
+                    >
+
+                    <label
+                        class="submenu-label"
+                        for="submenu-progetti"
+                    >
+                        Progetti
+                        <span class="submenu-arrow"></span>
+                    </label>
+
+                    <ul class="submenu">
+                        <li><a href="ILS.html">Italian Language Studio (ILS)</a></li>
+                        <li><a href="iVegan.html">iVegan</a></li>
+                        <li><a href="visual.html">Visual & Content Design</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cv-page">
+
+        <section class="cv-hero">
+
+            <div class="case-container">
+
+                <div class="cv-hero__grid">
+
+                    <div class="cv-hero__content">
+
+                        <p class="case-label">
+                            CURRICULUM
+                        </p>
+
+                        <h1>
+                            Sara Marotta
+                        </h1>
+
+                        <p class="cv-hero__role">
+                            UX/UI Designer · Web Designer · Digital Marketing
+                        </p>
+
+                        <p class="cv-hero__intro">
+                            Lavoro tra UX/UI design, progettazione web,
+                            contenuti e digital marketing, con un approccio
+                            user-centered orientato a chiarezza, accessibilità
+                            e obiettivi di business.
+                        </p>
+
+
+                        <div class="cv-focus">
+
+                            <span class="case-label">
+                                FOCUS
+                            </span>
+
+                            <p>
+                                UX/UI · Accessibility · Front-end ·
+                                Digital Strategy · Analytics
+                            </p>
+
+                        </div>
+
+
+                        <div
+                            class="cv-downloads"
+                            role="group"
+                            aria-label="Scarica il curriculum vitae"
+                        >
+                            <a
+                                href="CV-Sara-Marotta.pdf"
+                                class="cv-download"
+                                download="CV-Sara-Marotta-Italiano.pdf"
+                            >
+                                <span>CV in italiano</span>
+                                <span aria-hidden="true">↓</span>
+                            </a>
+
+                            <a
+                                href="CV-Sara-Marotta-English.pdf"
+                                class="cv-download"
+                                download="CV-Sara-Marotta-English.pdf"
+                            >
+                                <span>English CV</span>
+                                <span aria-hidden="true">↓</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="cv-hero__portrait">
+                        <div class="cv-hero__portrait-shape">
+                            <img
+                                src="Sara Marotta - Profilo.png"
+                                alt="Sara Marotta"
+                            >
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cv-hero__scope">
+
+                    <div class="case-scope-grid">
+
+                        <a href="#esperienza" class="scope-item">
+                            <span>01</span>
+                            <strong>Esperienza</strong>
+                            <small>
+                                Web design, UX/UI e digital marketing
+                            </small>
+                        </a>
+
+                        <a href="#competenze" class="scope-item">
+                            <span>02</span>
+                            <strong>Competenze</strong>
+                            <small>
+                                Design, accessibility, front-end e analytics
+                            </small>
+                        </a>
+
+                        <a href="#progetti" class="scope-item">
+                            <span>03</span>
+                            <strong>Progetti</strong>
+                            <small>
+                                Case study e lavori selezionati
+                            </small>
+                        </a>
+
+                        <a href="#formazione" class="scope-item">
+                            <span>04</span>
+                            <strong>Formazione</strong>
+                            <small>
+                                UX/UI, strategia digitale e ricerca
+                            </small>
+                        </a>
+
+                        <a href="#lingue" class="scope-item">
+                            <span>05</span>
+                            <strong>Lingue</strong>
+                            <small>
+                                Profilo internazionale e certificazioni
+                            </small>
+                        </a>
+
+                    </div>
+
+                </div> 
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+            EXPERIENCE
+        ========================== -->
+
+        <section class="cv-section" id="esperienza">
+
+            <div class="case-container">
+
+                <div class="cv-section__heading">
+
+                    <p class="case-label">
+                        ESPERIENZA
+                    </p>
+
+                    <h2>
+                        Esperienza professionale
+                    </h2>
+
+                </div>
+
+
+                <div class="cv-timeline">
+
+                    <!-- FREELANCE -->
+
+                    <article class="cv-entry">
+
+                        <div class="cv-entry__meta">
+
+                            <span class="cv-entry__date">
+                                2024 — 2026
+                            </span>
+
+                            <span>
+                                Sydney · Torino
+                            </span>
+
+                        </div>
+
+
+                        <div class="cv-entry__content">
+
+                            <h3>
+                                Web Designer · Freelance
+                            </h3>
+
+
+                            <div class="cv-project">
+
+                                <h4>
+                                    Italian Language Studio
+                                </h4>
+
+                                <p>
+                                    Redesign UX/UI e riorganizzazione della
+                                    struttura del sito di una scuola di italiano
+                                    a Sydney, con attenzione a chiarezza,
+                                    accessibilità e percorsi di navigazione.
+                                </p>
+
+                                <p>
+                                    Il progetto ha incluso customizzazione
+                                    front-end responsive, architettura dei corsi,
+                                    automazioni, analytics e supporto alla
+                                    strategia di acquisizione e contenuti.
+                                </p>
+
+                                <a href="ils.html" class="cv-inline-link">
+                                    Vedi il case study
+                                    <span aria-hidden="true">→</span>
+                                </a>
+
+                            </div>
+
+
+                            <div class="cv-project">
+
+                                <h4>
+                                    Istituto Italiano di Cultura di Sydney
+                                </h4>
+
+                                <p>
+                                    Ideazione e realizzazione della piattaforma
+                                    web dedicata alla vendita dei corsi di lingua
+                                    italiana dell’Istituto Italiano di Cultura
+                                    di Sydney.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- LABELIUM -->
+
+                    <article class="cv-entry">
+
+                        <div class="cv-entry__meta">
+
+                            <span class="cv-entry__date">
+                                2022 — 2023
+                            </span>
+
+                            <span>
+                                Milano
+                            </span>
+
+                        </div>
+
+
+                        <div class="cv-entry__content">
+
+                            <h3>
+                                Digital Marketing Consultant
+                            </h3>
+
+                            <p class="cv-entry__company">
+                                Labelium Italia
+                            </p>
+
+                            <p>
+                                Pianificazione, gestione e ottimizzazione
+                                di campagne search, display e video per brand
+                                del gruppo LVMH, tra cui Fendi, Bulgari,
+                                Guerlain e Louis Vuitton.
+                            </p>
+
+                            <p>
+                                Monitoraggio delle performance, analisi
+                                continuativa dei dati e realizzazione di report,
+                                con esperienza su Google Ads, Microsoft Ads,
+                                SA360 e strumenti di analytics.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CONTENT -->
+
+                    <article class="cv-entry">
+
+                        <div class="cv-entry__meta">
+
+                            <span class="cv-entry__date">
+                                2019 — 2020
+                            </span>
+
+                            <span>
+                                Amsterdam
+                            </span>
+
+                        </div>
+
+
+                        <div class="cv-entry__content">
+
+                            <h3>
+                                Content Writer Intern
+                            </h3>
+
+                            <p class="cv-entry__company">
+                                +31mag.nl
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+            SKILLS
+        ========================== -->
+
+        <section class="cv-section" id="competenze">
+
+            <div class="case-container">
+
+                <div class="cv-section__heading">
+
+                    <p class="case-label">
+                        COMPETENZE
+                    </p>
+
+                    <h2>
+                        Strumenti e aree di lavoro
+                    </h2>
+
+                </div>
+
+
+                <div class="cv-skills-grid">
+
+                    <article class="cv-skill-group">
+
+                        <span class="cv-skill-group__number">
+                            01
+                        </span>
+
+                        <h3>
+                            UX/UI & Research
+                        </h3>
+
+                        <p>
+                            User Research · Personas · User Journey ·
+                            Information Architecture · User Flows ·
+                            Wireframing · Accessibility / WCAG
+                        </p>
+
+                    </article>
+
+
+                    <article class="cv-skill-group">
+
+                        <span class="cv-skill-group__number">
+                            02
+                        </span>
+
+                        <h3>
+                            Design & Front-end
+                        </h3>
+
+                        <p>
+                            Figma · HTML · CSS / Sass · Bootstrap ·
+                            Illustrator · Photoshop · InDesign · Canva
+                        </p>
+
+                    </article>
+
+
+                    <article class="cv-skill-group">
+
+                        <span class="cv-skill-group__number">
+                            03
+                        </span>
+
+                        <h3>
+                            Marketing & Analytics
+                        </h3>
+
+                        <p>
+                            Google Ads · Google Analytics · Google Tag Manager ·
+                            Microsoft Ads · SA360 · SEO · Social Media
+                        </p>
+
+                    </article>
+
+
+                    <article class="cv-skill-group">
+
+                        <span class="cv-skill-group__number">
+                            04
+                        </span>
+
+                        <h3>
+                            Content & Automation
+                        </h3>
+
+                        <p>
+                            Editorial Strategy · Copywriting ·
+                            Content Design · Zapier · Email Marketing
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+            SELECTED PROJECTS
+        ========================== -->
+
+        <section class="cv-section cv-section--alt" id="progetti">
+
+            <div class="case-container">
+
+                <div class="cv-section__heading">
+
+                    <p class="case-label">
+                        PROGETTI SELEZIONATI
+                    </p>
+
+                    <h2>
+                        Ricerca, design e strategia
+                    </h2>
+
+                </div>
+
+
+                <div class="cv-project-grid">
+
+                    <a href="ivegan.html" class="cv-project-card">
+
+                        <span>UX/UI · E-COMMERCE</span>
+
+                        <h3>
+                            iVegan
+                        </h3>
+
+                        <p>
+                            Redesign di un e-commerce attraverso ricerca,
+                            analisi di usabilità, accessibilità,
+                            architettura dell’informazione e wireframing.
+                        </p>
+
+                        <span class="cv-project-card__arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <a href="ils.html" class="cv-project-card">
+
+                        <span>UX/UI · WEB · DIGITAL</span>
+
+                        <h3>
+                            Italian Language Studio
+                        </h3>
+
+                        <p>
+                            Revisione dell’esperienza digitale della scuola,
+                            dalla struttura dei corsi al front-end,
+                            fino ad analytics, automazioni e contenuti.
+                        </p>
+
+                        <span class="cv-project-card__arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <a href="visual.html" class="cv-project-card">
+
+                        <span>VISUAL & CONTENT DESIGN</span>
+
+                        <h3>
+                            Brand, contenuti e strategia
+                        </h3>
+
+                        <p>
+                            Progetti di identità visiva, editorial strategy,
+                            copywriting e social content sviluppati
+                            a partire dal pubblico e dal contesto.
+                        </p>
+
+                        <span class="cv-project-card__arrow">
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+            EDUCATION
+        ========================== -->
+
+        <section class="cv-section cv-section--alt" id="formazione">
+
+            <div class="case-container">
+
+                <div class="cv-section__heading">
+
+                    <p class="case-label">
+                        FORMAZIONE
+                    </p>
+
+                    <h2>
+                        Un percorso tra design, strategia e ricerca
+                    </h2>
+
+                </div>
+
+
+                <div class="cv-timeline">
+
+                    <article class="cv-entry">
+
+                        <div class="cv-entry__meta">
+
+                            <span class="cv-entry__date">
+                                2024 — in corso
+                            </span>
+
+                        </div>
+
+
+                        <div class="cv-entry__content">
+
+                            <h3>
+                                Master in UX/UI Design
+                            </h3>
+
+                            <p class="cv-entry__company">
+                                Start2Impact · Remote
+                            </p>
+
+                            <p>
+                                Progettazione di interfacce web intuitive e
+                                accessibili attraverso ricerca, user-centered
+                                design, information architecture, wireframing
+                                e visual design.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="cv-entry">
+
+                        <div class="cv-entry__meta">
+
+                            <span class="cv-entry__date">
+                                2021 — 2023
+                            </span>
+
+                        </div>
+
+
+                        <div class="cv-entry__content">
+
+                            <h3>
+                                Master in Design the Digital Strategy
+                            </h3>
+
+                            <p class="cv-entry__company">
+                                POLI.design · Milano
+                            </p>
+
+                            <p>
+                                Pianificazione e coordinamento di strategie
+                                di business, marketing e comunicazione digitale
+                                attraverso un approccio user-centered.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="cv-entry">
+
+                        <div class="cv-entry__meta">
+
+                            <span class="cv-entry__date">
+                                2017 — 2020
+                            </span>
+
+                        </div>
+
+
+                        <div class="cv-entry__content">
+
+                            <h3>
+                                Bachelor in International Studies
+                            </h3>
+
+                            <p class="cv-entry__company">
+                                Leiden University · L’Aia
+                            </p>
+
+                            <p>
+                                Percorso interdisciplinare tra economia politica,
+                                relazioni internazionali, sociolinguistica,
+                                storia globale e studi culturali, con
+                                specializzazione sull’Africa Sub-Sahariana.
+                            </p>
+
+                            <p class="cv-entry__detail">
+                                Minor in Sustainable Development
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="cv-entry">
+
+                        <div class="cv-entry__meta">
+
+                            <span class="cv-entry__date">
+                                2011 — 2016
+                            </span>
+
+                        </div>
+
+
+                        <div class="cv-entry__content">
+
+                            <h3>
+                                Diploma di Liceo Linguistico
+                            </h3>
+
+                            <p class="cv-entry__company">
+                                Liceo Statale Domenico Berti · Torino
+                            </p>
+
+                            <p class="cv-entry__detail">
+                                Diplôme du Baccalauréat Général Littéraire
+                                · ESABAC
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+            OTHER PROJECTS
+        ========================== -->
+
+        <section class="cv-section cv-other-projects">
+
+            <div class="case-container">
+
+                <div class="cv-section__heading">
+
+                    <p class="case-label">
+                        ALTRI PROGETTI
+                    </p>
+
+                    <h2>
+                        Esperienze interdisciplinari
+                    </h2>
+
+                </div>
+
+
+                <div class="cv-compact-list">
+
+                    <article>
+                        <span>2022</span>
+
+                        <div>
+                            <h3>
+                                Project Work · Factoryspa
+                            </h3>
+
+                            <p>
+                                POLI.design · Strategia di identità e
+                                posizionamento nel settore beauty care.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article>
+                        <span>2022</span>
+
+                        <div>
+                            <h3>
+                                Meanwhile Solutions @MIND
+                            </h3>
+
+                            <p>
+                                Call for Ideas · 3° posto.
+                                Ricerca e progettazione di una community
+                                per il distretto MIND di Milano.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article>
+                        <span>2020</span>
+
+                        <div>
+                            <h3>
+                                AQysta
+                            </h3>
+
+                            <p>
+                                Ricerca sull’accessibilità e accettazione
+                                di pompe idroelettriche in diversi contesti
+                                dell’Africa Sub-Sahariana.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article>
+                        <span>2020</span>
+
+                        <div>
+                            <h3>
+                                Isabela State University
+                            </h3>
+
+                            <p>
+                                Ricerca quantitativa e qualitativa sui
+                                modelli di acquisto e sull’inquinamento
+                                da plastica ad Aparri, Filippine.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+            LANGUAGES
+        ========================== -->
+
+        <section class="cv-section cv-section--alt" id="lingue">
+
+            <div class="case-container cv-bottom-grid">
+
+
+                <div>
+
+                    <div class="cv-section__heading">
+
+                        <p class="case-label">
+                            LINGUE
+                        </p>
+
+                        <h2>
+                            Lingue
+                        </h2>
+
+                    </div>
+
+
+                    <div class="cv-languages">
+
+                        <div>
+                            <span>Italiano</span>
+                            <strong>C2</strong>
+                        </div>
+
+                        <div>
+                            <span>Inglese</span>
+                            <strong>C1</strong>
+                        </div>
+
+                        <div>
+                            <span>Spagnolo</span>
+                            <strong>B2</strong>
+                        </div>
+
+                        <div>
+                            <span>Francese</span>
+                            <strong>B1</strong>
+                        </div>
+
+                        <div>
+                            <span>Portoghese</span>
+                            <strong>A2</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div>
+
+                    <div class="cv-section__heading">
+
+                        <p class="case-label">
+                            CERTIFICAZIONI
+                        </p>
+
+                        <h2>
+                            Certificazioni
+                        </h2>
+
+                    </div>
+
+
+                    <div class="cv-certifications">
+
+                        <article>
+
+                            <h3>
+                                IELTS
+                            </h3>
+
+                            <p>
+                                Livello C1
+                            </p>
+
+                        </article>
+
+
+                        <article>
+
+                            <h3>
+                                Social Media Marketing Specialization
+                            </h3>
+
+                            <p>
+                                Northwestern University · Coursera
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+     <section class="contact-preview">
+            <div class="contact-preview-inner">
+
+                <div class="contact-preview-content">
+                    <p class="section-kicker">Contatti</p>
+                    <h2>UX/UI design con attenzione alle persone</h2>                
+                    <p>
+                        Vorrei entrare in un contesto più solido, come azienda o agenzia,
+                        dove poter crescere come UX/UI designer e lavorare su progetti digitali
+                        chiari, accessibili e pensati davvero per le persone. Mi interessano realtà
+                        attente alla qualità, alla responsabilità e al modo in cui il design può
+                        rendere le esperienze più semplici e più inclusive.
+                    </p>
+                    <a href="contatti.html" class="hero-button">Contattami</a>
+                </div>
+
+                <div class="contact-preview-links">
+                    <h3>Link utili</h3>
+
+                    <ul>
+                        <li><a href="cv.html">CV in HTML</a></li>
+                        <li><a href="https://www.linkedin.com/in/sara-marotta" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+    <footer>
+        © 2026 Sara Marotta ·
+        <br class="mobile-break">
+        Portfolio UX/UI realizzato in HTML e CSS
+    </footer>
+
+</body>
+</html>
