@@ -14057,3 +14057,126 @@ main.case-study:not(.visual-page) #accessibility-02 .accessibility-insight__colu
   font-size: 14px !important;
   line-height: 1.5 !important;
 }/*# sourceMappingURL=style.css.map */
+
+
+
+
+/* =========================
+   PRIVACY PAGE
+========================= */
+
+.privacy-page {
+    padding: 96px 0 120px;
+    background: #F5F1E8;
+}
+
+.privacy-shell {
+    width: min(820px, calc(100% - 80px));
+    margin-inline: auto;
+}
+
+.privacy-page .case-label {
+    margin: 0 0 20px;
+    color: #265649;
+}
+
+.privacy-page h1 {
+    margin: 0 0 32px;
+    color: #0f4a3c;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.05;
+    font-weight: 700;
+}
+
+.privacy-intro {
+    max-width: 700px;
+    margin: 0 0 64px;
+    color: #5f5d58;
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+.privacy-block {
+    padding: 32px 0;
+    border-top: 1px solid rgba(24, 24, 23, 0.14);
+}
+
+.privacy-block h2 {
+    margin: 0 0 18px;
+    color: #0f4a3c;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.privacy-block p,
+.privacy-block li {
+    color: #181817;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.privacy-block p {
+    max-width: 740px;
+    margin: 0 0 16px;
+}
+
+.privacy-block p:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-block ul {
+    max-width: 740px;
+    margin: 0 0 16px;
+    padding-left: 24px;
+}
+
+.privacy-block li + li {
+    margin-top: 8px;
+}
+
+.privacy-block a {
+    color: #265649;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.privacy-block a:hover {
+    color: #806224;
+}
+
+
+@media (max-width: 767.98px) {
+
+    .privacy-page {
+        padding: 64px 0 80px;
+    }
+
+    .privacy-shell {
+        width: calc(100% - 64px);
+    }
+
+    .privacy-page h1 {
+        font-size: 38px;
+    }
+
+    .privacy-intro {
+        font-size: 18px;
+        margin-bottom: 48px;
+    }
+
+    .privacy-block {
+        padding: 28px 0;
+    }
+
+    .privacy-block h2 {
+        font-size: 21px;
+    }
+
+    .privacy-block p,
+    .privacy-block li {
+        font-size: 16px;
+    }
+
+}
