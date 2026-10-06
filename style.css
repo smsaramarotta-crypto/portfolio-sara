@@ -284,12 +284,22 @@ li {
   }
 }
 
-.footer {
-  padding: 24px 20px;
-  text-align: center;
+.site-footer {
+  padding: 32px 40px;
+  border-top: 1px solid rgba(24, 24, 23, 0.14);
+  background: #F5F1E8;
+}
+.site-footer p {
+  margin: 0;
   color: #5f5d58;
-  line-height: 1.5;
-  border-top: 1px solid rgba(24, 24, 23, 0.15);
+  font-size: 14px;
+  line-height: 1.65;
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  .site-footer {
+    padding: 32px 32px;
+  }
 }
 
 .mobile-break {
