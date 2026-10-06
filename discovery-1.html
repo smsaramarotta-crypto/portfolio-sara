@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Approfondimento Discovery 01 del case study iVegan: analisi as-is, valutazione euristica, 3C del design, competitor e target survey.">
+
+    <title>Discovery 01 · Analisi as-is e competitor | Sara Marotta</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo" href="index.html" aria-label="Home">
+            <img src="logo.svg" alt="Logo di Sara Marotta">
+        </a>
+
+        <nav aria-label="Navigazione principale">
+            <input
+                class="menu-btn"
+                id="menu-btn"
+                type="checkbox"
+                aria-label="Apri o chiudi il menu di navigazione"
+            >
+
+            <label for="menu-btn" class="menu-icon">
+                <span class="navicon"></span>
+            </label>
+
+            <ul class="menu">
+
+                <li>
+                <a href="index.html">Home</a>
+                </li>
+
+                <li class="has-submenu">
+                    <input
+                        class="submenu-btn"
+                        type="checkbox"
+                        id="submenu-progetti"
+                    >
+
+                    <label
+                        class="submenu-label"
+                        for="submenu-progetti"
+                    >
+                        Progetti
+                        <span class="submenu-arrow"></span>
+                    </label>
+
+                    <ul class="submenu">
+                        <li><a href="ILS.html">Italian Language Studio (ILS)</a></li>
+                        <li><a href="iVegan.html">iVegan</a></li>
+                        <li><a href="visual.html">Visual & Content Design</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="case-study research-page research-page--ivegan">
+
+        <!-- =========================
+            HERO
+        ========================== -->
+
+        <section class="research-hero">
+
+            <div class="research-shell">
+
+                <a
+                    href="iVegan.html#discovery"
+                    class="research-back"
+                >
+                    <span aria-hidden="true">←</span>
+                    Torna al case study
+                </a>
+
+
+                <div class="research-hero__grid">
+
+                    <div class="research-hero__copy">
+
+                        <p class="case-label">
+                            DISCOVERY 01 · ANALISI AS-IS E COMPETITOR
+                        </p>
+
+                        <h1>
+                            Capire le criticità
+                            dell’esperienza esistente
+                        </h1>
+
+                        <p>
+                            Prima di intervenire sul redesign, il sito iVegan
+                            è stato analizzato per capire dove l’esperienza
+                            risultava poco chiara, incoerente o difficile
+                            da navigare.
+                        </p>
+
+                        <p>
+                            La ricerca ha combinato analisi euristica,
+                            3C del design, visual sitemap, benchmark dei
+                            competitor e una survey con utenti del target.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                            class="research-hero__visual discovery-hero-steps"
+                            aria-label="Sintesi delle tre aree di analisi della prima fase Discovery"
+                        >
+                            <p class="case-label discovery-hero-steps__eyebrow">
+                                DALL'ANALISI ALLE CRITICITÀ
+                            </p>
+
+                            <div class="discovery-hero-steps__step">
+                                <span class="discovery-hero-steps__number">01</span>
+
+                                <div>
+                                    <strong>Analisi euristica</strong>
+                                    <small>Usabilità e principi di Nielsen</small>
+                                </div>
+                            </div>
+
+                            <div class="discovery-hero-steps__step">
+                                <span class="discovery-hero-steps__number">02</span>
+
+                                <div>
+                                    <strong>3C e sitemap</strong>
+                                    <small>Chiarezza, contenuto e consistenza</small>
+                                </div>
+                            </div>
+
+                            <div class="discovery-hero-steps__step">
+                                <span class="discovery-hero-steps__number">03</span>
+
+                                <div>
+                                    <strong>Benchmark e survey</strong>
+                                    <small>Confronto e bisogni degli utenti</small>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+
+                <!-- SCOPE -->
+
+                <nav class="research-scope"
+                    aria-label="Sezioni della ricerca"
+                >
+
+                    <a href="#heuristic">
+                        <span>01</span>
+                        <strong>Analisi euristica</strong>
+                        <small>Usabilità e principi di Nielsen</small>
+                    </a>
+
+                    <a href="#structure">
+                        <span>02</span>
+                        <strong>3C &amp; sitemap</strong>
+                        <small>Chiarezza, contenuto e consistenza</small>
+                    </a>
+
+                    <a href="#competitor">
+                        <span>03</span>
+                        <strong>Competitor</strong>
+                        <small>Benchmark e pattern e-commerce</small>
+                    </a>
+
+                    <a href="#survey">
+                        <span>04</span>
+                        <strong>Target &amp; survey</strong>
+                        <small>Bisogni e priorità degli utenti</small>
+                    </a>
+
+                </nav>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+            01 HEURISTIC
+        ========================== -->
+
+        <section class="research-block" id="heuristic"
+        >
+
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+
+                    <p class="case-label">
+                        01 · ANALISI EURISTICA
+                    </p>
+
+                    <h2>
+                        Valutare l’esperienza esistente
+                    </h2>
+
+                </div>
+
+
+                <div class="research-copy">
+
+                    <p>
+                        Il sito è stato analizzato attraverso i 10 principi
+                        di usabilità di Jakob Nielsen, considerando desktop,
+                        tablet, mobile e app.
+                    </p>
+
+                    <p>
+                        L’analisi ha evidenziato alcuni elementi già efficaci,
+                        come feedback del sistema e opzioni di filtro, ma anche
+                        criticità ricorrenti: categorie poco intuitive,
+                        informazioni importanti poco visibili, interazioni
+                        incoerenti e percorsi che richiedevano uno sforzo
+                        eccessivo per essere compresi.
+                    </p>
+
+                </div>
+
+
+                <div class="heuristics-grid">
+
+                    <article class="heuristic-card">
+
+                        <h3 data-number="01">
+                            Visibilità dello stato del sistema
+                        </h3>
+
+                        <ul>
+                            <li>Disponibilità dei prodotti non sempre chiara.</li>
+                            <li>Informazioni sulla spedizione gratuita poco visibili.</li>
+                            <li>Stato del carrello non sempre visibile nell’app.</li>
+                        </ul>
+
+                    </article>
+
+
+                    <article class="heuristic-card">
+
+                            <h3 data-number="02">
+                                Corrispondenza tra sistema e mondo reale
+                            </h3>
+
+                        <ul>
+                            <li>Categorie poco autoesplicative.</li>
+                            <li>Gerarchia dei contenuti poco logica.</li>
+                            <li>Informazioni sulle spedizioni frammentate.</li>
+                        </ul>
+
+                    </article>
+
+                    <article class="heuristic-card">
+
+                            <h3 data-number="03">
+                                Controllo e libertà dell’utente
+                            </h3>
+
+                        <ul>
+                            <li>La posizione di scroll non veniva mantenuta tornando indietro.</li>
+                            <li>La chat si apriva anche dopo “No grazie” ed era difficile da chiudere.</li>
+                            <li>Slider e navigazione offrivano controlli poco evidenti.</li>
+                        </ul>
+
+                    </article>
+
+                    <article class="heuristic-card">
+
+                            <h3 data-number="04">
+                                Coerenza e standard
+                            </h3>
+
+                        <ul>
+                            <li>Categorie senza un ordine alfabetico o logico.</li>
+                            <li>Hover e pulsanti con comportamenti visivi diversi.</li>
+                            <li>Schede prodotto e icone non coerenti tra sito e app.</li>
+                        </ul>
+
+                    </article>
+
+                    <article class="heuristic-card">
+
+                            <h3 data-number="05">
+                                Prevenzione degli errori
+                            </h3>
+
+
+                        <ul>
+                            <li>“Accetta” e “Nega” troppo simili visivamente.</li>
+                            <li>Target di clic troppo piccoli in categorie e carrello mobile.</li>
+                            <li>Alcune scelte nei form potevano generare errori o esclusione.</li>
+                        </ul>
+
+                    </article>
+
+
+                    <article class="heuristic-card">
+
+                             <h3 data-number="06">
+                                 Riconoscimento invece di ricordo
+                            </h3>
+
+                        <ul>
+                            <li>Informazioni importanti sparse in punti diversi.</li>
+                            <li>Categorie difficili da ritrovare perché prive di una logica evidente.</li>
+                            <li>Campi obbligatori e funzioni non sempre riconoscibili subito.</li>
+                        </ul>
+
+                    </article>
+
+
+                    <article class="heuristic-card">
+
+                            <h3 data-number="07">
+                                  Flessibilità ed efficienza d’uso
+                            </h3>
+
+                        <ul>
+                            <li>Alcune scorciatoie portavano a percorsi poco efficienti.</li>
+                            <li>Il pulsante “Torna su” poteva essere coperto dalla chat.</li>
+                            <li>Homepage e navigazione aumentavano il carico cognitivo.</li>
+                        </ul>
+
+                    </article>
+
+
+                    <article class="heuristic-card">
+
+                             <h3 data-number="08">
+                                  Design estetico e minimalista
+                            </h3>
+
+                        <ul>
+                            <li>Identità visiva poco coerente.</li>
+                            <li>Spazi, box e immagini con dimensioni e stili disomogenei.</li>
+                            <li>Nell’app diverse immagini risultavano sfocate o tagliate.</li>
+                        </ul>
+
+                    </article>
+
+
+                    <article class="heuristic-card">
+
+                            <h3 data-number="09">
+                                   Riconoscere, diagnosticare e recuperare dagli errori
+                            </h3>
+
+                        <ul>
+                            <li>Alcuni errori non indicavano chiaramente come proseguire.</li>
+                            <li>Il messaggio sull’ordine minimo non offriva un ritorno rapido allo shopping.</li>
+                            <li>Erano presenti contenuti errati o di test in alcune pagine.</li>
+                        </ul>
+
+                    </article>
+
+                    <article class="heuristic-card">
+
+                            <h3 data-number="10">
+                                  Aiuto e documentazione
+                            </h3>
+
+                        <ul>
+                            <li>“Pagamento sicuro” non spiegava perché il pagamento fosse sicuro.</li>
+                            <li>Il programma fedeltà era spiegato in modo frammentato.</li>
+                            <li>Alcune funzioni dell’account mancavano di istruzioni chiare.</li>
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+            02 3C + SITEMAP
+        ========================== -->
+
+        <section class="research-block" id="structure"
+        >
+
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+
+                    <p class="case-label">
+                        02 · 3C DEL DESIGN
+                    </p>
+
+                    <h2>
+                        Chiarezza, contenuto e consistenza
+                    </h2>
+
+                </div>
+
+
+                <div class="research-copy">
+
+                    <p>
+                        La lettura attraverso le 3C ha sintetizzato le criticità
+                        in tre aree: chiarezza comunicativa, organizzazione
+                        dei contenuti e consistenza dell’interfaccia.
+                    </p>
+
+                    <p>
+                        La visual sitemap as-is ha poi reso evidente
+                        la frammentazione della struttura, permettendo
+                        di individuare ridondanze, percorsi poco lineari
+                        e contenuti difficili da raggiungere.
+                    </p>
+
+                </div>
+
+
+                <div class="research-visual-grid">
+
+                    <!-- =========================
+                        3C DEL DESIGN
+                    ========================== -->
+
+                    <figure class="research-figure">
+
+                        <div class="research-visual research-visual--3c">
+
+                            <p class="case-label">
+                                3C DEL DESIGN
+                            </p>
+
+                            <div class="three-c-list">
+
+                                <div class="three-c-item">
+
+                                    <span>01</span>
+
+                                    <div>
+                                        <strong>Chiarezza</strong>
+
+                                        <p>
+                                            Terminologia e percorsi non sempre
+                                            immediatamente comprensibili.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="three-c-item">
+
+                                    <span>02</span>
+
+                                    <div>
+                                        <strong>Contenuto</strong>
+
+                                        <p>
+                                            Informazioni importanti frammentate
+                                            in sezioni diverse.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="three-c-item">
+
+                                    <span>03</span>
+
+                                    <div>
+                                        <strong>Consistenza</strong>
+
+                                        <p>
+                                            Pattern e comportamenti differenti
+                                            tra sito e app.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </figure>
+
+
+
+                    <!-- =========================
+                        SITEMAP AS-IS
+                    ========================== -->
+
+                    <figure class="research-figure">
+
+                        <div class="research-visual research-visual--sitemap">
+
+                            <p class="case-label">
+                                VISUAL SITEMAP · AS-IS
+                            </p>
+
+                            <div class="sitemap-visual">
+
+                                <div class="sitemap-node sitemap-node--main">
+                                    Homepage
+                                </div>
+
+                                <div
+                                    class="sitemap-line sitemap-line--vertical"
+                                    aria-hidden="true">
+                                </div>
+
+                                <div class="sitemap-branches">
+
+                                    <div class="sitemap-branch">
+
+                                        <div class="sitemap-node">
+                                            Categorie
+                                        </div>
+
+                                        <small>
+                                            Struttura poco lineare
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="sitemap-branch">
+
+                                        <div class="sitemap-node">
+                                            Prodotti
+                                        </div>
+
+                                        <small>
+                                            Informazioni frammentate
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="sitemap-branch">
+
+                                        <div class="sitemap-node">
+                                            Servizi
+                                        </div>
+
+                                        <small>
+                                            Contenuti dispersi
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="sitemap-summary">
+
+                                    <span aria-hidden="true">↓</span>
+
+                                    <strong>
+                                        Navigazione frammentata
+                                    </strong>
+
+                                    <p>
+                                        Più percorsi e livelli rendevano
+                                        alcune informazioni difficili
+                                        da raggiungere.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+            03 COMPETITOR
+        ========================== -->
+
+        <section class="research-block" id="competitor"
+        >
+
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+
+                    <p class="case-label">
+                        03 · COMPETITOR ANALYSIS
+                    </p>
+
+                    <h2>
+                        Confrontare iVegan con
+                        e-commerce specializzati
+                    </h2>
+
+                </div>
+
+
+                <div class="research-copy">
+
+                    <p>
+                        Il benchmark ha confrontato iVegan con competitor
+                        diretti specializzati nel mercato vegano, osservando
+                        struttura del sito, account e carrello, product box
+                        e principali leve di fiducia.
+                    </p>
+
+                    <p>
+                        Il confronto ha mostrato esperienze generalmente
+                        più uniformi e complete, soprattutto nella gestione
+                        del carrello, nella consistenza delle schede prodotto
+                        e nella comunicazione delle informazioni d’acquisto.
+                    </p>
+
+                </div>
+
+                <figure class="research-figure research-figure--wide">
+
+                    <div class="benchmark-visual">
+
+                        <div class="benchmark-visual__header">
+
+                            <p class="case-label">
+                                BENCHMARK COMPETITOR
+                            </p>
+
+                            <p>
+                                Pattern ricorrenti osservati nel confronto
+                                con e-commerce specializzati.
+                            </p>
+
+                        </div>
+
+
+                        <div class="benchmark-row">
+
+                            <span class="benchmark-row__number">
+                                01
+                            </span>
+
+                            <div class="benchmark-row__content">
+
+                                <h3>Categorie</h3>
+
+                                <div class="benchmark-comparison">
+
+                                    <div>
+                                        <span class="benchmark-label">
+                                            iVegan
+                                        </span>
+
+                                        <p>
+                                            Gerarchia e categorie non sempre
+                                            immediatamente comprensibili.
+                                        </p>
+                                    </div>
+
+                                    <span
+                                        class="benchmark-arrow"
+                                        aria-hidden="true"
+                                    >
+                                        →
+                                    </span>
+
+                                    <div>
+                                        <span class="benchmark-label">
+                                            Pattern competitor
+                                        </span>
+
+                                        <p>
+                                            Categorie più chiare, riconoscibili
+                                            e prevedibili.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="benchmark-row">
+
+                            <span class="benchmark-row__number">
+                                02
+                            </span>
+
+                            <div class="benchmark-row__content">
+
+                                <h3>Product box</h3>
+
+                                <div class="benchmark-comparison">
+
+                                    <div>
+                                        <span class="benchmark-label">
+                                            iVegan
+                                        </span>
+
+                                        <p>
+                                            Informazioni e stati del prodotto
+                                            poco uniformi.
+                                        </p>
+                                    </div>
+
+                                    <span
+                                        class="benchmark-arrow"
+                                        aria-hidden="true"
+                                    >
+                                        →
+                                    </span>
+
+                                    <div>
+                                        <span class="benchmark-label">
+                                            Pattern competitor
+                                        </span>
+
+                                        <p>
+                                            Schede prodotto più coerenti
+                                            e complete.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="benchmark-row">
+
+                            <span class="benchmark-row__number">
+                                03
+                            </span>
+
+                            <div class="benchmark-row__content">
+
+                                <h3>Carrello</h3>
+
+                                <div class="benchmark-comparison">
+
+                                    <div>
+                                        <span class="benchmark-label">
+                                            iVegan
+                                        </span>
+
+                                        <p>
+                                            Quantità, prezzo e azioni successive
+                                            poco evidenti.
+                                        </p>
+                                    </div>
+
+                                    <span
+                                        class="benchmark-arrow"
+                                        aria-hidden="true"
+                                    >
+                                        →
+                                    </span>
+
+                                    <div>
+                                        <span class="benchmark-label">
+                                            Pattern competitor
+                                        </span>
+
+                                        <p>
+                                            Informazioni e controlli principali
+                                            sempre visibili.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="benchmark-row">
+
+                            <span class="benchmark-row__number">
+                                04
+                            </span>
+
+                            <div class="benchmark-row__content">
+
+                                <h3>Fiducia</h3>
+
+                                <div class="benchmark-comparison">
+
+                                    <div>
+                                        <span class="benchmark-label">
+                                            iVegan
+                                        </span>
+
+                                        <p>
+                                            Informazioni utili all’acquisto
+                                            distribuite in più punti.
+                                        </p>
+                                    </div>
+
+                                    <span
+                                        class="benchmark-arrow"
+                                        aria-hidden="true"
+                                    >
+                                        →
+                                    </span>
+
+                                    <div>
+                                        <span class="benchmark-label">
+                                            Pattern competitor
+                                        </span>
+
+                                        <p>
+                                            Recensioni e informazioni d’acquisto
+                                            più visibili e accessibili.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </figure>
+                
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+            04 TARGET + SURVEY
+        ========================== -->
+
+        <section class="research-block" id="survey"
+        >
+
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+
+                    <p class="case-label">
+                        04 · TARGET &amp; SURVEY
+                    </p>
+
+                    <h2>
+                        Validare priorità e aspettative
+                        con utenti reali
+                    </h2>
+
+                </div>
+
+
+                <div class="research-copy">
+
+                    <p>
+                        Il target è stato approfondito attraverso dati
+                        demografici e sociografici e successivamente
+                        validato con una survey rivolta a persone vegane
+                        e vegetariane tra i 18 e i 35 anni.
+                    </p>
+
+                    <p>
+                        Il questionario ha esplorato acquisto online,
+                        disponibilità dei prodotti, trasparenza,
+                        fiducia e principali frustrazioni del processo
+                        di acquisto.
+                    </p>
+
+                </div>
+
+
+                <div class="research-metrics">
+
+                    <div>
+                        <strong>28</strong>
+                        <span>partecipanti</span>
+                    </div>
+
+                    <div>
+                        <strong>18–35</strong>
+                        <span>fascia d’età</span>
+                    </div>
+
+                    <div>
+                        <strong>70%</strong>
+                        <span>
+                            associa trasparenza su origine e produzione
+                            a maggiore affidabilità
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="research-survey">
+
+                    <div class="research-graph">
+                        <p class="research-graph__question">
+                            Quali informazioni ritieni più utili in una piattaforma di spesa
+                            vegana/vegetariana online? (puoi scegliere più opzioni)
+                        </p>
+
+                        <img
+                            src="iVegan/ivegan-graph-informazioni-crop.png"
+                            alt="Risultati della survey sulle informazioni considerate utili"
+                        >
+                    </div>
+
+                    <div class="research-graph">
+                        <p class="research-graph__question">
+                            Quanto ti interessa sapere da quale paese provengono e in quale
+                            paese vengono lavorati i prodotti?
+                        </p>
+
+                        <img
+                            src="iVegan/ivegan-graph-interesse-crop.png"
+                            alt="Livello di interesse per provenienza e lavorazione dei prodotti"
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="research-insight">
+
+                    <p class="case-label">
+                        INSIGHT PRINCIPALE
+                    </p>
+
+                    <h3>
+                        La fiducia dipende dalla chiarezza.
+                    </h3>
+
+                    <p>
+                        Origine e lavorazione dei prodotti, certificazioni,
+                        recensioni, prezzi e spedizioni devono essere
+                        immediatamente comprensibili. Allo stesso tempo,
+                        navigazione e accesso devono richiedere il minor
+                        sforzo possibile.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+            OUTCOME
+        ========================== -->
+
+        <section class="research-outcome">
+
+            <div class="research-shell">
+
+                <p class="case-label">
+                    DALLA RICERCA AL DESIGN
+                </p>
+
+                <h2>
+                    Quattro priorità per il redesign
+                </h2>
+
+
+                <div class="research-outcome__grid">
+
+                    <div>
+                        <span>01</span>
+                        <strong>Architettura più chiara</strong>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <strong>Informazioni più trasparenti</strong>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        <strong>Più elementi di fiducia</strong>
+                    </div>
+
+                    <div>
+                        <span>04</span>
+                        <strong>Percorsi più semplici</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="research-nav">
+                    <p class="research-next-label">CONTINUA L’ESPLORAZIONE</p>
+
+                    <div class="research-nav__links">
+                        <a class="research-nav__link" href="iVegan.html">
+                            <span class="research-nav__arrow research-nav__arrow--back" aria-hidden="true">←</span>
+                            <span>Torna al case study</span>
+                        </a>
+                        <a class="research-nav__link research-nav__link--next" href="discovery-2.html">
+                            <span>Discovery 02</span>
+                            <span class="research-nav__arrow" aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Sara Marotta ·
+        <br class="mobile-break">
+        Portfolio UX/UI realizzato in HTML e CSS
+    </footer>
+
+</body>
+</html>

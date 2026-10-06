@@ -1,0 +1,2183 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
+
+        <meta
+            name="description"
+            content="Case study UX/UI di iVegan, progettato da Sara Marotta."
+        >
+
+        <title>iVegan | Sara Marotta</title>
+
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        >
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <header class="header">
+            <a class="logo" href="index.html" aria-label="Home">
+                <img src="logo.svg" alt="Logo di Sara Marotta">
+            </a>
+
+            <nav aria-label="Navigazione principale">
+
+                <input 
+                    class="menu-btn" 
+                    id="menu-btn" 
+                    type="checkbox" 
+                    aria-label="Apri o chiudi il menu di navigazione"
+                >
+
+                <label for="menu-btn" class="menu-icon">
+                    <span class="navicon"></span>
+                </label>
+            
+                <ul class="menu">
+
+                <li>
+                <a href="index.html">Home</a>
+                </li>
+
+                <li class="has-submenu">
+
+                    <input
+                        class="submenu-btn"
+                        type="checkbox"
+                        id="submenu-progetti"
+                    >
+
+                    <label
+                        class="submenu-label"
+                        for="submenu-progetti"
+                    > Progetti    
+                    <span class="submenu-arrow"></span>            
+                    </label>
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="ILS.html">Italian Language Studio (ILS)</a>
+                        </li>
+
+                        <li>
+                            <a href="iVegan.html">iVegan</a>
+                        </li>
+
+                        <li>
+                            <a href="visual.html">Visual & Content Design</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="cv.html">CV</a>
+                </li>
+
+                <li>
+                    <a href="contatti.html">Contatti</a>
+                </li>
+
+                </ul>
+
+            </nav>
+
+        </header>
+            
+        <main class="case-study">
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="case-hero case-hero--ivegan">
+
+            <div class="case-container">
+
+                <div class="case-hero-content">
+
+                   
+                    <img
+                        src="iVegan/iVegan Logo.png"
+                        alt="iVegan"
+                        class="case-logo"
+                    >
+
+                    <h1>
+                        Trasformare ricerca e insight in una nuova esperienza e-commerce
+                    </h1>
+
+                    <p class="case-hero-description">
+                        Redesign UX/UI di un e-commerce vegano, dalla ricerca e
+                        accessibilità alla nuova architettura e ai wireframe responsive.
+                    </p>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =========================
+             INTRODUZIONE
+        ========================== -->
+
+        <section class="case-intro">
+
+            <div class="case-container">
+
+                <div class="case-intro-grid">
+
+                    <div>
+                        <p class="case-label">PROGETTO</p>
+
+                        <h2>
+                            Dall’analisi del sito alle scelte di redesign
+                        </h2>
+                    </div>
+
+                    <div class="case-intro-copy">
+
+                        <p>
+                        Il progetto iVegan nasce dall’analisi dell’esperienza esistente
+                        per comprendere criticità, bisogni degli utenti e opportunità
+                        di miglioramento lungo il percorso di acquisto.
+                        </p>
+
+                        <p>
+                        Analisi euristica, competitor, survey, personas e user journey
+                        hanno guidato le fasi successive: accessibilità, revisione
+                        dell’architettura dell’informazione e progettazione dei wireframe
+                        desktop e mobile.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        
+        </section>
+
+        <!-- META -->
+
+         <section class="case-meta-section">
+
+            <div class="case-container">
+
+                <div class="case-meta-top">
+
+                    <div class="case-meta-item">
+                        <span class="case-label">RUOLO</span>
+                        <p>UX/UI Designer</p>
+                    </div>
+
+                    <div class="case-meta-item">
+                        <span class="case-label">ATTIVITÀ</span>
+                        <p>
+                        User Research · User Journey · Information Architecture ·
+                        Accessibility · Wireframing
+                        </p>
+                    </div>
+
+                </div>                
+
+
+                <div class="case-tools">
+
+                    <span class="case-label case-tools-title">
+                        STRUMENTI UTILIZZATI
+                    </span>
+
+                    <div class="case-tools-grid">
+
+                            <img src="strumenti/google-color-icon.svg" alt="Google">
+                            <img src="strumenti/figma-brands-solid.svg" alt="Figma">
+                            <img src="strumenti/Miro Logo.svg" alt="Miro" class="tool-wide tool-miro">
+                            <img src="strumenti/adobe-illustrator-icon.svg" alt="Adobe Illustrator">
+                            <img src="strumenti/adobe-photoshop-icon.svg" alt="Photoshop">
+                            <img src="strumenti/indesign-icon.svg" alt="In Design">
+                            <img src="strumenti/canva-icon.svg" alt="Canva">
+
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROBLEMA / OBIETTIVI
+        ========================== -->
+
+        <section class="case-overview">
+
+            <div class="case-container">
+
+                <div class="overview-grid">
+
+                    <!-- SFIDA -->
+                    <article class="overview-card">
+
+                        <p class="case-label">PROBLEMA</p>
+
+                        <h2>Un’esperienza poco chiara e coerente</h2>
+                        
+                        <p>
+                             L’analisi ha evidenziato una navigazione poco intuitiva,
+                            categorie difficili da comprendere e informazioni frammentate.
+                            Anche homepage e percorso d’acquisto comunicavano con poca
+                            chiarezza offerta e valori del brand.
+                        </p>
+
+                        <p>
+                            La ricerca ha inoltre mostrato quanto trasparenza, recensioni,
+                            prezzi e costi di spedizione incidano sulla fiducia e sulla
+                            decisione di acquistare online.
+                        </p>
+
+                    </article>
+
+
+                    <!-- OBIETTIVI -->
+                    <article class="overview-card">
+
+                        <p class="case-label">OBIETTIVI</p>
+
+                        <h2>Rendere il percorso più chiaro e affidabile</h2>
+
+                        <ul>
+                                <li>riorganizzare navigazione, categorie e architettura dell’informazione;</li>
+                                <li>rendere più chiare informazioni, prezzi e spedizioni;</li>
+                                <li>rafforzare fiducia e trasparenza del brand;</li>
+                                <li>semplificare carrello, login e checkout;</li>
+                                <li>integrare accessibilità, etica e sostenibilità nell’esperienza.</li>
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </div>
+        
+        </section>
+
+        <!-- =========================
+            PERCORSO DEL PROGETTO
+        ========================= -->
+
+            <section
+                class="case-scope case-scope--ivegan"
+                aria-labelledby="ivegan-scope-title"
+            >
+
+                <div class="case-container">
+
+                    <p class="case-label">
+                        PERCORSO DEL PROGETTO
+                    </p>
+
+                    <h2 id="ivegan-scope-title">
+                        Esplora il case study per fase
+                    </h2>
+
+                    <p class="case-scope-intro">
+                        Il progetto si sviluppa dalla ricerca iniziale alla definizione
+                        dell’esperienza e dell’interfaccia. Ogni fase approfondisce
+                        un aspetto specifico del redesign.
+                    </p>
+
+
+                    <div class="case-scope-grid">
+
+                        <a href="#discovery" class="scope-item">
+
+                            <span>01</span>
+
+                            <strong>Discovery</strong>
+
+                            <small>
+                                Analisi as-is, competitor
+                                e user research
+                            </small>
+
+                        </a>
+
+
+                        <a href="#accessibility" class="scope-item">
+
+                            <span>02</span>
+
+                            <strong>Accessibility</strong>
+
+                            <small>
+                                Personas, user journey
+                                e audit WCAG 2.2
+                            </small>
+
+                        </a>
+
+
+                        <a href="#wireframing" class="scope-item">
+
+                            <span>03</span>
+
+                            <strong>Wireframing</strong>
+
+                            <small>
+                                Sitemap, information architecture,
+                                wireframe e wireflow
+                            </small>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        <!-- =========================
+            DISCOVERY INTRO
+        ========================== -->
+
+        <section class="case-process" id="discovery">
+            <div class="case-process__container">
+
+                <div class="case-process__intro">
+                    <p class="case-label">Discovery</p>
+                    <h2>Da dove parte il redesign</h2>
+                    <div class="case-process__divider"></div>
+
+                    <p>
+                        L’analisi del sito, dei competitor e la ricerca con utenti reali
+                        hanno fatto emergere criticità legate soprattutto a navigazione,
+                        chiarezza delle informazioni e fiducia nel processo di acquisto.
+                    </p>
+
+                </div>
+
+                <div class="process-flow">
+
+                    <div class="process-flow__stage">
+                        <p class="case-label process-flow__stage-label">Analisi</p>
+
+                        <div class="process-flow__cards">
+                            <article class="process-card">
+                                <h3>Analisi as-is</h3>
+                                <p>Sito, struttura e criticità</p>
+                            </article>
+
+                            <article class="process-card">
+                                <h3>Competitor</h3>
+                                <p>Confronto e benchmark</p>
+                            </article>
+
+                            <article class="process-card">
+                                <h3>Ricerca utenti</h3>
+                                <p>Survey e bisogni reali</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="process-flow__arrow" aria-hidden="true">→</div>
+
+                    <div class="process-flow__stage">
+                        <p class="case-label process-flow__stage-label">Insight emersi</p>
+
+                        <div class="process-flow__cards process-flow__cards--insights">
+                            <article class="process-card process-card--highlight">
+                                <h3>Criticità</h3>
+                                <p>Navigazione e informazioni poco chiare.</p>
+                            </article>
+
+                            <article class="process-card process-card--highlight">
+                                <h3>Bisogni</h3>
+                                <p>Maggiore trasparenza e fiducia.</p>
+                            </article>
+
+                            <article class="process-card process-card--highlight">
+                                <h3>Opportunità</h3>
+                                <p>Percorsi e contenuti più semplici.</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="process-flow__arrow" aria-hidden="true">→</div>
+
+                    <div class="process-flow__stage process-flow__stage--outcome">
+                        <p class="case-label process-flow__stage-label">Output</p>
+
+                        <div class="process-outcome">
+                            Personas, user journey e priorità di redesign
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+       
+        <!-- =========================
+            DISCOVERY 01
+        ========================= -->
+
+        <section class="project-section">
+
+            <div class="case-container">
+
+                <div class="project-grid">
+
+                    <!-- TESTO -->
+                    
+                    <div class="project-copy">
+
+                        <div class="project-heading">
+
+                            <p class="project-number">01</p>
+
+                            <div>
+
+                                <p class="case-label">
+                                    DISCOVERY · ANALISI E RICERCA
+                                </p>
+
+                                <h2>
+                                    Individuare le criticità
+                                    dell’esperienza esistente
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <h3>
+                            Comprendere i problemi del sito e confrontarli
+                            con le esigenze degli utenti
+                        </h3>
+
+                        <p>
+                            La prima fase del progetto si è concentrata
+                            sull’analisi dell’esperienza iVegan esistente.
+                            Attraverso i principi di usabilità di Jakob Nielsen
+                            e le 3C del design, sono stati esaminati sito e app,
+                            individuando criticità nella navigazione,
+                            nell’organizzazione dei contenuti e nella
+                            coerenza delle interazioni.
+                        </p>
+
+                        <p>
+                            L’analisi dei competitor ha permesso di confrontare
+                            categorie, schede prodotto e funzionalità d’acquisto
+                            con quelle di altri e-commerce specializzati,
+                            evidenziando possibili opportunità di miglioramento.
+                        </p>
+
+                        <p>
+                            La ricerca è stata completata con la definizione
+                            del target e una survey condotta con 28 partecipanti.
+                            Le risposte hanno approfondito aspettative e
+                            difficoltà legate all’acquisto online, confermando
+                            l’importanza di informazioni chiare su provenienza,
+                            certificazioni, recensioni e prezzi.
+                        </p>
+
+                        <div class="case-resource">
+
+                            <a
+                                class="case-resource__link"
+                                href="discovery-1.html"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <span>Vedi la ricerca completa</span>
+
+                                <span
+                                    class="case-resource__arrow"
+                                    aria-hidden="true"
+                                >
+                                    ↗
+                                </span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- VISUAL -->
+
+                    <div class="project-visual ivegan-research-visual">
+                    <div class="discovery-audit">
+
+                        <div class="discovery-audit__chrome" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="discovery-audit__body">
+
+                            <!-- 01 — CRITICITÀ -->
+                            <p class="discovery-audit__eyebrow">
+                                <span>01</span> · CRITICITÀ INDIVIDUATE
+                            </p>
+
+                            <div class="discovery-audit__issues">
+
+                                <article class="discovery-audit__issue">
+                                    <span class="discovery-audit__number">01</span>
+
+                                    <strong>Navigazione</strong>
+
+                                    <p>
+                                        Categorie e percorsi
+                                        poco immediati.
+                                    </p>
+                                </article>
+
+                                <article class="discovery-audit__issue">
+                                    <span class="discovery-audit__number">02</span>
+
+                                    <strong>Informazioni</strong>
+
+                                    <p>
+                                        Provenienza e certificazioni
+                                        difficili da trovare.
+                                    </p>
+                                </article>
+
+                                <article class="discovery-audit__issue">
+                                    <span class="discovery-audit__number">03</span>
+
+                                    <strong>Acquisto</strong>
+
+                                    <p>
+                                        Costi e condizioni
+                                        poco visibili.
+                                    </p>
+                                </article>
+
+                            </div>
+
+                            <!-- 02 — OPPORTUNITÀ -->
+                            <div class="discovery-audit__insight">
+
+                                <p class="discovery-audit__eyebrow">
+                                    <span>02</span> · DALLE CRITICITÀ ALLE OPPORTUNITÀ
+                                </p>
+
+                                <div class="discovery-audit__columns">
+
+                                    <div>
+                                        <small>PROBLEMI EMERSI</small>
+
+                                        <p>
+                                            Percorsi complessi<br>
+                                            Contenuti poco accessibili<br>
+                                            Informazioni tardive
+                                        </p>
+                                    </div>
+
+                                    <span class="discovery-audit__arrow"
+                                        aria-hidden="true">→</span>
+
+                                    <div>
+                                        <small>OPPORTUNITÀ UX</small>
+
+                                        <p>
+                                            Navigazione più chiara<br>
+                                            Informazioni riconoscibili<br>
+                                            Maggiore trasparenza
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                        <div class="mini-features">
+
+                            <div class="mini-feature-item">
+
+                                <span
+                                    class="mini-feature-icon icon-usability"
+                                    aria-hidden="true">
+                                </span>
+
+                                <strong>Usabilità</strong>
+
+                                <span>
+                                   Navigazione e contenuti poco immediati
+                                </span>
+
+                            </div>
+
+
+                            <div class="mini-feature-item">
+
+                                <span
+                                    class="mini-feature-icon icon-data"
+                                    aria-hidden="true">
+                                </span>
+
+                                <strong>User Research</strong>
+
+                                <span>
+                                    Bisogni e aspettative
+                                    raccolti nella survey
+                                </span>
+
+                            </div>
+
+
+                            <div class="mini-feature-item">
+
+                                <span
+                                    class="mini-feature-icon icon-benchmark"
+                                    aria-hidden="true">
+                                </span>
+
+                                <strong>Benchmark</strong>
+
+                                <span>
+                                    Confronto con e-commerce specializzati
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div> <!-- project-visual ivegan-research-visual -->
+
+                </div> <!-- project-grid -->
+
+            </div> <!-- case-container -->
+
+        </section>
+
+        <!-- =========================
+            DISCOVERY 02
+        ========================= -->
+
+        <section class="project-section project-section-alt">
+
+            <div class="case-container">
+
+                <div class="project-grid project-grid-reverse">
+
+                    <!-- TESTO -->
+                    
+                    <div class="project-copy">
+
+                        <div class="project-heading">
+
+                            <p class="project-number">02</p>
+
+                            <div>
+
+                                <p class="case-label">
+                                    DISCOVERY · PERSONAS E USER JOURNEY
+                                </p>
+
+                                <h2>
+                                    Tradurre gli insight
+                                    in percorsi più chiari
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <h3>
+                            Dai bisogni delle persone alle prime
+                            scelte di redesign
+                        </h3>
+
+                        <p>
+                            A partire dai risultati della ricerca, sono state
+                            sviluppate due personas, Sonia e Luca, per rappresentare
+                            esigenze, motivazioni e comportamenti d’acquisto
+                            differenti.
+                        </p>
+
+                        <p>
+                            I rispettivi user journey as-is hanno permesso
+                            di ricostruire il percorso dall’esplorazione
+                            dei prodotti al checkout, mettendo in relazione
+                            le difficoltà incontrate con i bisogni emersi
+                            durante la ricerca.
+                        </p>
+
+                        <p>
+                            Queste evidenze sono state tradotte in opportunità
+                            di miglioramento e in nuovi journey proposti.
+                            Il lavoro ha portato anche alla revisione della
+                            sitemap, con una riorganizzazione di categorie,
+                            contenuti e servizi pensata per rendere
+                            l’esperienza più comprensibile e continua.
+                        </p>
+
+                        <div class="case-resource">
+
+                            <a
+                                class="case-resource__link"
+                                href="discovery-2.html"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <span>Vedi la ricerca completa</span>
+
+                                <span
+                                    class="case-resource__arrow"
+                                    aria-hidden="true"
+                                >
+                                    ↗
+                                </span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- VISUAL -->
+                    <div class="project-visual ivegan-research-visual">
+
+                        <div class="discovery-media discovery-media--02">
+
+                        <div class="discovery-visual discovery-visual--design">
+
+                            <div class="discovery-visual__chrome" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="discovery-visual__body">
+
+                                <!-- PERSONAS -->
+
+                                <p class="discovery-visual__eyebrow">
+                                    01 · PERSONAS
+                                </p>
+
+                                <div class="discovery-mini-personas">
+
+                                    <article class="discovery-mini-persona">
+
+                                        <div class="discovery-mini-persona__header">
+
+                                            <span
+                                                class="discovery-mini-persona__avatar"
+                                                aria-hidden="true">
+
+                                                 <img
+                                                    src="iVegan/sonia.png"
+                                                    alt="Ritratto illustrativo di Sonia"
+                                                >
+                                            </span>
+
+                                            <div>
+                                                <strong>Sonia</strong>
+                                                <small>Qualità e trasparenza</small>
+                                            </div>
+
+                                        </div>
+
+                                        <p>
+                                            Cerca prodotti specifici e informazioni
+                                            affidabili su origine e certificazioni.
+                                        </p>
+
+                                    </article>
+
+
+                                    <article class="discovery-mini-persona">
+
+                                        <div class="discovery-mini-persona__header">
+
+                                            <span
+                                                class="discovery-mini-persona__avatar"
+                                                aria-hidden="true">
+
+                                                <img
+                                                    src="iVegan/luca.png"
+                                                    alt="Ritratto illustrativo di Luca"
+                                                >
+
+                                            </span>
+
+                                            <div>
+                                                <strong>Luca</strong>
+                                                <small>Praticità e chiarezza</small>
+                                            </div>
+
+                                        </div>
+
+                                        <p>
+                                            Vuole orientarsi rapidamente e acquistare
+                                            senza interruzioni tra sito e app.
+                                        </p>
+
+                                    </article>
+
+                                </div>
+
+                                
+                                <!-- USER JOURNEY -->
+
+                                <div class="discovery-mini-journey">
+
+                                    <p class="discovery-visual__eyebrow">
+                                        02 · USER JOURNEY
+                                    </p>
+
+                                    <ol class="journey-steps">
+                                        <li>
+                                            <span>01</span>
+                                            <strong>Scoperta</strong>
+                                        </li>
+
+                                        <li>
+                                            <span>02</span>
+                                            <strong>Esplorazione</strong>
+                                        </li>
+
+                                        <li>
+                                            <span>03</span>
+                                            <strong>Acquisto</strong>
+                                        </li>
+                                    </ol>
+
+                                </div>
+
+
+                                <!-- SITEMAP -->
+
+                                <div class="discovery-mini-sitemap">
+
+                                    <p class="discovery-visual__eyebrow">
+                                        03 · NUOVA SITEMAP
+                                    </p>
+
+                                    <div class="discovery-mini-sitemap__root">
+                                        iVegan
+                                    </div>
+
+                                    <div class="discovery-mini-sitemap__branches">
+
+                                        <span>Prodotti</span>
+
+                                        <span>Etica e contenuti</span>
+
+                                        <span>Servizi</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="mini-features">
+
+                            <div class="mini-feature-item">
+
+                                <span
+                                    class="mini-feature-icon icon-personas"
+                                    aria-hidden="true">
+                                </span>
+
+                                <strong>Personas</strong>
+
+                                <span>
+                                    Bisogni e comportamenti di Sonia e Luca
+                                </span>
+
+                            </div>
+
+
+                            <div class="mini-feature-item">
+
+                                <span
+                                    class="mini-feature-icon icon-user-journey"
+                                    aria-hidden="true">
+                                </span>
+
+                                <strong>User Journey</strong>
+
+                                <span>
+                                    Percorsi attuali e nuove soluzioni
+                                </span>
+
+                            </div>
+
+
+                            <div class="mini-feature-item">
+
+                                <span
+                                    class="mini-feature-icon icon-architecture"
+                                    aria-hidden="true">
+                                </span>
+
+                                <strong>Information Architecture</strong>
+
+                                <span>
+                                    Riorganizzazione di categorie e contenuti
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+            ACCESSIBILITY INTRO
+        ========================= -->
+
+        <section class="case-process" id="accessibility">
+
+            <div class="case-process__container">
+
+                <div class="case-process__intro">
+
+                    <p class="case-label">Accessibility</p>
+
+                    <h2>
+                        Rendere l’esperienza accessibile a esigenze diverse
+                    </h2>
+
+                    <div class="case-process__divider"></div>
+
+                    <p>
+                        L’accessibilità è stata integrata nel processo di redesign
+                        combinando due prospettive: l’analisi di barriere cognitive,
+                        linguistiche e visive attraverso personas e user journey,
+                        e una verifica tecnica delle principali interfacce secondo
+                        i criteri WCAG 2.2.
+                    </p>
+
+                </div>
+
+
+                <div class="process-flow">
+
+                    <!-- STAGE 1 -->
+                    <div class="process-flow__stage">
+
+                        <p class="case-label process-flow__stage-label">
+                            Prospettive utente
+                        </p>
+
+                        <div class="process-flow__cards">
+
+                            <article class="process-card">
+                                <h3>Cognitive</h3>
+                                <p>Chiarezza, prevedibilità e carico sensoriale</p>
+                            </article>
+
+                            <article class="process-card">
+                                <h3>Linguistiche</h3>
+                                <p>Comprensione, traduzione e terminologia</p>
+                            </article>
+
+                            <article class="process-card">
+                                <h3>Visive</h3>
+                                <p>Leggibilità e tecnologie assistive</p>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-flow__arrow" aria-hidden="true">
+                        →
+                    </div>
+
+
+                    <!-- STAGE 2 -->
+                    <div class="process-flow__stage">
+
+                        <p class="case-label process-flow__stage-label">
+                            Analisi WCAG
+                        </p>
+
+                        <div class="process-flow__cards process-flow__cards--insights">
+
+                            <article class="process-card process-card--highlight">
+                                <h3>Percezione</h3>
+                                <p>Contrasto, leggibilità e gerarchie</p>
+                            </article>
+
+                            <article class="process-card process-card--highlight">
+                                <h3>Interazione</h3>
+                                <p>Tastiera, focus e controlli accessibili</p>
+                            </article>
+
+                            <article class="process-card process-card--highlight">
+                                <h3>Comprensione</h3>
+                                <p>Linguaggio e comportamenti prevedibili</p>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-flow__arrow" aria-hidden="true">
+                        →
+                    </div>
+
+
+                    <!-- OUTPUT -->
+                    <div class="process-flow__stage process-flow__stage--outcome">
+
+                        <p class="case-label process-flow__stage-label">
+                            Direzione progettuale
+                        </p>
+
+                        <div class="process-outcome">
+                            Linee guida accessibili per il redesign
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ACCESSIBILITY 01 · PERSONAS E PERCORSI -->
+        <section class="project-section" id="accessibility-01">
+            <div class="case-container">
+                <div class="project-grid">
+                <div class="project-copy">
+                    <div class="project-heading">
+                    <p class="project-number">01</p>
+                    <div>
+                        <p class="case-label">ACCESSIBILITY · PERSONAS E USER JOURNEY</p>
+                        <h2>Comprendere le barriere attraverso esigenze diverse</h2>
+                    </div>
+                    </div>
+                    <h3>Tre prospettive per progettare percorsi più inclusivi</h3>
+                    <p>La prima parte del lavoro ha approfondito le barriere cognitive, linguistiche e visive che possono emergere durante l’acquisto online. Sono state sviluppate tre personas — Alice, Aarav e Carlo — accompagnate da user journey as-is per osservare come le difficoltà cambino a seconda delle esigenze di accesso.</p>
+                    <p>Alice ha guidato l’analisi di sovraccarico sensoriale, linguaggio ambiguo e interazioni imprevedibili. Aarav ha evidenziato l’importanza della traduzione e della coerenza terminologica. Carlo ha portato l’attenzione su leggibilità, contrasto, dimensione dei controlli e compatibilità con le tecnologie assistive.</p>
+                    <p>I pain point sono stati tradotti in nuovi journey e indicazioni di redesign: navigazione più prevedibile, testi diretti, informazioni su prezzi e spedizioni anticipate e interfacce più facilmente utilizzabili con diversi strumenti di accesso.</p>
+                    <div class="case-resource">
+                    <a class="case-resource__link" href="accessibility-1.html" target="_blank" rel="noopener">
+                        <span>Vedi la ricerca completa</span>
+                        <span class="case-resource__arrow" aria-hidden="true">↗</span>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="accessibility-media">
+                    <div class="accessibility-visual" aria-label="Sintesi grafica delle tre personas e delle barriere di accessibilità">
+                    <div class="accessibility-visual__chrome" aria-hidden="true"><span></span><span></span><span></span></div>
+                    <div class="accessibility-visual__body">
+                        <p class="accessibility-visual__eyebrow"><span>01</span> · PERSONAS &amp; BARRIERE</p>
+                        <div class="accessibility-personas">
+
+                            <!-- ALICE -->
+                            <article class="accessibility-persona">
+
+                                <div class="accessibility-persona__avatar">
+                                    <img src="iVegan/alice.png" alt="Alice">
+                                </div>
+
+                                <div class="accessibility-persona__content">
+                                    <strong>Alice</strong>
+                                    <small>Accessibilità cognitiva</small>
+
+                                    <p>
+                                        Sovraccarico sensoriale, linguaggio ambiguo e interazioni imprevedibili.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                            <!-- AARAV -->
+                            <article class="accessibility-persona">
+
+                                <div class="accessibility-persona__avatar">
+                                    <img src="iVegan/aarav.png" alt="Aarav">
+                                </div>
+
+                                <div class="accessibility-persona__content">
+                                    <strong>Aarav</strong>
+                                    <small>Accessibilità linguistica</small>
+
+                                    <p>
+                                       Terminologia poco intuitiva, istruzioni difficili da comprendere e barriere linguistiche.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                            <!-- CARLO -->
+                            <article class="accessibility-persona">
+
+                                <div class="accessibility-persona__avatar">
+                                    <img src="iVegan/carlo.png" alt="Carlo">
+                                </div>
+
+                                <div class="accessibility-persona__content">
+                                    <strong>Carlo</strong>
+                                    <small>Accessibilità visiva</small>
+
+                                    <p>
+                                       Contrasto insufficiente, testi poco leggibili e difficoltà nell'utilizzo delle tecnologie assistive.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <div class="accessibility-insight">
+                        <p class="accessibility-visual__eyebrow"><span>02</span> · DALLE BARRIERE AL REDESIGN</p>
+                        <div class="accessibility-insight__columns"><div><small>PAIN POINTS</small><strong>Navigazione complessa<br>Linguaggio ambiguo<br>Contrasto insufficiente</strong></div><span aria-hidden="true">→</span><div><small>OPPORTUNITÀ</small><strong>Percorsi prevedibili<br>Testi più chiari<br>Controlli leggibili</strong></div></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="mini-features">
+                    <div class="mini-feature-item"><span class="mini-feature-icon icon-cognitive" aria-hidden="true"></span><strong>Cognitiva</strong><span>Interfacce semplici e interazioni coerenti</span></div>
+                    <div class="mini-feature-item"><span class="mini-feature-icon icon-language" aria-hidden="true"></span><strong>Linguistica</strong><span>Linguaggio diretto e traduzioni complete</span></div>
+                    <div class="mini-feature-item"><span class="mini-feature-icon icon-visual" aria-hidden="true"></span><strong>Visiva</strong><span>Contrasto adeguato e tecnologie assistiv</span></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- ACCESSIBILITY 02 · AUDIT WCAG -->
+            <section class="project-section project-section-alt" id="accessibility-02">
+            <div class="case-container">
+                <div class="project-grid project-grid-reverse">
+                <div class="project-copy">
+                    <div class="project-heading">
+                    <p class="project-number">02</p>
+                    <div>
+                        <p class="case-label">ACCESSIBILITY · ANALISI WCAG 2.2</p>
+                        <h2>Tradurre le criticità in interventi di accessibilità</h2>
+                    </div>
+                    </div>
+                    <h3>Un audit mirato delle principali aree dell’e-commerce</h3>
+                    <p>La seconda parte ha esaminato cinque aree del sito iVegan — Homepage, pagina lista prodotti (PLP), scheda prodotto (PDP), Carrello e Account — usando i criteri WCAG 2.2 come riferimento per individuare e classificare le principali barriere.</p>
+                    <p>L’analisi ha combinato osservazione manuale, verifiche del contrasto, prove di navigazione da tastiera e valutazione dei task di acquisto. Sono emersi problemi ricorrenti di leggibilità, focus, comportamenti incoerenti, nomi poco chiari e informazioni essenziali difficili da trovare.</p>
+                    <p>Le criticità sono state associate a proposte di miglioramento per ogni area: maggiore contrasto, indicatori di focus visibili, controlli riconoscibili, terminologia uniforme, form più inclusivi e riepiloghi di costi e sconti comprensibili. L’analisi riguarda prevalentemente la versione desktop del sito originario: durante il progetto il sito risultava in manutenzione e sono state utilizzate anche le osservazioni delle fasi precedenti.</p>
+                    <div class="case-resource">
+                    <a class="case-resource__link" href="accessibility-2.html" target="_blank" rel="noopener">
+                        <span>Vedi la ricerca completa</span>
+                        <span class="case-resource__arrow" aria-hidden="true">↗</span>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="accessibility-media">
+                    <div class="accessibility-visual" aria-label="Sintesi grafica dell’audit di accessibilità delle cinque aree del sito">
+                    <div class="accessibility-visual__chrome" aria-hidden="true"><span></span><span></span><span></span></div>
+                    <div class="accessibility-visual__body">
+                        <p class="accessibility-visual__eyebrow"><span>01</span> · AREE ANALIZZATE</p>
+                        <div class="accessibility-pages" aria-label="Homepage, PLP, PDP, Carrello, Account"><span>HOME</span><span>PLP</span><span>PDP</span><span>CARRELLO</span><span>ACCOUNT</span></div>
+                        <p class="accessibility-visual__eyebrow"><span>02</span> · CRITICITÀ RILEVATE</p>
+                        <div class="accessibility-findings">
+                        <div class="accessibility-finding"><span class="accessibility-finding__code">1.4.3 <small>AA</small></span><div><strong>Contrasto e leggibilità</strong><p>Testi e messaggi poco distinguibili.</p></div></div>
+                        <div class="accessibility-finding"><span class="accessibility-finding__code">2.4.7 <small>AA</small></span><div><strong>Focus e navigazione</strong><p>Elementi difficili da raggiungere con TAB.</p></div></div>
+                        <div class="accessibility-finding"><span class="accessibility-finding__code">3.3.2 <small>A</small></span><div><strong>Etichette e istruzioni</strong><p>Form e informazioni non sempre espliciti.</p></div></div>
+                        </div>
+                        <div class="accessibility-remedies"><p class="accessibility-visual__eyebrow"><span>03</span> · INDICAZIONI DI REDESIGN</p><div><span>Contrasto adeguato</span><span>Focus visibile</span><span>Form più chiari</span></div></div>
+                    </div>
+                    </div>
+                    <div class="mini-features">
+                    <div class="mini-feature-item"><span class="mini-feature-icon icon-perceptible" aria-hidden="true"></span><strong>Percepibile</strong><span>Contrasto dei colori e leggibilità dei contenuti</span></div>
+                    <div class="mini-feature-item"><span class="mini-feature-icon icon-usability-wcag" aria-hidden="true"></span><strong>Utilizzabile</strong><span>Navigazione da tastiera e visibilità del focus</span></div>
+                    <div class="mini-feature-item"><span class="mini-feature-icon icon-comprehensible" aria-hidden="true"></span><strong>Comprensibile</strong><span>Etichette chiare e feedback delle interazioni</span></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+            WIREFRAMING INTRO
+        ========================= -->
+
+        <section class="case-process" id="wireframing">
+
+            <div class="case-process__container">
+
+                <div class="case-process__intro">
+
+                    <p class="case-label">Wireframing</p>
+
+                    <h2>
+                        Trasformare gli insight in struttura e percorsi
+                    </h2>
+
+                    <div class="case-process__divider"></div>
+
+                    <p>
+                        Le evidenze raccolte durante Discovery e Accessibility
+                        sono state tradotte in una nuova architettura dell’informazione
+                        e in wireframe mid-fidelity desktop e mobile delle principali
+                        fasi dell’esperienza di acquisto.
+                    </p>
+
+                </div>
+
+
+                <div class="process-flow">
+
+                    <!-- STAGE 1 -->
+                    <div class="process-flow__stage">
+
+                        <p class="case-label process-flow__stage-label">
+                            Struttura
+                        </p>
+
+                        <div class="process-flow__cards">
+
+                            <article class="process-card">
+                                <h3>Sitemap</h3>
+                                <p>Contenuti e categorie riorganizzati</p>
+                            </article>
+
+                            <article class="process-card">
+                                <h3>Gerarchie</h3>
+                                <p>Informazioni e CTA più riconoscibili</p>
+                            </article>
+
+                            <article class="process-card">
+                                <h3>Percorsi</h3>
+                                <p>Flussi più lineari tra shop e checkout</p>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-flow__arrow" aria-hidden="true">
+                        →
+                    </div>
+
+
+                    <!-- STAGE 2 -->
+                    <div class="process-flow__stage">
+
+                        <p class="case-label process-flow__stage-label">
+                            Wireframe
+                        </p>
+
+                        <div class="process-flow__cards process-flow__cards--insights">
+
+                            <article class="process-card process-card--highlight">
+                                <h3>Desktop</h3>
+                                <p>Struttura completa delle pagine chiave</p>
+                            </article>
+
+                            <article class="process-card process-card--highlight">
+                                <h3>Mobile</h3>
+                                <p>Priorità e interazioni adattate al touch</p>
+                            </article>
+
+                            <article class="process-card process-card--highlight">
+                                <h3>Wireflow</h3>
+                                <p>Continuità del percorso di acquisto</p>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-flow__arrow" aria-hidden="true">
+                        →
+                    </div>
+
+
+                    <!-- OUTPUT -->
+                    <div class="process-flow__stage process-flow__stage--outcome">
+
+                        <p class="case-label process-flow__stage-label">
+                            Direzione progettuale
+                        </p>
+
+                        <div class="process-outcome">
+                            Un’esperienza più chiara, coerente e accessibile
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        
+        <!-- =========================
+
+            WIREFRAMING 01
+
+        ========================= -->
+
+        <section class="project-section">
+
+            <div class="case-container">
+
+                <div class="project-grid">
+
+                    <!-- COPY -->
+
+                    <div class="project-copy">
+
+                        <div class="project-heading">
+
+                            <p class="project-number">01</p>
+
+                            <div>
+
+                                <p class="case-label">
+
+                                    WIREFRAMING · INFORMATION ARCHITECTURE & DESKTOP
+
+                                </p>
+
+                                <h2>
+
+                                    Costruire una struttura più chiara
+
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <h3>
+
+                            Dalla nuova sitemap alle principali schermate desktop
+
+                        </h3>
+
+                        <p>
+
+                            Il wireframing è partito dalla revisione dell’architettura
+
+                            dell’informazione, riorganizzando categorie, funzioni e contenuti
+
+                            secondo una struttura più prevedibile. Ricerca, account, wishlist
+
+                            e carrello diventano immediatamente riconoscibili, insieme ai
+
+                            principali percorsi di esplorazione dei prodotti.
+
+                        </p>
+
+                        <p>
+
+                            Etica, sostenibilità, certificazioni e Made in Italy vengono
+
+                            raccolti in un hub dedicato, mentre su questa nuova sitemap
+
+                            sono stati sviluppati wireframe mid-fidelity per Home, PLP,
+
+                            PDP, Carrello e Hub Etica & Sostenibilità.
+
+                        </p>
+
+                        <p>
+
+                            Le schermate traducono direttamente gli insight della ricerca:
+
+                            gerarchie e CTA più chiare, filtri e informazioni prodotto meglio
+
+                            organizzati e maggiore visibilità per totale, soglia minima,
+
+                            spedizione e sconti durante il percorso verso il checkout.
+
+                        </p>
+
+                        <div class="case-resource">
+
+                            <a  ="" ="" class="case-resource__link" href="wireframing-1.html" rel="noopener" target="_blank">
+
+                                <span>Vedi la ricerca completa</span>
+
+                                <span  ="" aria-hidden="true" class="case-resource__arrow">
+
+                                    ↗
+
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- VISUAL -->
+
+                    <div class="project-visual ivegan-research-visual">
+
+                    <div class="wf-case-window wf-case-window--home">
+
+                        <div class="wf-case-window__chrome" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="wf-home">
+
+                            <p class="wf-home__eyebrow">
+                                <span>01</span> · WIREFRAME DESKTOP
+                            </p>
+
+                            <div class="wf-home__screen"
+                                role="img"
+                                aria-label="Wireframe schematico della homepage iVegan con topbar, header, navigazione, hero e tre blocchi informativi.">
+
+                                <!-- TOPBAR -->
+                                <div class="wf-home__topbar">
+                                    <span>SCARICA L'APP</span>
+                                    <span>ITA</span>
+                                </div>
+
+                                <!-- HEADER -->
+                                <div class="wf-home__header">
+
+                                    <div class="wf-home__logo">iVegan</div>
+
+                                    <div class="wf-home__search">
+                                        <span></span>
+                                        <span></span>
+                                        <b></b>
+                                    </div>
+
+                                    <div class="wf-home__actions">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                </div>
+
+                                <!-- NAV -->
+                                <div class="wf-home__navigation">
+                                    <span>Offerte</span>
+                                    <span>Prodotti</span>
+                                    <span>Diete speciali</span>
+                                    <span>Chi siamo</span>
+                                    <span>Etica</span>
+                                </div>
+
+                                <!-- HERO -->
+                                <div class="wf-home__hero">
+
+                                    <div class="wf-home__hero-copy">
+
+                                        <div class="wf-home__headline">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="wf-home__paragraph">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="wf-home__cta"></div>
+
+                                        <div class="wf-home__secondary-image wf-home__image-placeholder"></div>
+
+                                    </div>
+
+                                    <div class="wf-home__hero-image wf-home__image-placeholder"></div>
+
+                                </div>
+
+                                <!-- BLOCCHI SOTTO -->
+                                <div class="wf-home__benefits">
+
+                                    <div class="wf-home__benefit">
+                                        <div class="wf-home__benefit-placeholder"></div>
+                                        <strong>Filiera</strong>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                    <div class="wf-home__benefit">
+                                        <div class="wf-home__benefit-placeholder"></div>
+                                        <strong>Spedizione</strong>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                    <div class="wf-home__benefit">
+                                        <div class="wf-home__benefit-placeholder"></div>
+                                        <strong>Ricette</strong>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="wf-home__footer">
+                                <span>HOME</span>
+                                <span>PLP</span>
+                                <span>PDP</span>
+                                <span>CARRELLO</span>
+                                <span>HUB ETICA</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mini-features">
+
+                            <div class="mini-feature-item">
+
+                                <span  ="" aria-hidden="true" class="mini-feature-icon icon-sitemap">
+
+                                </span>
+
+                                <strong>Nuova sitemap</strong>
+
+                                <span>
+
+                                    Categorie e contenuti
+
+                                    riorganizzati
+
+                                </span>
+
+                            </div>
+
+                            <div class="mini-feature-item">
+
+                                <span  ="" aria-hidden="true" class="mini-feature-icon icon-clarity">
+
+                                </span>
+
+                                <strong>Gerarchia chiara</strong>
+
+                                <span>
+
+                                    Informazioni e CTA
+
+                                    più riconoscibili
+
+                                </span>
+
+                            </div>
+
+                            <div class="mini-feature-item">
+
+                                <span  ="" aria-hidden="true" class="mini-feature-icon icon-user-flow">
+
+                                </span>
+
+                                <strong>Flussi più lineari</strong>
+
+                                <span>
+
+                                    Navigazione e acquisto più fluidi e chiari
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+
+            WIREFRAMING 02
+
+        ========================= -->
+
+        <section class="project-section project-section-alt">
+
+            <div class="case-container">
+
+                <div class="project-grid project-grid-reverse">
+
+                    <!-- COPY -->
+
+                    <div class="project-copy">
+
+                        <div class="project-heading">
+
+                            <p class="project-number">02</p>
+
+                            <div>
+
+                                <p class="case-label">
+
+                                    WIREFRAMING · MOBILE & WIREFLOW
+
+                                </p>
+
+                                <h2>
+
+                                    Adattare il percorso all’esperienza mobile
+
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <h3>Dalle schermate desktop a interazioni pensate per il touch</h3>
+
+                        <p>
+
+                            La versione mobile è stata riprogettata dando priorità
+
+                            alle azioni principali, invece di ridurre semplicemente
+
+                            il layout desktop. Navigazione, categorie e controlli sono
+
+                            stati adattati allo spazio disponibile e alle interazioni touch.
+
+                        </p>
+
+                        <p>
+
+                            Filtri e ordinamento diventano più compatti, mentre nelle PDP
+
+                            le informazioni vengono organizzate progressivamente attraverso
+
+                            una gerarchia più semplice. Nel carrello restano immediatamente
+
+                            visibili gli elementi che incidono sulla decisione d’acquisto,
+
+                            come totale, spedizione, soglie e sconti.
+
+                        </p>
+
+                        <p>
+
+                            Il wireflow ha infine verificato la continuità del percorso
+
+                            dalla categoria alla PLP e PDP, fino a carrello, autenticazione
+
+                            e checkout, assicurando che le singole schermate funzionassero
+
+                            come parti coerenti dello stesso flusso.
+
+                        </p>
+
+                        <div class="case-resource">
+
+                            <a  ="" ="" class="case-resource__link" href="wireframing-2.html" rel="noopener" target="_blank">
+
+                                <span>Vedi la ricerca completa</span>
+
+                                <span  ="" aria-hidden="true" class="case-resource__arrow">
+
+                                    ↗
+
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- VISUAL -->
+                    <div class="project-visual ivegan-research-visual">
+
+                        <div class="wf-case-window wf-case-window--mobile">
+
+                        <div class="wf-case-window__chrome" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="wf-mobile-visual">
+
+                            <p class="wf-mobile-visual__eyebrow">
+                                <span>02</span> · WIREFRAME MOBILE &amp; WIREFLOW
+                            </p>
+
+                            <div class="wf-mobile-visual__flow"
+                                role="img"
+                                aria-label="Wireflow mobile iVegan: lista prodotti con filtri, scheda prodotto con caratteristiche e carrello popup con buoni sconto e totale.">
+
+                                <!-- ==================================
+                                    01 · PLP
+                                =================================== -->
+
+                                <div class="wf-mobile-visual__step">
+
+                                    <div class="wf-mobile-visual__phone">
+
+                                        <div class="wf-mobile-visual__notch"></div>
+
+                                        <div class="wf-mobile-visual__screen">
+
+                                            <div class="wf-mobile-visual__topbar"></div>
+
+                                            <div class="wf-mobile-visual__header">
+                                                <span class="wf-mobile-visual__menu"></span>
+                                                <strong>iVegan</strong>
+                                                <span class="wf-mobile-visual__header-actions"></span>
+                                            </div>
+
+                                            <div class="wf-mobile-visual__content wf-mobile-visual__content--plp">
+
+                                                <!-- Visualizzazione + ordinamento -->
+                                                <div class="wf-mobile-plp__controls">
+                                                    <div class="wf-mobile-plp__view">
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+
+                                                    <div class="wf-mobile-plp__sort"></div>
+                                                </div>
+
+                                                <!-- Filtri a tutta larghezza -->
+                                                <div class="wf-mobile-plp__filters"></div>
+
+                                                <!-- Product card -->
+                                                <div class="wf-mobile-plp__card">
+
+                                                    <div class="wf-mobile-plp__image wf-mobile-visual__placeholder">
+                                                        <span class="wf-mobile-plp__tag"></span>
+                                                    </div>
+
+                                                    <div class="wf-mobile-plp__product-info">
+
+                                                        <div class="wf-mobile-plp__badges">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+
+                                                        <div class="wf-mobile-plp__title"></div>
+                                                        <div class="wf-mobile-plp__brand"></div>
+
+                                                        <div class="wf-mobile-plp__price"></div>
+
+                                                        <div class="wf-mobile-plp__button"></div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <strong>PLP</strong>
+                                    <span>Esplorazione</span>
+
+                                </div>
+
+                                <span class="wf-mobile-visual__arrow" aria-hidden="true">
+                                    →
+                                </span>
+
+                                <!-- ==================================
+                                    02 · PDP
+                                =================================== -->
+
+                                <div class="wf-mobile-visual__step">
+
+                                    <div class="wf-mobile-visual__phone">
+
+                                        <div class="wf-mobile-visual__notch"></div>
+
+                                        <div class="wf-mobile-visual__screen">
+
+                                            <div class="wf-mobile-visual__topbar"></div>
+
+                                            <div class="wf-mobile-visual__header">
+                                                <span class="wf-mobile-visual__menu"></span>
+                                                <strong>iVegan</strong>
+                                                <span class="wf-mobile-visual__header-actions"></span>
+                                            </div>
+
+                                            <div class="wf-mobile-visual__content wf-mobile-visual__content--pdp">
+
+                                                <!-- Breadcrumb -->
+                                                <div class="wf-mobile-pdp__breadcrumb"></div>
+
+                                                <!-- Nome prodotto -->
+                                                <div class="wf-mobile-pdp__title">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+
+                                                <!-- Brand -->
+                                                <div class="wf-mobile-pdp__brand"></div>
+
+                                                <!-- Certificazioni + prezzo -->
+                                                <div class="wf-mobile-pdp__meta">
+
+                                                    <div class="wf-mobile-pdp__badges">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+
+                                                    <div class="wf-mobile-pdp__price"></div>
+
+                                                </div>
+
+                                                <!-- Caratteristiche prodotto -->
+                                                <div class="wf-mobile-pdp__features">
+
+                                                    <div><span></span><i></i></div>
+                                                    <div><span></span><i></i></div>
+                                                    <div><span></span><i></i></div>
+                                                    <div><span></span><i></i></div>
+
+                                                </div>
+
+                                                <!-- Azione principale -->
+                                                <div class="wf-mobile-pdp__actions">
+                                                    <div class="wf-mobile-pdp__button"></div>
+                                                    <div class="wf-mobile-pdp__wishlist"></div>
+                                                </div>
+
+                                                <div class="wf-mobile-pdp__details"></div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <strong>PDP</strong>
+                                    <span>Scelta prodotto</span>
+
+                                </div>
+
+                                <span class="wf-mobile-visual__arrow" aria-hidden="true">
+                                    →
+                                </span>
+
+                                <!-- ==================================
+                                    03 · CARRELLO POPUP
+                                =================================== -->
+
+                                <div class="wf-mobile-visual__step">
+
+                                    <div class="wf-mobile-visual__phone">
+
+                                        <div class="wf-mobile-visual__notch"></div>
+
+                                        <div class="wf-mobile-visual__screen">
+
+                                            <div class="wf-mobile-visual__content wf-mobile-visual__content--cart">
+
+                                                <!-- Titolo popup -->
+                                                <div class="wf-mobile-cart__heading">
+                                                    <span class="right-line"></span>
+                                                    <span class="left-line"></span>
+                                                    <strong>RIEPILOGO</strong>
+                                                </div>
+
+                                                <!-- Importi -->
+                                                <div class="wf-mobile-cart__row">
+                                                    <span></span>
+                                                    <b></b>
+                                                </div>
+
+                                                <div class="wf-mobile-cart__row">
+                                                    <span></span>
+                                                    <b></b>
+                                                </div>
+
+                                                <div class="wf-mobile-cart__row">
+                                                    <span></span>
+                                                    <b></b>
+                                                </div>
+
+                                                <!-- Buoni sconto -->
+                                                <div class="wf-mobile-cart__voucher">
+                                                    <span></span>
+                                                    <i></i>
+                                                </div>
+
+                                                <div class="wf-mobile-cart__select"></div>
+
+                                                <div class="wf-mobile-cart__voucher">
+                                                    <span></span>
+                                                    <i></i>
+                                                </div>
+
+                                                <div class="wf-mobile-cart__select"></div>
+
+                                                <!-- Gift card -->
+                                                <div class="wf-mobile-cart__voucher wf-mobile-cart__voucher--gift">
+                                                    <span></span>
+                                                    <i></i>
+                                                </div>
+
+                                                <div class="wf-mobile-cart__input"></div>
+
+                                                <!-- Totale in fondo -->
+                                                <div class="wf-mobile-cart__total">
+                                                    <span></span>
+                                                    <strong></strong>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <strong>CARRELLO</strong>
+                                    <span>Riepilogo e sconti</span>
+
+                                </div>
+
+                            </div>
+
+                            <p class="wf-mobile-visual__footer">
+                                PLP → PDP → Carrello popup
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- MINI-FEATURES -->
+                    <div class="mini-features">
+
+                        <div class="mini-feature-item">
+                            <span class="mini-feature-icon icon-mobile"
+                                aria-hidden="true"></span>
+
+                            <strong>Mobile first</strong>
+
+                            <span>
+                                Contenuti prioritari
+                                su schermi ridotti
+                            </span>
+                        </div>
+
+                        <div class="mini-feature-item">
+                            <span class="mini-feature-icon icon-touch"
+                                aria-hidden="true"></span>
+
+                            <strong>Touch &amp; accessibilità</strong>
+
+                            <span>
+                                Controlli chiari
+                                e aree tappabili
+                            </span>
+                        </div>
+
+                        <div class="mini-feature-item">
+                            <span class="mini-feature-icon icon-wireflow"
+                                aria-hidden="true"></span>
+
+                            <strong>Wireflow</strong>
+
+                            <span>
+                                Continuità dal prodotto
+                                al checkout
+                            </span>
+                        </div>
+
+                    </div> <!-- mini-features -->
+
+                </div> <!-- project-visual -->
+                
+            </div> <!-- project-grid -->
+
+        </div> <!-- case-container -->
+
+         </section>
+
+
+        <!-- =========================
+            CONCLUSIONI
+        ========================= -->
+
+        <section class="case-results">
+
+            <div class="case-container">
+
+                <div class="case-results-grid">
+
+                    <div>
+
+                        <p class="case-label">
+                            CONCLUSIONI
+                        </p>
+
+                        <h2>
+                            Dalla ricerca a un’esperienza
+                            più chiara e accessibile
+                        </h2>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>
+                            Il progetto ha trasformato criticità di navigazione,
+                            trasparenza e accessibilità in una nuova struttura
+                            dell’esperienza, collegando ricerca con gli utenti,
+                            user journey, requisiti WCAG e architettura dell’informazione.
+                        </p>
+
+                        <p>
+                            L’approfondimento sull’accessibilità ha ampliato questa
+                            lettura, mostrando come le stesse criticità possano
+                            diventare vere barriere per persone con esigenze cognitive,
+                            linguistiche o visive. Il confronto con le WCAG 2.2 ha
+                            quindi trasformato gli insight in requisiti più concreti
+                            per leggibilità, interazione, comprensione e compatibilità
+                            con tecnologie assistive.
+                        </p>
+
+                        <p>
+                            Il risultato è una base funzionale più chiara, coerente
+                            e inclusiva, sviluppata attraverso wireframe desktop e mobile
+                            e pronta per essere tradotta nella successiva fase di
+                            Visual Design.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+            NEXT STEP
+        ========================= -->
+
+        <section class="next-project">
+
+            <div class="case-container">
+
+                <p class="case-label">
+                    CONTINUA IL PROGETTO
+                </p>
+
+                <a href="visual.html">
+
+                    <span class="next-project-title">
+                        Visual & Content Design 
+                    </span>
+
+                    <span
+                        class="next-project-arrow"
+                        aria-hidden="true">
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+         <section class="contact-preview">
+            <div class="contact-preview-inner">
+
+                <div class="contact-preview-content">
+                    <p class="section-kicker">Contatti</p>
+                    <h2>UX/UI design con attenzione alle persone</h2>                
+                    <p>
+                        Vorrei entrare in un contesto più solido, come azienda o agenzia,
+                        dove poter crescere come UX/UI designer e lavorare su progetti digitali
+                        chiari, accessibili e pensati davvero per le persone. Mi interessano realtà
+                        attente alla qualità, alla responsabilità e al modo in cui il design può
+                        rendere le esperienze più semplici e più inclusive.
+                    </p>
+                    <a href="contatti.html" class="hero-button">Contattami</a>
+                </div>
+
+                <div class="contact-preview-links">
+                    <h3>Link utili</h3>
+
+                    <ul>
+                        <li><a href="cv.html">CV in HTML</a></li>
+                        <li><a href="https://www.linkedin.com/in/sara-marotta" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            © 2026 Sara Marotta ·
+            <br class="mobile-break">
+            Portfolio UX/UI realizzato in HTML e CSS
+        </footer>
+
+    </body>
+
+</html>
+    

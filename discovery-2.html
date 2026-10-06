@@ -1,0 +1,1330 @@
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Discovery 02 del progetto UX/UI iVegan: personas, user journey as-is e proposti, opportunità di redesign e nuova architettura dell'informazione."
+    >
+
+    <title>Discovery 02 · Personas, Journey e Sitemap | Sara Marotta</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <a class="logo" href="index.html" aria-label="Home">
+            <img src="logo.svg" alt="Logo di Sara Marotta">
+        </a>
+
+        <nav aria-label="Navigazione principale">
+
+            <input
+                class="menu-btn"
+                id="menu-btn"
+                type="checkbox"
+                aria-label="Apri o chiudi il menu di navigazione"
+            >
+
+            <label for="menu-btn" class="menu-icon">
+                <span class="navicon"></span>
+            </label>
+
+            <ul class="menu">
+
+                <li>
+                <a href="index.html">Home</a>
+                </li>
+
+                <li class="has-submenu">
+
+                    <input
+                        class="submenu-btn"
+                        type="checkbox"
+                        id="submenu-progetti"
+                    >
+
+                    <label
+                        class="submenu-label"
+                        for="submenu-progetti"
+                    >
+                        Progetti
+                        <span class="submenu-arrow"></span>
+                    </label>
+
+                    <ul class="submenu">
+                        <li><a href="ILS.html">Italian Language Studio (ILS)</a></li>
+                        <li><a href="iVegan.html">iVegan</a></li>
+                        <li><a href="visual.html">Visual &amp; Content Design</a></li>
+                    </ul>
+
+                </li>
+
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main class="case-study research-page research-page--ivegan research-page--discovery-2">
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="research-hero" aria-labelledby="r2-title">
+
+            <div class="research-shell">
+
+                <a
+                    class="research-back"
+                    href="iVegan.html#discovery"
+                >
+                    <span aria-hidden="true">←</span>
+                    Torna al case study
+                </a>
+
+
+                <div class="research-hero__grid">
+
+                    <div class="research-hero__copy">
+
+                        <p class="case-label">
+                            DISCOVERY 02 · PERSONAS, JOURNEY &amp; SITEMAP
+                        </p>
+
+                        <h1 id="r2-title">
+                            Dagli insight a percorsi più chiari
+                        </h1>
+
+                        <p>
+                            La seconda parte della Discovery approfondisce
+                            i bisogni delle persone e il modo in cui si
+                            sviluppa il loro percorso d’acquisto su iVegan.
+                        </p>
+
+                        <p>
+                            Dai risultati dell’analisi as-is e della survey
+                            nascono due personas, i relativi user journey
+                            e una proposta di nuova architettura
+                            dell’informazione. L’obiettivo è collegare
+                            ogni scelta di redesign alle criticità osservate.
+                        </p>
+
+                    </div>
+
+
+                    <!-- VISUAL HERO -->
+
+                    <div
+                        class="research-hero__visual r2-hero-visual"
+                        aria-label="Sintesi delle tre fasi: ricerca, esperienza utente e architettura"
+                    >
+
+                        <p class="case-label r2-hero-visual__eyebrow">
+                            DAL DATO ALLA STRUTTURA
+                        </p>
+
+                        <div class="r2-hero-visual__step">
+
+                            <span>01</span>
+
+                            <div>
+                                <strong>Insight</strong>
+                                <small>Ricerca as-is e survey</small>
+                            </div>
+
+                        </div>
+
+                        <div class="r2-hero-visual__step">
+
+                            <span>02</span>
+
+                            <div>
+                                <strong>Personas &amp; journey</strong>
+                                <small>Bisogni e punti di attrito</small>
+                            </div>
+
+                        </div>
+
+                        <div class="r2-hero-visual__step">
+
+                            <span>03</span>
+
+                            <div>
+                                <strong>Nuova sitemap</strong>
+                                <small>Contenuti e percorsi riorganizzati</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INDICE -->
+
+                <nav
+                    class="research-scope"
+                    aria-label="Sezioni di Discovery 02"
+                >
+
+                    <a href="#personas">
+                        <span>01</span>
+                        <strong>Personas</strong>
+                        <small>Bisogni e priorità</small>
+                    </a>
+
+                    <a href="#journey-as-is">
+                        <span>02</span>
+                        <strong>Journey as-is</strong>
+                        <small>Attriti nell’esperienza</small>
+                    </a>
+
+                    <a href="#nuova-esperienza">
+                        <span>03</span>
+                        <strong>Opportunità</strong>
+                        <small>Nuovi percorsi proposti</small>
+                    </a>
+
+                    <a href="#sitemap">
+                        <span>04</span>
+                        <strong>Nuova sitemap</strong>
+                        <small>Architettura dell’informazione</small>
+                    </a>
+
+                </nav>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             01 PERSONAS
+        ========================== -->
+
+        <section class="research-block" id="personas"
+            aria-labelledby="r2-personas-title"
+        >
+
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+
+                    <p class="case-label">
+                        01 · PERSONAS
+                    </p>
+
+                    <h2 id="r2-personas-title">
+                        Due prospettive, esigenze diverse
+                    </h2>
+
+                </div>
+
+
+                <div class="research-copy">
+
+                    <p>
+                        I risultati della ricerca hanno orientato la
+                        definizione di due personas: Sonia, vegana
+                        attenta alla provenienza e alla qualità dei
+                        prodotti, e Luca, vegetariano interessato al
+                        consumo responsabile e alla praticità della
+                        spesa online.
+                    </p>
+
+                    <p>
+                        Non rappresentano due persone intervistate,
+                        ma profili progettuali elaborati per esplorare
+                        motivazioni, comportamenti e possibili
+                        difficoltà nell’esperienza di acquisto.
+                    </p>
+
+                </div>
+
+
+                <!-- VISUAL PERSONAS -->
+
+                <div
+                    class="r2-visual r2-personas"
+                    aria-label="Sintesi delle due personas del progetto"
+                >
+
+                    <!-- SONIA -->
+
+                    <article class="r2-persona">
+
+                        <header class="r2-persona__header">
+
+                            <span class="r2-persona__avatar">
+                                <img
+                                    src="iVegan/sonia.png"
+                                    alt="Ritratto illustrativo di Sonia"
+                                >
+                            </span>
+
+                            <div>
+
+                                <span class="r2-persona__meta">
+                                    PERSONA 01 · 33 ANNI
+                                </span>
+
+                                <h3>Sonia</h3>
+
+                                <p>Veterinaria · vegana</p>
+
+                            </div>
+
+                        </header>
+
+
+                        <p class="r2-persona__context">
+                            Organizza una cena vegana e cerca
+                            ingredienti di qualità, anche gluten free
+                            e sugar free, preferibilmente Made in Italy.
+                        </p>
+
+
+                        <dl class="r2-persona__details">
+
+                            <div>
+                                <dt>Cosa cerca</dt>
+                                <dd>
+                                    Varietà, filiera trasparente
+                                    e prodotti coerenti con i suoi valori.
+                                </dd>
+                            </div>
+
+                            <div>
+                                <dt>Cosa la frena</dt>
+                                <dd>
+                                    Categorie poco chiare, recensioni
+                                    poco visibili e gestione confusa
+                                    degli sconti.
+                                </dd>
+                            </div>
+
+                            <div>
+                                <dt>Opportunità UX</dt>
+                                <dd>
+                                    Rendere immediati filtri,
+                                    informazioni d’acquisto
+                                    e programma fedeltà.
+                                </dd>
+                            </div>
+
+                        </dl>
+
+                    </article>
+
+
+                    <!-- LUCA -->
+
+                    <article class="r2-persona">
+
+                        <header class="r2-persona__header">
+
+                            <span class="r2-persona__avatar">
+                                <img
+                                    src="iVegan/luca.png"
+                                    alt="Ritratto illustrativo di Luca"
+                                >
+                            </span>
+
+                            <div>
+
+                                <span class="r2-persona__meta">
+                                    PERSONA 02 · 22 ANNI
+                                </span>
+
+                                <h3>Luca</h3>
+
+                                <p>
+                                    Studente di antropologia · vegetariano
+                                </p>
+
+                            </div>
+
+                        </header>
+
+
+                        <p class="r2-persona__context">
+                            Scopre iVegan tramite un’amicizia
+                            e vorrebbe acquistare da una realtà
+                            in linea con le sue idee,
+                            soprattutto da mobile.
+                        </p>
+
+
+                        <dl class="r2-persona__details">
+
+                            <div>
+                                <dt>Cosa cerca</dt>
+                                <dd>
+                                    Spesa rapida, consegna a domicilio
+                                    e informazioni etiche verificabili.
+                                </dd>
+                            </div>
+
+                            <div>
+                                <dt>Cosa lo frena</dt>
+                                <dd>
+                                    Passaggi tra sito, shop e app,
+                                    costi non visibili
+                                    e registrazione lunga.
+                                </dd>
+                            </div>
+
+                            <div>
+                                <dt>Opportunità UX</dt>
+                                <dd>
+                                    Unificare i percorsi,
+                                    semplificare l’accesso
+                                    e chiarire totale e spedizioni.
+                                </dd>
+                            </div>
+
+                        </dl>
+
+                    </article>
+
+                </div>
+
+
+                <p class="r2-visual-caption">
+                    Sintesi delle personas sviluppate nel progetto.
+                    Età, ruoli e scenari derivano dal materiale
+                    di Discovery 02.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             02 JOURNEY AS-IS
+        ========================== -->
+
+        <section class="research-block" id="journey-as-is"
+            aria-labelledby="r2-as-is-title"
+        >
+
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+
+                    <p class="case-label">
+                        02 · USER JOURNEY AS-IS
+                    </p>
+
+                    <h2 id="r2-as-is-title">
+                        Individuare i punti in cui
+                        il percorso si interrompe
+                    </h2>
+
+                </div>
+
+
+                <div class="research-copy">
+
+                    <p>
+                        I journey as-is ricostruiscono due scenari
+                        di acquisto. Sonia arriva al sito cercando
+                        prodotti specifici; Luca parte da un
+                        passaparola e prova a utilizzare l’app.
+                    </p>
+
+                    <p>
+                        Pur avendo obiettivi diversi, entrambi incontrano
+                        difficoltà nella comprensione dell’offerta,
+                        nella navigazione e nei passaggi tra carrello,
+                        registrazione e pagamento.
+                    </p>
+
+                </div>
+
+
+                <!-- VISUAL JOURNEYS -->
+
+                <div class="r2-visual r2-journeys">
+
+                    <!-- JOURNEY SONIA -->
+
+                    <article
+                        class="r2-journey"
+                        aria-labelledby="r2-journey-sonia"
+                    >
+
+                        <header class="r2-journey__heading">
+
+                            <div>
+
+                                <span class="case-label">
+                                    PERCORSO ATTUALE · SONIA
+                                </span>
+
+                                <h3 id="r2-journey-sonia">
+                                    Dalla ricerca online al checkout
+                                </h3>
+
+                            </div>
+
+                            <span class="r2-status">
+                                AS-IS
+                            </span>
+
+                        </header>
+
+
+                        <ol class="r2-journey__steps">
+
+                            <li>
+                                <span>01 · RICERCA</span>
+                                <strong>Scoperta</strong>
+                                <p>
+                                    Etica e Made in Italy poco visibili nella ricerca.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>02 · FIDUCIA</span>
+                                <strong>Verifica</strong>
+                                <p>
+                                    Recensioni e informazioni sul brand
+                                    sono difficili da trovare.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>03 · NAVIGAZIONE</span>
+                                <strong>Categorie</strong>
+                                <p>
+                                    Etichette poco intuitive e filtri
+                                    gluten/sugar free difficili
+                                    da individuare.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>04 · CARRELLO</span>
+                                <strong>Costi e accesso</strong>
+                                <p>
+                                    Spesa minima poco visibile e registrazione complessa.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>05 · CHECKOUT</span>
+                                <strong>Fedeltà</strong>
+                                <p>
+                                    Bonus e ricompense non sono
+                                    immediatamente comprensibili.
+                                </p>
+                            </li>
+
+                        </ol>
+
+                    </article>
+
+
+                    <!-- JOURNEY LUCA -->
+
+                    <article
+                        class="r2-journey"
+                        aria-labelledby="r2-journey-luca"
+                    >
+
+                        <header class="r2-journey__heading">
+
+                            <div>
+
+                                <span class="case-label">
+                                    PERCORSO ATTUALE · LUCA
+                                </span>
+
+                                <h3 id="r2-journey-luca">
+                                    Dal passaparola all’acquisto su app
+                                </h3>
+
+                            </div>
+
+                            <span class="r2-status">
+                                AS-IS
+                            </span>
+
+                        </header>
+
+
+                        <ol class="r2-journey__steps">
+
+                            <li>
+                                <span>01 · ACCESSO</span>
+                                <strong>Scoperta</strong>
+                                <p>
+                                    Sito e shop separati rendono
+                                    meno chiaro dove iniziare.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>02 · APP</span>
+                                <strong>Orientamento</strong>
+                                <p>
+                                    La presentazione dei prodotti
+                                    e le categorie non sono uniformi.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>03 · CARRELLO</span>
+                                <strong>Totale</strong>
+                                <p>
+                                    Prezzo complessivo e spedizione
+                                    non sono subito visibili.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>04 · REGISTRAZIONE</span>
+                                <strong>Interruzione</strong>
+                                <p>
+                                    Il carrello si azzera dopo il signup
+                                    e l’indirizzo è difficile da inserire.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>05 · PAGAMENTO</span>
+                                <strong>Conferma</strong>
+                                <p>
+                                    Metodi limitati e messaggi
+                                    sull’ordine creano incertezza.
+                                </p>
+                            </li>
+
+                        </ol>
+
+                    </article>
+
+                </div>
+
+
+                <!-- INSIGHT -->
+
+                <div class="research-insight r2-insight">
+
+                    <p class="case-label">
+                        INSIGHT TRASVERSALE
+                    </p>
+
+                    <h3>
+                        Il problema non è una singola schermata,
+                        ma la continuità del percorso.
+                    </h3>
+
+                    <p>
+                        Informazioni incomplete, regole del carrello
+                        poco visibili e passaggi discontinui tra
+                        le piattaforme aumentano lo sforzo richiesto
+                        prima di completare l’acquisto.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             03 OPPORTUNITÀ
+        ========================== -->
+
+        <section class="research-block" id="nuova-esperienza"
+            aria-labelledby="r2-opportunities-title"
+        >
+
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+
+                    <p class="case-label">
+                        03 · OPPORTUNITÀ E NEW JOURNEY
+                    </p>
+
+                    <h2 id="r2-opportunities-title">
+                        Tradurre gli ostacoli
+                        in scelte di redesign
+                    </h2>
+
+                </div>
+
+
+                <div class="research-copy">
+
+                    <p>
+                        Le criticità dei due journey vengono collegate
+                        a interventi concreti su navigazione, interfaccia,
+                        carrello, login e contenuti di fiducia.
+                    </p>
+
+                    <p>
+                        I nuovi percorsi rappresentano
+                        <strong>scenari progettuali proposti</strong>:
+                        descrivono come potrebbe funzionare
+                        l’esperienza ripensata, non risultati
+                        già verificati con un test utenti.
+                    </p>
+
+                </div>
+
+
+                <!-- VISUAL: DA CRITICITÀ A SOLUZIONI -->
+
+                <div
+                    class="r2-visual r2-changes"
+                    aria-label="Corrispondenza tra criticità osservate e scelte di redesign"
+                >
+
+                    <div class="r2-changes__heading">
+
+                        <span>CRITICITÀ AS-IS</span>
+                        <span aria-hidden="true"></span>
+                        <span>PROPOSTA DI REDESIGN</span>
+
+                    </div>
+
+
+                    <div class="r2-change">
+
+                        <p>
+                            <strong>Navigazione frammentata</strong>
+                            <br>
+                            Categorie poco immediate e siti separati.
+                        </p>
+
+                        <span
+                            class="r2-change__arrow"
+                            aria-hidden="true"
+                        >→</span>
+
+                        <p>
+                            <strong>Struttura unica e intuitiva</strong>
+                            <br>
+                            Categorie riordinate, filtri chiari
+                            e percorsi coerenti tra sito e app.
+                        </p>
+
+                    </div>
+
+
+                    <div class="r2-change">
+
+                        <p>
+                            <strong>Fiducia da ricostruire</strong>
+                            <br>
+                            Recensioni e informazioni sulla filiera
+                            difficili da reperire.
+                        </p>
+
+                        <span
+                            class="r2-change__arrow"
+                            aria-hidden="true"
+                        >→</span>
+
+                        <p>
+                            <strong>Trasparenza accessibile</strong>
+                            <br>
+                            Hub dedicato a etica, origine,
+                            certificazioni, recensioni e ricette.
+                        </p>
+
+                    </div>
+
+
+                    <div class="r2-change">
+
+                        <p>
+                            <strong>Carrello poco prevedibile</strong>
+                            <br>
+                            Spesa minima, spedizione e sconti
+                            emergono tardi.
+                        </p>
+
+                        <span
+                            class="r2-change__arrow"
+                            aria-hidden="true"
+                        >→</span>
+
+                        <p>
+                            <strong>Costi sempre visibili</strong>
+                            <br>
+                            Totale aggiornato, soglie esplicite
+                            e applicazione chiara dei buoni.
+                        </p>
+
+                    </div>
+
+
+                    <div class="r2-change">
+
+                        <p>
+                            <strong>Checkout interrotto</strong>
+                            <br>
+                            Signup laborioso, carrello non mantenuto
+                            e conferme poco chiare.
+                        </p>
+
+                        <span
+                            class="r2-change__arrow"
+                            aria-hidden="true"
+                        >→</span>
+
+                        <p>
+                            <strong>Acquisto continuo</strong>
+                            <br>
+                            Login social, carrello preservato,
+                            campi chiari e conferma dell’ordine.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     NEW JOURNEY
+                ========================== -->
+
+                <div class="r2-subsection-heading">
+
+                    <p class="case-label">
+                        DUE NUOVI PERCORSI PROPOSTI
+                    </p>
+
+                    <h3>
+                        Come cambierebbe l’esperienza
+                    </h3>
+
+                </div>
+
+
+                <div class="r2-visual r2-new-journeys">
+
+                    <!-- NEW JOURNEY SONIA -->
+
+                    <article
+                        class="r2-new-journey"
+                        aria-labelledby="r2-new-sonia"
+                    >
+
+                        <header>
+
+                            <span>SONIA</span>
+
+                            <h4 id="r2-new-sonia">
+                                Dalle informazioni etiche al checkout
+                            </h4>
+
+                        </header>
+
+
+                        <ol>
+
+                            <li>
+                                <span>01</span>
+                                <strong>Scoperta</strong>
+                                <p>
+                                    Il brand rende visibili etica
+                                    e Made in Italy già dalla ricerca.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>02</span>
+                                <strong>Fiducia</strong>
+                                <p>
+                                    Recensioni, filiera e certificazioni
+                                    sono facili da consultare.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>03</span>
+                                <strong>Prodotti</strong>
+                                <p>
+                                    Categorie e filtri aiutano
+                                    a trovare opzioni GF/SF.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>04</span>
+                                <strong>Carrello</strong>
+                                <p>
+                                    Costi e soglie chiari;
+                                    registrazione senza perdere gli articoli.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>05</span>
+                                <strong>Acquisto</strong>
+                                <p>
+                                    Buoni fedeltà gestiti e applicati
+                                    nel checkout.
+                                </p>
+                            </li>
+
+                        </ol>
+
+                    </article>
+
+
+                    <!-- NEW JOURNEY LUCA -->
+
+                    <article
+                        class="r2-new-journey"
+                        aria-labelledby="r2-new-luca"
+                    >
+
+                        <header>
+
+                            <span>LUCA</span>
+
+                            <h4 id="r2-new-luca">
+                                Dal sito all’app senza passaggi inutili
+                            </h4>
+
+                        </header>
+
+
+                        <ol>
+
+                            <li>
+                                <span>01</span>
+                                <strong>Accesso</strong>
+                                <p>
+                                    Un sito unico presenta il brand
+                                    e rende visibile l’app.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>02</span>
+                                <strong>Esplorazione</strong>
+                                <p>
+                                    Blog, ricette e categorie conducono
+                                    ai prodotti pertinenti.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>03</span>
+                                <strong>Carrello</strong>
+                                <p>
+                                    Totale, soglie e spedizione
+                                    sono subito comprensibili.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>04</span>
+                                <strong>Account</strong>
+                                <p>
+                                    Login rapido e carrello conservato
+                                    dopo la registrazione.
+                                </p>
+                            </li>
+
+                            <li>
+                                <span>05</span>
+                                <strong>Pagamento</strong>
+                                <p>
+                                    Più modalità, conferme esplicite
+                                    e stato dell’ordine.
+                                </p>
+                            </li>
+
+                        </ol>
+
+                    </article>
+
+                </div>
+
+
+                <p class="r2-visual-caption">
+                    Sintesi delle new journey map: i passaggi
+                    rappresentano l’esperienza progettata,
+                    non un flusso già implementato o misurato.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             04 NUOVA SITEMAP
+        ========================== -->
+
+        <section class="research-block" id="sitemap"
+            aria-labelledby="r2-sitemap-title"
+        >
+
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+
+                    <p class="case-label">
+                        04 · INFORMATION ARCHITECTURE
+                    </p>
+
+                    <h2 id="r2-sitemap-title">
+                        Una struttura che rende più facili le scelte
+                    </h2>
+
+                </div>
+
+
+                <div class="research-copy">
+
+                    <p>
+                        La nuova sitemap organizza i contenuti
+                        attorno alle attività principali:
+                        trovare prodotti, comprendere l’identità
+                        del brand e completare un acquisto
+                        senza perdere informazioni o progressi.
+                    </p>
+
+                    <p>
+                        La proposta unifica la presenza web,
+                        collega l’app all’esperienza del sito
+                        e rende più visibili categorie, filtri,
+                        strumenti di fiducia e servizi legati
+                        all’account.
+                    </p>
+
+                </div>
+
+
+                <!-- VISUAL SITEMAP -->
+
+                <div
+                    class="r2-visual r2-sitemap"
+                    aria-label="Schema semplificato della nuova sitemap iVegan"
+                >
+
+                    <!-- LIVELLO PRINCIPALE -->
+
+                    <div class="r2-sitemap__root">
+
+                        <span class="case-label">
+                            LIVELLO PRINCIPALE
+                        </span>
+
+                        <strong>iVegan</strong>
+
+                        <small>
+                            Sito unificato · ricerca prodotti · accesso all’app
+                        </small>
+
+                    </div>
+
+
+                    <!-- RAMI SITEMAP -->
+
+                    <div class="r2-sitemap__branches">
+
+                        <!-- ACQUISTA -->
+
+                        <section
+                            class="r2-sitemap__branch"
+                            aria-labelledby="r2-tree-shop"
+                        >
+
+                            <div class="r2-sitemap__branch-heading">
+
+                                <span>01</span>
+
+                                <h3 id="r2-tree-shop">
+                                    Acquista
+                                </h3>
+
+                            </div>
+
+                            <ul>
+                                <li>New &amp; Offerte</li>
+                                <li>Carne e pesce vegan</li>
+                                <li>Formaggi vegan</li>
+                                <li>Snack e dolci vegan</li>
+                                <li>Dispensa vegan</li>
+                                <li>
+                                    Diete alternative
+                                    <small>
+                                        Gluten free · Sugar free · Keto
+                                    </small>
+                                </li>
+                                <li>Altri prodotti</li>
+                            </ul>
+
+                        </section>
+
+
+                        <!-- ETICA E CONTENUTI -->
+
+                        <section
+                            class="r2-sitemap__branch"
+                            aria-labelledby="r2-tree-ethics"
+                        >
+
+                            <div class="r2-sitemap__branch-heading">
+
+                                <span>02</span>
+
+                                <h3 id="r2-tree-ethics">
+                                    Etica e contenuti
+                                </h3>
+
+                            </div>
+
+                            <ul>
+                                <li>
+                                    Etica e trasparenza
+                                    <small>
+                                        Filiera · Made in Italy · Certificazioni
+                                    </small>
+                                </li>
+                                <li>Recensioni</li>
+                                <li>Marchi</li>
+                                <li>
+                                    Blog &amp; Ricette
+                                    <small>
+                                        Collegamenti ai prodotti
+                                    </small>
+                                </li>
+                                <li>Chi siamo</li>
+                            </ul>
+
+                        </section>
+
+
+                        <!-- SERVIZI -->
+
+                        <section
+                            class="r2-sitemap__branch"
+                            aria-labelledby="r2-tree-account"
+                        >
+
+                            <div class="r2-sitemap__branch-heading">
+
+                                <span>03</span>
+
+                                <h3 id="r2-tree-account">
+                                    Servizi e acquisto
+                                </h3>
+
+                            </div>
+
+                            <ul>
+                                <li>Account e login rapido</li>
+                                <li>Wishlist e buoni sconto</li>
+                                <li>
+                                    Carrello
+                                    <small>
+                                        Totale · Spedizione · Soglie
+                                    </small>
+                                </li>
+                                <li>Checkout e pagamenti</li>
+                                <li>I miei ordini</li>
+                                <li>Assistenza e FAQ</li>
+                            </ul>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="r2-sitemap__footer">
+
+                        <span>
+                            TOP BAR · LINK DOWNLOAD APP
+                        </span>
+
+                        <span>
+                            FOOTER · SPEDIZIONI, PRIVACY E CONTATTI
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <p class="r2-visual-caption">
+                    Sitemap sintetica ricostruita per il portfolio
+                    dalle sezioni del progetto originale;
+                    non comprende ogni sottocategoria
+                    o stato dinamico dell’interfaccia.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONCLUSIONI
+        ========================== -->
+
+        <section class="research-outcome">
+
+            <div class="research-shell">
+
+                <p class="case-label">
+                    DALLA DISCOVERY AL DESIGN
+                </p>
+
+                <h2>
+                    Una base progettuale più definita
+                </h2>
+
+
+                <div class="r2-deliverables">
+
+                    <div>
+
+                        <span>01</span>
+
+                        <strong>Personas</strong>
+
+                        <p>
+                            Due profili con bisogni
+                            e scenari d’acquisto differenti.
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <span>02</span>
+
+                        <strong>User journey</strong>
+
+                        <p>
+                            Percorsi as-is e proposte
+                            di miglioramento.
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <span>03</span>
+
+                        <strong>Architettura</strong>
+
+                        <p>
+                            Nuova organizzazione dei contenuti
+                            e dei servizi.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NAVIGAZIONE -->
+
+                <div class="research-nav">
+
+                    <p class="research-next-label">
+                        CONTINUA L’ESPLORAZIONE
+                    </p>
+
+                    <div class="research-nav__links">
+
+                        <a
+                            class="research-nav__link"
+                            href="discovery-1.html"
+                        >
+
+                            <span
+                                class="research-nav__arrow research-nav__arrow--back"
+                                aria-hidden="true"
+                            >←</span>
+
+                            <span>Discovery 1</span>
+
+                        </a>
+
+
+                        <a
+                            class="research-nav__link research-nav__link--next"
+                            href="accessibility-1.html"
+                        >
+
+                            <span>Accessibility 1</span>
+
+                            <span
+                                class="research-nav__arrow"
+                                aria-hidden="true"
+                            >→</span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+        © 2026 Sara Marotta ·
+        <br class="mobile-break">
+        Portfolio UX/UI realizzato in HTML e CSS
+    </footer>
+
+</body>
+</html>
+

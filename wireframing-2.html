@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Approfondimento Wireframing 02 del case study iVegan: sistema mobile, Home, PLP, PDP, Carrello, Account e wireflow.">
+
+    <title>Wireframing 02 · Mobile e wireflow | Sara Marotta</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo" href="index.html" aria-label="Home">
+                <img src="logo.svg" alt="Logo di Sara Marotta">
+        </a>
+
+        <nav aria-label="Navigazione principale">
+            <input
+                class="menu-btn"
+                id="menu-btn"
+                type="checkbox"
+                aria-label="Apri o chiudi il menu di navigazione"
+            >
+
+            <label for="menu-btn" class="menu-icon">
+                <span class="navicon"></span>
+            </label>
+
+            <ul class="menu">
+
+                <li>
+                <a href="index.html">Home</a>
+                </li>
+
+                <li class="has-submenu">
+                    <input
+                        class="submenu-btn"
+                        type="checkbox"
+                        id="submenu-progetti"
+                    >
+
+                    <label
+                        class="submenu-label"
+                        for="submenu-progetti"
+                    >
+                        Progetti
+                        <span class="submenu-arrow"></span>
+                    </label>
+
+                    <ul class="submenu">
+                        <li><a href="ILS.html">Italian Language Studio (ILS)</a></li>
+                        <li><a href="iVegan.html">iVegan</a></li>
+                        <li><a href="visual.html">Visual Design</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="case-study research-page research-page--ivegan wf-page wf-page--2">
+        <section class="research-hero">
+        <div class="research-shell">
+        <a class="research-back" href="iVegan.html#wireframing">
+            <span aria-hidden="true">
+            &larr;
+            </span>
+            Torna al case study
+        </a>
+        <div class="research-hero__grid">
+            <div class="research-hero__copy">
+            <p class="case-label">
+            WIREFRAMING 02 &middot; iVEGAN
+            </p>
+            <h1>
+            Progettare percorsi chiari anche su mobile
+            </h1>
+            <p>
+            Adattamento del redesign iVegan per smartphone: priorit&agrave; dei contenuti, controlli touch, navigazione compatta e un wireflow che preserva la continuit&agrave; della spesa.
+            </p>
+            <p>
+            Le schermate qui mostrate utilizzano le immagini dei wireframe originali. Puoi consultare anche il progetto Figma per esplorare tutti i dettagli.
+            </p>
+            </div>
+            <div class="research-hero__visual r2-hero-visual">
+            <p class="r2-hero-visual__eyebrow">
+            DAL PROBLEMA ALLA STRUTTURA
+            </p>
+            <div class="r2-hero-visual__step">
+            <span>
+            01
+            </span>
+            <div>
+            <strong>
+                Sistema mobile
+            </strong>
+            <small>
+                4 colonne e scala tipografica
+            </small>
+            </div>
+            </div>
+            <div class="r2-hero-visual__step">
+            <span>
+            02
+            </span>
+            <div>
+            <strong>
+                Sei schermate
+            </strong>
+            <small>
+                Home, PLP, PDP, carrello, account e hub
+            </small>
+            </div>
+            </div>
+            <div class="r2-hero-visual__step">
+            <span>
+            03
+            </span>
+            <div>
+            <strong>
+                Wireflow
+            </strong>
+            <small>
+                Navigazione e carrello popup
+            </small>
+            </div>
+            </div>
+            </div>
+        </div>
+        <nav aria-label="Indice dei contenuti" class="research-scope">
+        <a href="#layout">
+        <span>
+            01
+        </span>
+        <strong>
+            Layout mobile
+        </strong>
+        <small>
+            Griglia e componenti
+        </small>
+        </a>
+        <a href="#mobile-screens">
+        <span>
+            02
+        </span>
+        <strong>
+            Schermate
+        </strong>
+        <small>
+            Sei aree chiave
+        </small>
+        </a>
+        <a href="#mobile-flow">
+        <span>
+            03
+        </span>
+        <strong>
+            Wireflow
+        </strong>
+        <small>
+            Dalla categoria al carrello
+        </small>
+        </a>
+        <a href="#mobile-output">
+        <span>
+            04
+        </span>
+        <strong>
+            Output
+        </strong>
+        <small>
+            Scelte progettuali
+        </small>
+        </a>
+        </nav>
+        </div>
+        </section>
+        
+        <section class="research-block" id="layout">
+        <div class="research-shell">
+        <div class="research-block__heading">
+            <p class="case-label">
+            01 &middot; SISTEMA WIREFRAME MOBILE
+            </p>
+            <h2>
+            Adattare la struttura, non ridurre il desktop
+            </h2>
+        </div>
+        <div class="research-copy">
+            <p>
+            La Pt. 2 mantiene la scala Minor Third (rapporto 1,2) e il font Inter, adattando i titoli al contesto mobile. I valori riportati nelle slide per le headline sono 40, 32, 26, 22 e 18px, con body 16px.
+            </p>
+            <p>
+            La griglia mobile &egrave; composta da
+            <strong>
+            4 colonne, con gutter e margini da 16px
+            </strong>
+            ; i controlli privilegiano aree touch riconoscibili, i pulsanti primari sono presentati con altezza di 56pt e le icone sono progettate con area tappabile almeno di 44px. Nel wireframe, blu e grigi identificano priorit&agrave; e interazioni.
+            </p>
+        </div>
+        <div class="wf-visual wf-cards">
+            <article>
+            <span class="wf-card__index">
+            01
+            </span>
+            <h3>
+            4 colonne
+            </h3>
+            <p>
+            Margini 16px e gutter 16px nelle schermate mobile.
+            </p>
+            </article>
+            <article>
+            <span class="wf-card__index">
+            02
+            </span>
+            <h3>
+            Gerarchia
+            </h3>
+            <p>
+            CTA primaria, secondaria e terziaria chiaramente distinguibili.
+            </p>
+            </article>
+            <article>
+            <span class="wf-card__index">
+            03
+            </span>
+            <h3>
+            Touch e lettura
+            </h3>
+            <p>
+            Etichette esplicite, contenuti progressivi e navigazione semplificata.
+            </p>
+            </article>
+        </div>
+        <p class="wf-caption">
+            Specifiche descritte nelle slide 3&ndash;6 della Pt. 2. Il blu &egrave; un codice funzionale dei wireframe, non il colore del portfolio.
+        </p>
+        </div>
+        </section>
+        <section class="research-block" id="mobile-screens">
+        <div class="research-shell">
+        <div class="research-block__heading">
+            <p class="case-label">
+            02 &middot; WIREFRAME MOBILE
+            </p>
+            <h2>
+            Sei schermate, una gerarchia coerente
+            </h2>
+        </div>
+        <div class="research-copy">
+            <p>
+            Il lavoro mobile riguarda Home, Product Listing Page, Product Details Page, Carrello, Account e Hub Etica &amp; Sostenibilit&agrave;. I singoli layout reinterpretano i contenuti desktop secondo priorit&agrave;, spazio disponibile e pattern di interazione touch.
+            </p>
+        </div>
+        <div class="wf-mobile-gallery">
+            <article class="wf-mobile-gallery__item">
+            <figure class="wf-phone">
+            <img alt="Wireframe originale iVegan &mdash; Home mobile" class="wf-phone__image" loading="lazy" src="iVegan/home mobile.png"/>
+            <figcaption>
+            Wireframe originale &middot; Home mobile
+            </figcaption>
+            </figure>
+            <div>
+            <p class="case-label">
+            01 &middot; HOME
+            </p>
+            <h3>
+            Scoperta e azioni prioritarie
+            </h3>
+            <p>
+            Topbar con lingua e app; hamburger, account e carrello visibili; offerte e recensioni esplorabili con scorrimento orizzontale.
+            </p>
+            </div>
+            </article>
+            <article class="wf-mobile-gallery__item">
+            <figure class="wf-phone">
+            <img alt="Wireframe originale iVegan &mdash; PLP mobile" class="wf-phone__image" loading="lazy" src="iVegan/plp mobile.png"/>
+            <figcaption>
+            Wireframe originale &middot; PLP mobile
+            </figcaption>
+            </figure>
+            <div>
+            <p class="case-label">
+            02 &middot; PLP
+            </p>
+            <h3>
+            Esplorazione senza sovraccarico
+            </h3>
+            <p>
+            Breadcrumb di ritorno semplificato, tipologie circolari, filtri e ordinamento in pannelli, prodotti in verticale e &ldquo;Carica altri&rdquo; ogni 10 elementi.
+            </p>
+            </div>
+            </article>
+            <article class="wf-mobile-gallery__item">
+            <figure class="wf-phone">
+            <img alt="Wireframe originale iVegan &mdash; PDP mobile" class="wf-phone__image" loading="lazy" src="iVegan/pdp mobile.png"/>
+            <figcaption>
+            Wireframe originale &middot; PDP mobile
+            </figcaption>
+            </figure>
+            <div>
+            <p class="case-label">
+            03 &middot; PDP
+            </p>
+            <h3>
+            Dettaglio con disclosure progressiva
+            </h3>
+            <p>
+            Gallery sfogliabile, disponibilit&agrave; esplicita, brand collegato, accordion di approfondimento e correlati in scorrimento orizzontale.
+            </p>
+            </div>
+            </article>
+            <article class="wf-mobile-gallery__item">
+            <figure class="wf-phone">
+            <img alt="Wireframe originale iVegan &mdash; Carrello mobile" class="wf-phone__image" loading="lazy" src="iVegan/carrello mobile.png"/>
+            <figcaption>
+            Wireframe originale &middot; Carrello mobile
+            </figcaption>
+            </figure>
+            <div>
+            <p class="case-label">
+            04 &middot; CARRELLO
+            </p>
+            <h3>
+            Controllo e trasparenza
+            </h3>
+            <p>
+            Popup chiudibile con totale, soglie, sconti e spedizione; carrello completo per quantit&agrave; e suggerimenti. Il buono si inserisce nel popup, non nella pagina carrello.
+            </p>
+            </div>
+            </article>
+            <article class="wf-mobile-gallery__item">
+            <figure class="wf-phone">
+            <img alt="Wireframe originale iVegan &mdash; Account&agrave; mobile" class="wf-phone__image" loading="lazy" src="iVegan/account mobile.png"/>
+            <figcaption>
+            Account &middot; schema mobile
+            </figcaption>
+            </figure>
+            <div>
+            <p class="case-label">
+            05 &middot; ACCOUNT
+            </p>
+            <h3>
+            Form comprensibili
+            </h3>
+            <p>
+            Dettagli personali, indirizzi di consegna e fatturazione separati, label persistenti e autocompletamento degli indirizzi.
+            </p>
+            </div>
+            </article>
+            <article class="wf-mobile-gallery__item">
+            <figure class="wf-phone">
+            <img alt="Wireframe originale iVegan &mdash; Hub Etica e Sostenibilit&agrave; mobile" class="wf-phone__image" loading="lazy" src="iVegan/hub mobile.png"/>
+            <figcaption>
+            Wireframe originale &middot; Hub Etica e Sostenibilit&agrave; mobile
+            </figcaption>
+            </figure>
+            <div>
+            <p class="case-label">
+            06 &middot; HUB ETICA
+            </p>
+            <h3>
+            Fiducia che conduce allo shop
+            </h3>
+            <p>
+            Quattro aree verticali &mdash; etica, sostenibilit&agrave;, filiera, certificazioni &mdash; con approfondimenti e collegamento finale ai prodotti.
+            </p>
+            </div>
+            </article>
+        </div>
+        <p class="wf-source-link">
+            <a href="https://www.figma.com/design/iMuFiw8ELD2xjHHmlu9le8/iVegan?node-id=0-1" rel="noopener noreferrer" target="_blank">
+            Visualizza i wireframe iVegan su Figma
+            <span aria-hidden="true">
+            &nearrow;
+            </span>
+            </a>
+        </p>
+        </div>
+        </section>
+        <section class="research-block" id="mobile-flow">
+        <div class="research-shell">
+        <div class="research-block__heading">
+            <p class="case-label">
+            03 &middot; WIREFLOW MOBILE
+            </p>
+            <h2>
+            Dal menu hamburger al checkout
+            </h2>
+        </div>
+        <div class="research-copy">
+            <p>
+            Il wireflow mobile documenta il percorso tra schermate effettivamente disegnate: menu, categoria Carne veg, PLP, PDP e aggiunta al carrello. Il carrello si apre come popup, da cui si pu&ograve; continuare al checkout oppure consultare il carrello completo.
+            </p>
+            <p>
+            La presentazione chiarisce che
+            <strong>
+            la schermata completa di checkout &egrave; documentata nei wireframe desktop
+            </strong>
+            ; non viene quindi presentata come una schermata mobile progettata in questa fase.
+            </p>
+        </div>
+        <ol class="wf-visual wf-flow">
+            <li>
+            <span>
+            01
+            </span>
+            <strong>
+            Menu hamburger
+            </strong>
+            <p>
+            Prodotti vegani &rarr; Carne veg.
+            </p>
+            </li>
+            <li>
+            <span>
+            02
+            </span>
+            <strong>
+            PLP
+            </strong>
+            <p>
+            Scorrimento verticale fino al prodotto &ldquo;Tagliata veg&rdquo;.
+            </p>
+            </li>
+            <li>
+            <span>
+            03
+            </span>
+            <strong>
+            PDP
+            </strong>
+            <p>
+            Consultazione e aggiunta al carrello.
+            </p>
+            </li>
+            <li>
+            <span>
+            04
+            </span>
+            <strong>
+            Popup carrello
+            </strong>
+            <p>
+            Totale, spedizione, numero articoli e sconti.
+            </p>
+            </li>
+            <li>
+            <span>
+            05
+            </span>
+            <strong>
+            Scelta successiva
+            </strong>
+            <p>
+            Checkout oppure carrello completo per modificare l&rsquo;ordine.
+            </p>
+            </li>
+        </ol>
+        <p class="wf-caption">
+            Wireflow descritto nelle slide 35&ndash;36 della Pt. 2.
+        </p>
+        </div>
+        </section>
+        <section class="research-block" id="mobile-output">
+        <div class="research-shell">
+        <div class="research-block__heading">
+            <p class="case-label">
+            04 &middot; DIREZIONE PROGETTUALE
+            </p>
+            <h2>
+            Coerenza tra navigazione e conversione
+            </h2>
+        </div>
+        <div class="research-copy">
+            <p>
+            Le decisioni sui componenti non sono isolate: i filtri apribili riducono il rumore visivo, le card scorrevoli valorizzano la scoperta, i dettagli in accordion aiutano la lettura e il popup del carrello concentra informazioni decisive prima del checkout.
+            </p>
+            <p>
+            Il risultato della fase &egrave; una proposta di wireframing mobile a media fedelt&agrave; informativa, non una versione gi&agrave; sviluppata o validata con test di usabilit&agrave;.
+            </p>
+        </div>
+        <div class="wf-visual wf-pairs">
+            <div class="wf-pairs__heading">
+            <span>
+            CRITICIT&Agrave; RILEVATA
+            </span>
+            <span>
+            </span>
+            <span>
+            PROPOSTA
+            </span>
+            </div>
+            <div class="wf-pair">
+            <div>
+            <strong>
+            Poco spazio sullo schermo
+            </strong>
+            <p>
+            Controlli e contenuti simultanei aumentano il carico visivo.
+            </p>
+            </div>
+            <span aria-hidden="true">
+            &rarr;
+            </span>
+            <div>
+            <strong>
+            Progressive disclosure
+            </strong>
+            <p>
+            Filtri, accordion e menu apribili quando servono.
+            </p>
+            </div>
+            </div>
+            <div class="wf-pair">
+            <div>
+            <strong>
+            Percorso d&rsquo;acquisto discontinuo
+            </strong>
+            <p>
+            Cambio schermata e informazioni sui costi frammentati.
+            </p>
+            </div>
+            <span aria-hidden="true">
+            &rarr;
+            </span>
+            <div>
+            <strong>
+            Carrello persistente
+            </strong>
+            <p>
+            Overlay con totale, soglie e azioni chiaramente distinte.
+            </p>
+            </div>
+            </div>
+            <div class="wf-pair">
+            <div>
+            <strong>
+            Accesso ai valori del brand
+            </strong>
+            <p>
+            Contenuti di fiducia separati dalla navigazione commerciale.
+            </p>
+            </div>
+            <span aria-hidden="true">
+            &rarr;
+            </span>
+            <div>
+            <strong>
+            Hub collegato allo shop
+            </strong>
+            <p>
+            Card tematiche verticali con CTA di approfondimento.
+            </p>
+            </div>
+            </div>
+        </div>
+        </div>
+        </section>
+        <section class="research-outcome">
+        <div class="research-shell">
+        <p class="case-label">
+            OUTPUT &middot; WIREFRAMING 02
+        </p>
+        <h2>
+            Dalla ricerca alle decisioni di struttura
+        </h2>
+        <div class="wf-deliverables">
+            <div>
+            <span>
+            01
+            </span>
+            <strong>
+            Mobile
+            </strong>
+            <p>
+            Sei schermate mid-fi con priorit&agrave; touch.
+            </p>
+            </div>
+            <div>
+            <span>
+            02
+            </span>
+            <strong>
+            Componenti
+            </strong>
+            <p>
+            Filtri, accordion, overlay e card scorrevoli.
+            </p>
+            </div>
+            <div>
+            <span>
+            03
+            </span>
+            <strong>
+            Flusso
+            </strong>
+            <p>
+            Wireflow fino alla scelta fra carrello e checkout.
+            </p>
+            </div>
+        </div>
+
+        <div class="research-nav">
+                    <p class="research-next-label">CONTINUA L’ESPLORAZIONE</p>
+
+                    <div class="research-nav__links">
+                        <a class="research-nav__link" href="iVegan.html">
+                            <span class="research-nav__arrow research-nav__arrow--back" aria-hidden="true">←</span>
+                            <span>Torna al case study</span>
+                        </a>
+                        <a class="research-nav__link research-nav__link--next" href="wireframing-1.html">
+                            <span> Rivedi Wireframing 01</span>
+                            <span class="research-nav__arrow" aria-hidden="true">→</span>
+                        </a>
+                    </div>
+        </div>
+
+        </div>
+        </div>
+        </section>
+    </main>
+
+
+    <footer>
+        © 2026 Sara Marotta ·
+        <br class="mobile-break">
+        Portfolio UX/UI realizzato in HTML e CSS
+    </footer>
+
+</body>
+</html>

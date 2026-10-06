@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Approfondimento Wireframing 01 del case study iVegan: analisi strutturale, sitemap, wireframe desktop e wireflow.">
+
+    <title>Wireframing 01 · IA e desktop | Sara Marotta</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo" href="index.html" aria-label="Home">
+                <img src="logo.svg" alt="Logo di Sara Marotta">
+        </a>
+
+        <nav aria-label="Navigazione principale">
+            <input
+                class="menu-btn"
+                id="menu-btn"
+                type="checkbox"
+                aria-label="Apri o chiudi il menu di navigazione"
+            >
+
+            <label for="menu-btn" class="menu-icon">
+                <span class="navicon"></span>
+            </label>
+
+            <ul class="menu">
+                <li>
+                <a href="index.html">Home</a>
+                </li>
+
+                <li class="has-submenu">
+                    <input
+                        class="submenu-btn"
+                        type="checkbox"
+                        id="submenu-progetti"
+                    >
+
+                    <label
+                        class="submenu-label"
+                        for="submenu-progetti"
+                    >
+                        Progetti
+                        <span class="submenu-arrow"></span>
+                    </label>
+
+                    <ul class="submenu">
+                        <li><a href="ILS.html">Italian Language Studio (ILS)</a></li>
+                        <li><a href="iVegan.html">iVegan</a></li>
+                        <li><a href="visual.html">Visual Design</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="case-study research-page research-page--ivegan wf-page wf-page--1">
+        <section class="research-hero">
+        <div class="research-shell">
+        <a class="research-back" href="iVegan.html#wireframing">
+            <span aria-hidden="true">
+            &larr;
+            </span>
+            Torna al case study
+        </a>
+        <div class="research-hero__grid">
+            <div class="research-hero__copy">
+            <p class="case-label">
+            WIREFRAMING 01 &middot; iVEGAN
+            </p>
+            <h1>
+            Dagli insight alla struttura del sito
+            </h1>
+            <p>
+            Dall&rsquo;esercizio di ricostruzione su PlantX alla proposta di architettura, ai wireframe mid-fidelity desktop e al wireflow di acquisto iVegan.
+            </p>
+            <p>
+            Le schermate qui mostrate utilizzano le immagini dei wireframe originali. Puoi consultare anche il progetto Figma per esplorare tutti i dettagli.
+            </p>
+            </div>
+            <div class="research-hero__visual r2-hero-visual">
+            <p class="r2-hero-visual__eyebrow">
+            DAL PROBLEMA ALLA STRUTTURA
+            </p>
+            <div class="r2-hero-visual__step">
+            <span>
+            01
+            </span>
+            <div>
+            <strong>
+                Analisi tecnica
+            </strong>
+            <small>
+                PlantX desktop e mobile
+            </small>
+            </div>
+            </div>
+            <div class="r2-hero-visual__step">
+            <span>
+            02
+            </span>
+            <div>
+            <strong>
+                Architettura
+            </strong>
+            <small>
+                Pain point e nuova sitemap
+            </small>
+            </div>
+            </div>
+            <div class="r2-hero-visual__step">
+            <span>
+            03
+            </span>
+            <div>
+            <strong>
+                Wireframe &amp; wireflow
+            </strong>
+            <small>
+                Home, PLP, PDP, carrello e hub
+            </small>
+            </div>
+            </div>
+            </div>
+        </div>
+        <nav aria-label="Indice dei contenuti" class="research-scope">
+        <a href="#plantx">
+        <span>
+            01
+        </span>
+        <strong>
+            Esercizio PlantX
+        </strong>
+        <small>
+            Layout e ricostruzione
+        </small>
+        </a>
+        <a href="#sitemap">
+        <span>
+            02
+        </span>
+        <strong>
+            Nuova sitemap
+        </strong>
+        <small>
+            Riorganizzazione iVegan
+        </small>
+        </a>
+        <a href="#wireframe-desktop">
+        <span>
+            03
+        </span>
+        <strong>
+            Desktop
+        </strong>
+        <small>
+            Schermate chiave
+        </small>
+        </a>
+        <a href="#wireflow">
+        <span>
+            04
+        </span>
+        <strong>
+            Wireflow
+        </strong>
+        <small>
+            Dall&rsquo;accesso all&rsquo;ordine
+        </small>
+        </a>
+        </nav>
+        </div>
+        </section>
+        
+        <section class="research-block" id="plantx">
+        <div class="research-shell">
+        <div class="research-block__heading">
+            <p class="case-label">
+            01 &middot; ESERCIZIO PRELIMINARE
+            </p>
+            <h2>
+            Ricostruire prima di riprogettare
+            </h2>
+        </div>
+        <div class="research-copy">
+            <p>
+            Nella prima fase ho analizzato PlantX e ricostruito Home, PLP e PDP in versione desktop e mobile. Lo scopo era comprendere struttura, spaziature, allineamenti e componenti esistenti,
+            <strong>
+            mantenendone anche le incoerenze
+            </strong>
+            , non ridisegnarli.
+            </p>
+            <p>
+            La lettura di Chrome DevTools ha evidenziato un uso esteso di Flexbox, margini e gutter discontinui, tipografia non uniforme, CTA concorrenti e alcune criticit&agrave; di contrasto. Per organizzare la ricostruzione ho utilizzato griglie da 12 colonne desktop e 4 colonne mobile.
+            </p>
+        </div>
+        <div class="wf-visual wf-cards">
+            <article>
+            <span class="wf-card__index">
+            01
+            </span>
+            <h3>
+            Osservazione
+            </h3>
+            <p>
+            Rilievo di layout, proporzioni, spazi e gerarchie con DevTools.
+            </p>
+            </article>
+            <article>
+            <span class="wf-card__index">
+            02
+            </span>
+            <h3>
+            Ricostruzione
+            </h3>
+            <p>
+            Wireframe mid-fi fedeli alle pagine PlantX originali.
+            </p>
+            </article>
+            <article>
+            <span class="wf-card__index">
+            03
+            </span>
+            <h3>
+            Apprendimento
+            </h3>
+            <p>
+            Distinzione tra fedelt&agrave; del rilievo e successivo redesign iVegan.
+            </p>
+            </article>
+        </div>
+        <p class="wf-source-link">
+            <a href="https://www.figma.com/design/5OijOpCie26wuYeAMz9QMC/Progetto-Wireframing?node-id=0-1" rel="noopener noreferrer" target="_blank">
+            Apri l&rsquo;esercizio PlantX in Figma
+            <span aria-hidden="true">
+            &nearrow;
+            </span>
+            </a>
+        </p>
+        </div>
+        </section>
+        <section class="research-block" id="sitemap">
+        <div class="research-shell">
+        <div class="research-block__heading">
+            <p class="case-label">
+            02 &middot; PAIN POINT E INFORMATION ARCHITECTURE
+            </p>
+            <h2>
+            Una struttura di navigazione pi&ugrave; prevedibile
+            </h2>
+        </div>
+        <div class="research-copy">
+            <p>
+            Le evidenze delle journey e dell&rsquo;analisi di accessibilit&agrave; sono state ricondotte a obiettivi concreti: unificare sito e shop, rendere subito riconoscibili ricerca, wishlist, account e carrello, esplicitare costi e soglie e dare spazio ai contenuti di fiducia.
+            </p>
+            <p>
+            La nuova alberatura distingue accesso ai prodotti, approfondimenti su etica e sostenibilit&agrave; e servizi per l&rsquo;acquisto. La sitemap presente nelle slide include tipologie di link e comportamenti dinamici: qui &egrave; mostrata una sintesi, non l&rsquo;alberatura integrale.
+            </p>
+        </div>
+        <div class="wf-visual wf-pairs">
+            <div class="wf-pairs__heading">
+            <span>
+            CRITICIT&Agrave; RILEVATA
+            </span>
+            <span>
+            </span>
+            <span>
+            PROPOSTA
+            </span>
+            </div>
+            <div class="wf-pair">
+            <div>
+            <strong>
+            Architettura frammentata
+            </strong>
+            <p>
+            Sito/shop e categorie discontinui.
+            </p>
+            </div>
+            <span aria-hidden="true">
+            &rarr;
+            </span>
+            <div>
+            <strong>
+            Accesso unificato
+            </strong>
+            <p>
+            Navigazione ordinata e prodotti pi&ugrave; raggiungibili.
+            </p>
+            </div>
+            </div>
+            <div class="wf-pair">
+            <div>
+            <strong>
+            Informazioni poco visibili
+            </strong>
+            <p>
+            Etica, filiera, origine e recensioni difficili da reperire.
+            </p>
+            </div>
+            <span aria-hidden="true">
+            &rarr;
+            </span>
+            <div>
+            <strong>
+            Hub informativo
+            </strong>
+            <p>
+            Sezioni dedicate a trasparenza, brand e certificazioni.
+            </p>
+            </div>
+            </div>
+            <div class="wf-pair">
+            <div>
+            <strong>
+            Checkout poco prevedibile
+            </strong>
+            <p>
+            Soglia, spese di spedizione e buoni emergono tardi.
+            </p>
+            </div>
+            <span aria-hidden="true">
+            &rarr;
+            </span>
+            <div>
+            <strong>
+            Feedback anticipato
+            </strong>
+            <p>
+            Totale e condizioni visibili lungo il percorso.
+            </p>
+            </div>
+            </div>
+        </div>
+        </div>
+        </section>
+        <section class="research-block" id="wireframe-desktop">
+        <div class="research-shell">
+        <div class="research-block__heading">
+            <p class="case-label">
+            03 &middot; WIREFRAME MID-FIDELITY
+            </p>
+            <h2>
+            Dal sistema di layout alle schermate desktop
+            </h2>
+        </div>
+        <div class="research-copy">
+            <p>
+            I wireframe iVegan sono stati sviluppati con griglia Bootstrap da
+            <strong>
+            12 colonne, margine 15px e gutter 30px
+            </strong>
+            . Per la tipografia sono stati definiti stili Inter e una scala modulare Minor Third (1,2); scala di grigi e blu distinguono struttura e azioni.
+            </p>
+            <p>
+            Le schermate sono selezionate per il ruolo che svolgono nel funnel: dalla home alla consultazione del catalogo, dalla scheda prodotto al carrello, fino all&rsquo;hub Etica &amp; Sostenibilit&agrave;.
+            </p>
+        </div>
+        <div class="wf-showcase">
+            <article class="wf-showcase__item">
+            <div class="wf-showcase__copy">
+            <p class="case-label">
+            01 &middot; HOME
+            </p>
+            <h3>
+            Orientamento e fiducia
+            </h3>
+            <p>
+            Topbar con scelta lingua e accesso all&rsquo;app; CTA primaria e sezioni etica, categorie, offerte e recensioni.
+            </p>
+            </div>
+            <figure class="wf-browser wf-browser--home">
+            <div class="wf-browser__chrome">
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <small>
+                Home
+            </small>
+            </div>
+            <div class="wf-browser__body">
+            <img alt="Wireframe originale iVegan &mdash; Home desktop" class="wf-browser__image" loading="lazy" src="iVegan/HOME .png"/>
+            </div>
+            <figcaption>
+            Wireframe originale &middot; Home desktop
+            </figcaption>
+            </figure>
+            </article>
+            <article class="wf-showcase__item">
+            <div class="wf-showcase__copy">
+            <p class="case-label">
+            02 &middot; PLP
+            </p>
+            <h3>
+            Ricerca e confronto
+            </h3>
+            <p>
+            Breadcrumb, filtri per diete e sostenibilit&agrave;, numero risultati, card informative e ordinamento.
+            </p>
+            </div>
+            <figure class="wf-browser wf-browser--plp">
+            <div class="wf-browser__chrome">
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <small>
+                PLP
+            </small>
+            </div>
+            <div class="wf-browser__body">
+            <img alt="Wireframe originale iVegan &mdash; PLP desktop" class="wf-browser__image" loading="lazy" src="iVegan/PLP.png"/>
+            </div>
+            <figcaption>
+            Wireframe originale &middot; PLP desktop
+            </figcaption>
+            </figure>
+            </article>
+            <article class="wf-showcase__item">
+            <div class="wf-showcase__copy">
+            <p class="case-label">
+            03 &middot; PDP
+            </p>
+            <h3>
+            Informazioni per decidere
+            </h3>
+            <p>
+            Disponibilit&agrave;, brand, allergeni, recensioni, impatto e CTA coerente con lo stato prodotto.
+            </p>
+            </div>
+            <figure class="wf-browser wf-browser--pdp">
+            <div class="wf-browser__chrome">
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <small>
+                PDP
+            </small>
+            </div>
+            <div class="wf-browser__body">
+            <img alt="Wireframe originale iVegan &mdash; PDP desktop (prodotto non disponibile)" class="wf-browser__image" loading="lazy" src="iVegan/PDP- Non disponibile.png"/>
+            </div>
+            <figcaption>
+            Wireframe originale &middot; PDP desktop (prodotto non disponibile)
+            </figcaption>
+            </figure>
+            </article>
+            <article class="wf-showcase__item">
+            <div class="wf-showcase__copy">
+            <p class="case-label">
+            04 &middot; CARRELLO
+            </p>
+            <h3>
+            Trasparenza prima del checkout
+            </h3>
+            <p>
+            Pop-up e riepilogo con totale, soglia minima, spedizione, sconti e checkout.
+            </p>
+            </div>
+            <figure class="wf-browser wf-browser--cart">
+            <div class="wf-browser__chrome">
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <small>
+                Carrello
+            </small>
+            </div>
+            <div class="wf-browser__body">
+            <img alt="Wireframe originale iVegan &mdash; Carrello desktop" class="wf-browser__image" loading="lazy" src="iVegan/CART.png"/>
+            </div>
+            <figcaption>
+            Wireframe originale &middot; Carrello desktop
+            </figcaption>
+            </figure>
+            </article>
+            <article class="wf-showcase__item">
+            <div class="wf-showcase__copy">
+            <p class="case-label">
+            05 &middot; HUB ETICA
+            </p>
+            <h3>
+            Accesso ai valori del brand
+            </h3>
+            <p>
+            Contenuti su etica, sostenibilit&agrave;, filiera, certificazioni e collegamento allo shop.
+            </p>
+            </div>
+            <figure class="wf-browser wf-browser--hub">
+            <div class="wf-browser__chrome">
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <small>
+                Hub etica
+            </small>
+            </div>
+            <div class="wf-browser__body">
+            <img alt="Wireframe originale iVegan &mdash; Hub Etica e Sostenibilit&agrave; desktop" class="wf-browser__image" loading="lazy" src="iVegan/SUSTAINABILITY &amp; ETHICS HUB.png"/>
+            </div>
+            <figcaption>
+            Wireframe originale &middot; Hub Etica e Sostenibilit&agrave; desktop
+            </figcaption>
+            </figure>
+            </article>
+        </div>
+        <p class="wf-source-link">
+            <a href="https://www.figma.com/design/iMuFiw8ELD2xjHHmlu9le8/iVegan?node-id=0-1" rel="noopener noreferrer" target="_blank">
+            Esplora i wireframe originali iVegan in Figma
+            <span aria-hidden="true">
+            &nearrow;
+            </span>
+            </a>
+        </p>
+        </div>
+        </section>
+        <section class="research-block" id="wireflow">
+        <div class="research-shell">
+        <div class="research-block__heading">
+            <p class="case-label">
+            04 &middot; WIREFLOW DESKTOP
+            </p>
+            <h2>
+            Verificare la continuit&agrave; fra le schermate
+            </h2>
+        </div>
+        <div class="research-copy">
+            <p>
+            Il wireflow della Pt. 1 accompagna l&rsquo;utente dall&rsquo;accesso ai prodotti alla conferma dell&rsquo;ordine. Sono rappresentati i passaggi di login/registrazione, l&rsquo;inserimento dell&rsquo;indirizzo e la scelta del pagamento. Il focus &egrave; la continuit&agrave; dell&rsquo;esperienza, non una verifica di risultati su un prodotto gi&agrave; sviluppato.
+            </p>
+        </div>
+        <ol class="wf-visual wf-flow">
+            <li>
+            <span>
+            01
+            </span>
+            <strong>
+            Home / menu
+            </strong>
+            <p>
+            Prodotti vegani &rarr; Carne veg.
+            </p>
+            </li>
+            <li>
+            <span>
+            02
+            </span>
+            <strong>
+            PLP / PDP
+            </strong>
+            <p>
+            Scelta del prodotto e aggiunta al carrello.
+            </p>
+            </li>
+            <li>
+            <span>
+            03
+            </span>
+            <strong>
+            Carrello popup
+            </strong>
+            <p>
+            Totale, soglie, buoni e accesso al checkout.
+            </p>
+            </li>
+            <li>
+            <span>
+            04
+            </span>
+            <strong>
+            Login / signup
+            </strong>
+            <p>
+            Accesso social o email; carrello conservato.
+            </p>
+            </li>
+            <li>
+            <span>
+            05
+            </span>
+            <strong>
+            Indirizzo / pagamento
+            </strong>
+            <p>
+            Dati di consegna, metodo di pagamento e conferma.
+            </p>
+            </li>
+        </ol>
+        </div>
+        </section>
+        <section class="research-outcome">
+        <div class="research-shell">
+        <p class="case-label">
+            OUTPUT &middot; WIREFRAMING 01
+        </p>
+        <h2>
+            Dalla ricerca alle decisioni di struttura
+        </h2>
+        <div class="wf-deliverables">
+            <div>
+            <span>
+            01
+            </span>
+            <strong>
+            Metodo
+            </strong>
+            <p>
+            Rilievo fedelmente ricostruito su PlantX.
+            </p>
+            </div>
+            <div>
+            <span>
+            02
+            </span>
+            <strong>
+            Architettura
+            </strong>
+            <p>
+            Nuova sitemap e requisiti del redesign.
+            </p>
+            </div>
+            <div>
+            <span>
+            03
+            </span>
+            <strong>
+            Wireframe
+            </strong>
+            <p>
+            Cinque aree desktop e wireflow d&rsquo;acquisto.
+            </p>
+            </div>
+        </div>
+
+         <div class="research-nav">
+                    <p class="research-next-label">CONTINUA L’ESPLORAZIONE</p>
+
+                    <div class="research-nav__links">
+                        <a class="research-nav__link" href="accessibility-2.html">
+                            <span class="research-nav__arrow research-nav__arrow--back" aria-hidden="true">←</span>
+                            <span>Accessibility 02</span>
+                        </a>
+                        <a class="research-nav__link research-nav__link--next" href="wireframing-2.html">
+                            <span>Wireframing 02</span>
+                            <span class="research-nav__arrow" aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </div>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Sara Marotta ·
+        <br class="mobile-break">
+        Portfolio UX/UI realizzato in HTML e CSS
+    </footer>
+
+</body>
+</html>
