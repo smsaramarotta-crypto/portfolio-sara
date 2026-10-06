@@ -151,6 +151,13 @@ li {
   transform: rotate(45deg);
   top: 0;
 }
+
+.header .submenu-btn:focus-visible + .submenu-label {
+  outline: 3px solid #C09A46;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
 .header .menu-btn:focus-visible ~ .menu-icon {
   outline: 3px solid #C09A46;
   outline-offset: 4px;
