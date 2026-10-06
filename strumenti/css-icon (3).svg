@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 561.08 631.21">
+  <defs>
+    <style>
+      .cls-1 {
+        mask: url(#mask);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #2062af;
+      }
+
+      .cls-12 {
+        mask: url(#mask-1);
+      }
+
+      .cls-5 {
+        fill: url(#Sfumatura_senza_nome);
+      }
+
+      .cls-6 {
+        fill: url(#Sfumatura_senza_nome_4);
+      }
+
+      .cls-7 {
+        fill: url(#Sfumatura_senza_nome_3);
+      }
+
+      .cls-8 {
+        fill: url(#Sfumatura_senza_nome_2);
+      }
+
+      .cls-9 {
+        fill: url(#Sfumatura_senza_nome_6);
+      }
+
+      .cls-10 {
+        fill: url(#Sfumatura_senza_nome_5);
+      }
+
+      .cls-11 {
+        fill: #3c9cd7;
+      }
+    </style>
+    <linearGradient id="Sfumatura_senza_nome" data-name="Sfumatura senza nome" x1="-7829.78" y1="54685.28" x2="-7829.78" y2="49183.45" gradientTransform="translate(391.19 1532.58) scale(.02 -.02)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".39" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".83"/>
+    </linearGradient>
+    <mask id="mask" x="116.91" y="188.35" width="163.71" height="135.78" maskUnits="userSpaceOnUse">
+      <g id="id0">
+        <path class="cls-5" d="M116.91,188.35h163.71v135.78H116.91v-135.78Z"/>
+      </g>
+    </mask>
+    <linearGradient id="Sfumatura_senza_nome_3" data-name="Sfumatura senza nome 3" x1="-7829.82" y1="54685.28" x2="-7829.82" y2="49183.45" gradientTransform="translate(391.19 1532.58) scale(.02 -.02)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d1d3d4"/>
+      <stop offset=".39" stop-color="#d1d3d4"/>
+      <stop offset="1" stop-color="#d1d3d4"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_2" data-name="Sfumatura senza nome 2" x1="-955.54" y1="57646.48" x2="-955.54" y2="51927.58" gradientTransform="translate(391.19 1532.58) scale(.02 -.02)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".39" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".83"/>
+    </linearGradient>
+    <mask id="mask-1" x="280.05" y="115.58" width="175.31" height="141.12" maskUnits="userSpaceOnUse">
+      <g id="id2">
+        <path class="cls-8" d="M280.05,115.58h175.31v141.12h-175.31V115.58Z"/>
+      </g>
+    </mask>
+    <linearGradient id="Sfumatura_senza_nome_4" data-name="Sfumatura senza nome 4" x1="-955.54" y1="57646.47" x2="-955.54" y2="51927.58" gradientTransform="translate(391.19 1532.58) scale(.02 -.02)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d1d3d4"/>
+      <stop offset=".39" stop-color="#d1d3d4"/>
+      <stop offset="1" stop-color="#d1d3d4"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_5" data-name="Sfumatura senza nome 5" x1="-11138.75" y1="46729.57" x2="2075.38" y2="46729.57" gradientTransform="translate(391.19 1532.58) scale(.02 -.02)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8e7e5"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_6" data-name="Sfumatura senza nome 6" x1="-11746.69" y1="56246.47" x2="2599.56" y2="56246.47" gradientTransform="translate(391.19 1532.58) scale(.02 -.02)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8e7e5"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Livello_1" data-name="Livello 1" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <g id="Layer_1">
+      <g id="_513085304" data-name=" 513085304">
+        <path class="cls-3" d="M508.47,569.84l-227.93,61.37-227.94-61.37L0,0h561.08l-52.61,569.84Z"/>
+        <path class="cls-11" d="M280.53,46.16v536.1l.52.14,184.46-49.67,42.58-486.58h-227.55Z"/>
+        <path class="cls-2" d="M280.33,188.64l-163.14,67.94,5.41,67.27,157.73-67.44,167.78-71.74,6.96-68.81-174.74,72.78Z"/>
+        <g class="cls-1">
+          <path class="cls-7" d="M117.19,256.58l5.41,67.27,157.73-67.44v-67.77l-163.14,67.94Z"/>
+        </g>
+        <g class="cls-12">
+          <path class="cls-6" d="M455.07,115.86l-174.74,72.77v67.77l167.78-71.74,6.96-68.81Z"/>
+        </g>
+        <path class="cls-10" d="M117.44,256.58l5.41,67.27,242.02.77-5.41,89.69-79.64,22.42-76.56-19.33-4.64-55.67h-71.13l9.28,107.48,143.82,42.53,143.04-41.75,18.56-213.4H117.44Z"/>
+        <path class="cls-4" d="M280.33,256.58H117.19l5.41,67.27,157.73.5v-67.77ZM280.33,436.52l-.77.22-76.54-19.33-4.64-55.67h-71.13l9.28,107.48,143.81,42.53v-75.22Z"/>
+        <path class="cls-9" d="M102.5,115.86h352.57l-6.96,68.81H111l-8.5-68.81Z"/>
+        <path class="cls-4" d="M280.33,115.86H102.5l8.5,68.81h169.33v-68.81Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

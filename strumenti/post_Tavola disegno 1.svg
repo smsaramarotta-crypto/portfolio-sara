@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 561.1 631.2">
+  <!-- Generator: Adobe Illustrator 29.8.10, SVG Export Plug-In . SVG Version: 2.1.1 Build 2)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7 {
+        fill-rule: evenodd;
+      }
+
+      .st1 {
+        fill: #2062af;
+      }
+
+      .st2 {
+        fill: none;
+      }
+
+      .st3 {
+        fill: url(#Sfumatura_senza_nome_4);
+      }
+
+      .st4 {
+        fill: url(#Sfumatura_senza_nome_3);
+      }
+
+      .st5 {
+        fill: url(#Sfumatura_senza_nome_6);
+      }
+
+      .st6 {
+        fill: url(#Sfumatura_senza_nome_5);
+      }
+
+      .st7 {
+        fill: #3c9cd7;
+      }
+    </style>
+    <linearGradient id="Sfumatura_senza_nome_3" data-name="Sfumatura senza nome 3" x1="-182468" y1="-170250.4" x2="-182468" y2="-164748.6" gradientTransform="translate(3848.1 3559.4) scale(0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d1d3d4"/>
+      <stop offset=".4" stop-color="#d1d3d4"/>
+      <stop offset="1" stop-color="#d1d3d4"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_4" data-name="Sfumatura senza nome 4" x1="-174020.5" y1="-173211.6" x2="-174020.5" y2="-167492.7" gradientTransform="translate(3848.1 3559.4) scale(0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d1d3d4"/>
+      <stop offset=".4" stop-color="#d1d3d4"/>
+      <stop offset="1" stop-color="#d1d3d4"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_5" data-name="Sfumatura senza nome 5" x1="-188553.8" y1="-158760.4" x2="-175339.7" y2="-158760.4" gradientTransform="translate(3848.1 3559.4) scale(0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8e7e5"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_6" data-name="Sfumatura senza nome 6" x1="-189161.7" y1="-170455.2" x2="-174815.5" y2="-170455.2" gradientTransform="translate(3848.1 3559.4) scale(0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8e7e5"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Livello_11" data-name="Livello_1" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <g id="Layer_1">
+      <g id="_513085304">
+        <path class="st1" d="M508.5,569.8l-227.9,61.4-227.9-61.4L0,0h561.1l-52.6,569.8Z"/>
+        <path class="st7" d="M280.5,46.2v536.1h.5c0,.1,184.5-49.5,184.5-49.5l42.6-486.6h-227.6Z"/>
+        <path class="st0" d="M280.3,188.6l-163.1,67.9,5.4,67.3,157.7-67.4,167.8-71.7,7-68.8-174.7,72.8h0Z"/>
+        <path class="st4" d="M117.2,256.6l5.4,67.3,157.7-67.4v-67.8l-163.1,67.9Z"/>
+        <path class="st3" d="M455.1,115.9l-174.7,72.8v67.8l167.8-71.7,7-68.8h0Z"/>
+        <path class="st6" d="M117.4,256.6l5.4,67.3,242,.8-5.4,89.7-79.6,22.4-76.6-19.3-4.6-55.7h-71.1l9.3,107.5,143.8,42.5,143-41.8,18.6-213.4H117.4Z"/>
+        <path class="st2" d="M280.3,256.6H117.2l5.4,67.3,157.7.5v-67.8ZM280.3,436.5l-.8.2-76.5-19.3-4.6-55.7h-71.1l9.3,107.5,143.8,42.5v-75.2h0Z"/>
+        <path class="st5" d="M102.5,115.9h352.6l-7,68.8H111l-8.5-68.8h0Z"/>
+        <path class="st2" d="M280.3,115.9H102.5l8.5,68.8h169.3v-68.8Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
