@@ -4391,14 +4391,12 @@ html {
     line-height: 1;
     font-weight: 700;
     text-transform: none;
-    margin-bottom: 0,
 }
 
 .home-hero-title .home-hero-name-logo {
     display: block;
     width: min(100%, 560px);
     height: auto;
-    margin-top: 0;
 }
 
 .home-hero-role {
