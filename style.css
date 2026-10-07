@@ -2283,6 +2283,64 @@ main.case-study {
     height: 38px;
   }
 }
+
+.case-live {
+    margin-top: 40px;
+}
+
+.case-live-label {
+    margin: 0 0 12px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #265649;
+}
+
+.case-live-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 20px;
+    margin-top: 24px;
+
+    background-color: #265649;
+    color: #ffffff;
+
+    font-weight: 700;
+    text-decoration: none;
+
+    border: 2px solid #265649;
+    border-radius: 4px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.case-live-link:hover {
+    background-color: transparent;
+    color: #265649;
+    transform: translateY(-2px);
+}
+
+.case-live-link:focus-visible {
+    outline: 3px solid #806224;
+    outline-offset: 4px;
+}
+
+.case-live-link span {
+    font-size: 1.15em;
+    line-height: 1;
+}
+
+
+
+
+
+
 /* CASE STUDY: iVegan.html */
 .case-process {
   padding: 96px 0;
