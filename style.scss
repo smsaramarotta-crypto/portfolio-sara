@@ -4367,42 +4367,43 @@ main.case-study {
 }
 
 .case-live {
-    margin-top: 40px;
+    margin-top: 32px;
 
     &-label {
+        margin: 0 0 12px;
+
         color: $color-green;
-        font-size: $font-label;
-        font-weight: $weight-label;
-        line-height: $line-label;
-        letter-spacing: $tracking-label;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
     }
 
     &-link {
         display: inline-flex;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
 
-        padding: 14px 20px;
-        margin-top: 24px;
+        padding: 14px 18px;
 
-        background-color: $color-green;
-        color: $color-white;
+        color: $color-green;
+        background-color: transparent;
 
+        font-size: 16px;
         font-weight: 700;
         text-decoration: none;
 
-        border: 2px solid $color-green;
-        border-radius: 4px;
+        border: 1px solid rgba(38, 86, 73, 0.22);
+        border-radius: 6px;
 
         transition:
+            border-color 0.2s ease,
             background-color 0.2s ease,
-            color 0.2s ease,
             transform 0.2s ease;
 
         &:hover {
-            background-color: transparent;
-            color: $color-green;
+            background-color: rgba(38, 86, 73, 0.04);
+            border-color: $color-green;
             transform: translateY(-2px);
         }
 
@@ -4412,7 +4413,8 @@ main.case-study {
         }
 
         span {
-            font-size: 1.15em;
+            color: $color-gold;
+            font-size: 20px;
             line-height: 1;
         }
     }
