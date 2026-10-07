@@ -10609,30 +10609,49 @@ html {
   line-height: 1.65;
 }
 .wf-page .wf-source-link {
-  margin-top: 32px;
-  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
-  color: transparent;
-}
-
- .wf-page .wf-source-link:hover {
-                    background-color: rgba(38, 86, 73, 0.04);
-                    border-color: $color-green;
-                    transform: translateY(-2px);
+    margin-top: 32px;
 }
 
 .wf-page .wf-source-link a {
-  display: inline-flex;
-  align-items: center;
-  gap: 24px;
-  color: #265649;
-  font-size: 17px;
-  line-height: 1.65;
-  font-weight: 700;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 14px 18px;
+
+    color: #265649;
+    background-color: transparent;
+
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+    text-decoration: none;
+
+    border: 1px solid rgba(38, 86, 73, 0.22);
+    border-radius: 6px;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
 }
-.wf-page .wf-source-link span {
-  color: #806224;
+
+.wf-page .wf-source-link a:hover {
+    background-color: rgba(38, 86, 73, 0.04);
+    border-color: #265649;
+    transform: translateY(-2px);
+}
+
+.wf-page .wf-source-link a:focus-visible {
+    outline: 3px solid #806224;
+    outline-offset: 4px;
+}
+
+.wf-page .wf-source-link a span {
+    color: #806224;
+    font-size: 20px;
+    line-height: 1;
 }
 .wf-page .wf-cards {
   display: grid;
