@@ -4422,19 +4422,18 @@ html {
 }
 
 .hero__description {
-     max-width: 620px;
-    margin-top: 0;
-}
-
-.hero__statement {
-    margin: 0 0 18px;
+    max-width: 600px;
+    margin: 0;
 }
 
 .hero__description p {
-      margin: 0;
+    margin: 0;
+
     color: #181817;
+
+    font-family: "Lato", sans-serif;
     font-size: 17px;
-    line-height: 1.6;
+    line-height: 1.55;
     font-weight: 400;
 }
 
@@ -4491,17 +4490,21 @@ html {
   font-weight: 700;
 }
 .home-page .hero-content .hero-role {
-  margin: 0 0 32px;
-  color: #265649;
-  font-size: 18px;
-  line-height: 1.4;
-  font-weight: 700;
+ margin: 6px 0 14px;
+    color: #265649;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 700;
 }
 .home-page .hero-content .hero-statement {
-  margin: 0 0 18px;
+ margin: 0 0 8px;
     color: #265649;
-    font-size: clamp(19px, 1.8vw, 24px);
-    line-height: 1.35;
+
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    line-height: 1.4;
     font-weight: 700;
 }
 .home-page .hero-content > p:not(.case-label):not(.hero-role) {
