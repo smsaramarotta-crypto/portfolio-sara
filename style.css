@@ -4372,6 +4372,19 @@ html {
   }
 }
 
+.home-hero-title {
+    margin: 0 0 28px;
+    color: $color-green;
+    line-height: 1.05;
+    font-weight: 700;
+
+    span {
+        display: block;
+        margin-top: 16px;
+        color: $color-gold;
+    }
+}
+
 .hero__description {
     margin-top: 1.5rem;
 
