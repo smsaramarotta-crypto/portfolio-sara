@@ -4370,12 +4370,12 @@ main.case-study {
     margin-top: 40px;
 
     &-label {
-        margin: 0 0 12px;
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
         color: $color-green;
+        font-size: $font-label;
+        font-weight: $weight-label;
+        line-height: $line-label;
+        letter-spacing: $tracking-label;
+        text-transform: uppercase;
     }
 
     &-link {
