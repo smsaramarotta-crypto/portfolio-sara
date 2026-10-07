@@ -10615,7 +10615,7 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 24px;
-  color: #0f4a3c;
+  color: transparent;
   font-size: 17px;
   line-height: 1.65;
   font-weight: 700;
