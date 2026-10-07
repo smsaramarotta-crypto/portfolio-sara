@@ -4476,7 +4476,7 @@ html {
 
     margin: 0 0 2px;
 
-    color: #265649;
+    color: #0F4A3C;
 
     font-family: "Lato", sans-serif;
     font-size: clamp(30px, 3vw, 42px);
@@ -4520,7 +4520,7 @@ html {
 .home-page .hero-content .hero-statement {
     margin: 0 0 8px;
 
-    color: #265649;
+    color: #181817;
 
     font-family: "Lato", sans-serif;
     font-size: 17px;
@@ -4541,7 +4541,7 @@ html {
 .home-page .hero-content .hero__description p {
     margin: 0;
 
-    color: #181817;
+    color: #5F5D58;
 
     font-family: "Lato", sans-serif;
     font-size: 17px;
