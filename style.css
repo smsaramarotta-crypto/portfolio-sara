@@ -4373,16 +4373,31 @@ html {
 }
 
 .home-hero-title {
-    margin: 0 0 28px;
-    color: #265649;
-    line-height: 1.05;
+   margin: 0 0 24px;
+
+    color: $color-green;
+    font-size: clamp(44px, 5vw, 64px);
+    line-height: 0.98;
     font-weight: 700;
 }
 
 .home-hero-title span {
     display: block;
-    margin-top: 16px;
-    color: #C09A46;
+        margin-top: 12px;
+
+        color: $color-gold;
+        font-family: "Skippy Sharp", cursive;
+        font-size: 1.12em;
+        font-weight: 400;
+        line-height: 1;
+}
+
+.hero h2 {
+    margin: 0 0 32px;
+    color: #265649;
+    font-size: clamp(22px, 2.4vw, 30px);
+    line-height: 1.2;
+    font-weight: 700;
 }
 
 .hero__description {
