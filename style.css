@@ -4379,29 +4379,32 @@ html {
 }
 
 .home-hero-title {
-   margin: 0 0 24px;
+    margin: 0 0 24px;
+}
 
-    color: $color-green;
-    font-size: clamp(44px, 5vw, 64px);
-    line-height: 0.98;
+.home-hero-title .home-hero-greeting {
+    display: block;
+    color: #265649;
+    font-size: clamp(42px, 4.2vw, 62px);
+    line-height: 1;
     font-weight: 700;
 }
 
-.home-hero-title span {
+.home-hero-title .home-hero-name {
     display: block;
-        margin-top: 12px;
-
-        color: $color-gold;
-        font-family: "Skippy Sharp", cursive;
-        font-size: 1.12em;
-        font-weight: 400;
-        line-height: 1;
+    margin-top: 10px;
+    color: #C09A46;
+    font-family: "SkippySharp", cursive;
+    font-size: clamp(72px, 8vw, 118px);
+    line-height: 0.9;
+    font-weight: 400;
+    white-space: nowrap;
 }
 
-.hero h2 {
-    margin: 0 0 32px;
+.home-hero-role {
+    margin: 24px 0 34px;
     color: #265649;
-    font-size: clamp(22px, 2.4vw, 30px);
+    font-size: clamp(22px, 2.3vw, 30px);
     line-height: 1.2;
     font-weight: 700;
 }
