@@ -4402,10 +4402,10 @@ html {
 }
 
 .home-hero-role {
-    margin: 10px 0 24px;
+   margin: 12px 0 26px;
     color: #265649;
-    font-size: clamp(21px, 2vw, 28px);
-    line-height: 1.2;
+    font-size: clamp(20px, 2vw, 26px);
+    line-height: 1.25;
     font-weight: 700;
 }
 
@@ -4422,8 +4422,11 @@ html {
 }
 
 .hero__description {
-    max-width: 620px;
-    margin-top: 0;
+   margin: 0 0 18px;
+    color: #265649;
+    font-size: clamp(19px, 1.8vw, 24px);
+    line-height: 1.35;
+    font-weight: 700;
 }
 
 .hero__statement {
