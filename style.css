@@ -10610,25 +10610,26 @@ html {
 }
 .wf-page .wf-source-link {
   margin-top: 32px;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+  color: transparent;
 }
+
+ .wf-page .wf-source-link:hover {
+                    background-color: rgba(38, 86, 73, 0.04);
+                    border-color: $color-green;
+                    transform: translateY(-2px);
+}
+
 .wf-page .wf-source-link a {
   display: inline-flex;
   align-items: center;
   gap: 24px;
-  color: transparent;
+  color: #265649;
   font-size: 17px;
   line-height: 1.65;
   font-weight: 700;
   text-decoration-thickness: 1px;
   text-underline-offset: 5px;
-  transition:       border-color 0.2s ease,
-                    background-color 0.2s ease,
-                    transform 0.2s ease;
-        
-    &:hover {
-                    background-color: rgba(38, 86, 73, 0.04);
-                    border-color: $color-green;
-                    transform: translateY(-2px);
 }
 .wf-page .wf-source-link span {
   color: #806224;
