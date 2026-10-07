@@ -4394,7 +4394,7 @@ html {
     display: block;
     margin-top: 10px;
     color: #C09A46;
-    font-family: "SkippySharp", cursive;
+    font-family: "SkippySharp";
     font-size: clamp(72px, 8vw, 118px);
     line-height: 0.9;
     font-weight: 400;
