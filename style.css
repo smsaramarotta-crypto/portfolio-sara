@@ -13872,7 +13872,7 @@ html {
   padding: 12px 16px;
   border: 1px solid rgba(24, 24, 23, 0.14);
   border-radius: 8px;
-  background: #fbf9f5;
+  background: transparent;
   text-wrap: balance;
 }
 .research-page.wf-page .wf-source-link a:hover {
