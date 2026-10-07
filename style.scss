@@ -8404,6 +8404,19 @@ html {
     }
 }
 
+.hero__description {
+    margin-top: 1.5rem;
+
+    p {
+        margin: 0;
+        line-height: 1.6;
+
+        & + p {
+            margin-top: 0.75rem;
+        }
+    }
+}
+
 .home-page {
     background: $color-background;
 
