@@ -4397,6 +4397,9 @@ html {
     display: block;
     width: min(100%, 560px);
     height: auto;
+
+    margin-top: 2px;
+    margin-left: 40px;
 }
 
 .home-hero-role {
