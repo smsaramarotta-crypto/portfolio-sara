@@ -94,13 +94,13 @@ li {
     align-items: stretch;
     justify-content: flex-start;
     margin: 0;
-    padding-left: 12px;
+    padding-left: 20px;
     white-space: nowrap;
     background-color: #265649;
 }
 
 .header .language-switcher .language-link {
-    display: flex;
+   display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 4px;
@@ -111,8 +111,23 @@ li {
     text-decoration: none;
 }
 
+.header .language-switcher .language-link[aria-current="page"] {
+    font-weight: 700;
+}
+
+.header .language-switcher .language-link:hover {
+    color: #C09A46;
+    background-color: transparent;
+}
+
+.header .language-switcher .language-link:focus-visible {
+    outline: 3px solid #C09A46;
+    outline-offset: -3px;
+    border-radius: 4px;
+}
+
 .header .language-switcher > span {
-    display: flex;
+     display: flex;
     align-items: center;
     padding: 0 1px;
     color: #F5F1E8;
@@ -122,22 +137,21 @@ li {
 }
 
 @media (min-width: 48em) {
-    .header .language-switcher {
+    .header ul li.language-switcher {
         justify-content: center;
-        margin-right: 48px;
+        margin: 0 48px 0 0;
         padding: 0 30px;
         background-color: #F5F1E8;
     }
 
-    .header .language-switcher .language-link {
+    .header ul li.language-switcher .language-link {
         padding: 20px 4px;
         color: #0f4a3c;
     }
 
-    .header .language-switcher > span {
+    .header ul li.language-switcher > span {
         color: #0f4a3c;
     }
-}
 
 .header .menu {
   clear: both;
