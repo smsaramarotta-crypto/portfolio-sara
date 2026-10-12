@@ -131,13 +131,15 @@ li {
 
 @media (min-width: 48em) {
     .header .language-switcher {
-        margin-left: 10px;
+        justify-content: center;
+        margin-left: 0;
         margin-right: 48px;
+        padding: 0 30px;
         background-color: #F5F1E8;
     }
 
     .header .language-switcher .language-link {
-        padding: 20px 8px;
+        padding: 20px 6px;
         color: #0f4a3c;
     }
 
