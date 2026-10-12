@@ -88,6 +88,47 @@ li {
   outline-offset: -3px;
   border-radius: 8px;
 }
+
+.header .language-switcher {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.header .language-switcher > span {
+    padding: 20px 0;
+    color: #F5F1E8;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+}
+
+.header .language-switcher .language-link {
+    padding: 20px 12px;
+}
+
+.header .language-switcher .language-link[aria-current="page"] {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+@media (min-width: 48em) {
+    .header .language-switcher > span {
+        color: #0f4a3c;
+    }
+
+    .header .language-switcher .language-link {
+        padding: 20px 10px;
+        color: #0f4a3c;
+        background-color: #F5F1E8;
+    }
+
+    .header .language-switcher .language-link:hover {
+        background-color: #E8DDCB;
+    }
+}
+
 .header .menu {
   clear: both;
   max-height: 0;
