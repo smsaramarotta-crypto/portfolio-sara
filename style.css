@@ -132,6 +132,7 @@ li {
 @media (min-width: 48em) {
     .header .language-switcher {
         margin-left: 10px;
+        margin-right: 48px;
         background-color: #F5F1E8;
     }
 
