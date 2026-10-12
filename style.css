@@ -91,7 +91,7 @@ li {
 
 .header .language-switcher {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: flex-start;
     margin: 0;
     padding-left: 20px;
@@ -137,19 +137,25 @@ li {
 }
 
 @media (min-width: 48em) {
-    .header ul li.language-switcher {
+    .header .language-switcher {
+        align-items: stretch;
         justify-content: center;
-        margin: 0 48px 0 0;
+        margin: 0;
         padding: 0 30px;
         background-color: #F5F1E8;
     }
 
-    .header ul li.language-switcher .language-link {
+    .header .language-switcher .language-link {
+        display: flex;
+        align-items: center;
+        height: 100%;
         padding: 20px 4px;
         color: #0f4a3c;
     }
 
-    .header ul li.language-switcher > span {
+    .header .language-switcher > span {
+        display: flex;
+        align-items: center;
         color: #0f4a3c;
     }
 }
