@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessibility 01 deep dive for the iVegan case study: personas, user journeys, and cognitive, language and visual barriers.">
+
+    <title>Accessibility 01 · Personas and user journeys | Sara Marotta</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo" href="index.html" aria-label="Home">
+            <img src="logo.svg" alt="Sara Marotta logo">
+        </a>
+
+        <nav aria-label="Main navigation">
+            <input
+                class="menu-btn"
+                id="menu-btn"
+                type="checkbox"
+                aria-label="Open or close the navigation menu"
+            >
+
+            <label for="menu-btn" class="menu-icon">
+                <span class="navicon"></span>
+            </label>
+
+            <ul class="menu">
+                <li>
+                <a href="index.html">Home</a>
+                </li>
+
+                <li class="has-submenu">
+                    <input
+                        class="submenu-btn"
+                        type="checkbox"
+                        id="submenu-progetti"
+                    >
+
+                    <label
+                        class="submenu-label"
+                        for="submenu-progetti"
+                    >
+                        Projects
+                        <span class="submenu-arrow"></span>
+                    </label>
+
+                    <ul class="submenu">
+                        <li><a href="ILS.html">Italian Language Studio (ILS)</a></li>
+                        <li><a href="iVegan.html">iVegan</a></li>
+                        <li><a href="visual.html">Visual &amp; Content Design</a></li>
+</ul>
+                </li>
+
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contatti.html">Contact</a></li>
+
+                <li class="language-switcher" aria-label="Language selector">
+                    <a class="language-link language-link--en" href="accessibility-1.html" lang="en" aria-current="page">EN</a>
+                    <span aria-hidden="true">/</span>
+                    <a class="language-link language-link--it" href="accessibility-1-it.html" lang="it">IT</a>
+                </li>
+</ul>
+        </nav>
+    </header>
+
+
+    <main class="case-study research-page research-page--ivegan ar-page ar-page--1">
+
+        <!-- HERO -->
+        <section class="research-hero" aria-labelledby="ar-page-title">
+            <div class="research-shell">
+
+                <a class="research-back" href="iVegan.html#accessibility">
+                    <span aria-hidden="true">←</span> Back to the case study
+                </a>
+
+                <div class="research-hero__grid">
+                    <div class="research-hero__copy">
+                        <p class="case-label">ACCESSIBILITY 01 · iVEGAN</p>
+
+                        <h1 id="ar-page-title">
+                            Understanding barriers through people and journeys
+                        </h1>
+
+                        <p>
+                            Three project personas explore the iVegan shopping experience from cognitive, language and visual perspectives.
+                        </p>
+
+                        <p>
+                            The as-is journey analysis connects recurring barriers to clearer, more predictable and accessible redesign scenarios.
+                        </p>
+                    </div>
+
+                    <div class="research-hero__visual r2-hero-visual"
+                        aria-label="Summary of the research method">
+
+                        <p class="r2-hero-visual__eyebrow">FROM NEEDS TO REDESIGN</p>
+
+                        <div class="r2-hero-visual__step">
+                            <span>01</span>
+                            <div>
+                                <strong>Three personas</strong>
+                                <small>Alice · Aarav · Carlo</small>
+                            </div>
+                        </div>
+
+                        <div class="r2-hero-visual__step">
+                            <span>02</span>
+                            <div>
+                                <strong>As-is journey</strong>
+                                <small>Barriers during shopping</small>
+                            </div>
+                        </div>
+
+                        <div class="r2-hero-visual__step">
+                            <span>03</span>
+                            <div>
+                                <strong>New journeys</strong>
+                                <small>Proposed design solutions</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            <nav class="research-scope" aria-label="Research index">
+
+                <a href="#personas">
+                    <span>01</span>
+                    <strong>Personas</strong>
+                    <small>Three different needs</small>
+                </a>
+
+                <a href="#barriere">
+                    <span>02</span>
+                    <strong>As-is journey</strong>
+                    <small>Where barriers emerge</small>
+                </a>
+
+                <a href="#opportunita">
+                    <span>03</span>
+                    <strong>UX opportunities</strong>
+                    <small>From pain points to decisions</small>
+                </a>
+
+                <a href="#new-journey">
+                    <span>04</span>
+                    <strong>New journey</strong>
+                    <small>Proposed journeys</small>
+                </a>
+
+            </nav>
+            </div>
+        </section>
+
+        <!-- INDICE -->
+        
+
+        <!-- 01 PERSONAS -->
+        <section id="personas" class="research-block">
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+                    <p class="case-label">01 · PERSONAS</p>
+                    <h2>Three perspectives, three access needs</h2>
+                    <p>
+                        The personas represent usage scenarios defined for the project: Alice focuses on cognitive and sensory barriers, Aarav on language barriers, and Carlo on low vision and assistive technologies. They are not accounts of individual interviews.
+                    </p>
+                </div>
+
+                <div class="ar-personas">
+
+                    <!-- ALICE -->
+                    <article class="ar-persona">
+
+                        <div class="ar-persona__heading">
+                            <span class="ar-persona__avatar">
+                                <img src="iVegan/alice.png"
+                                    alt=""
+                                    onerror="this.style.display='none';this.parentNode.classList.add('ar-avatar-missing')">
+                            </span>
+                            <div>
+                                <span class="ar-mini">
+                                    UNIVERSITY STUDENT · AUTISM
+                                </span>
+                                <h3>Alice</h3>
+                            </div>
+                        </div>
+
+                        <p>
+                            She wants to buy vegetarian and vegan products while checking that they align with her values.
+                        </p>
+
+                        <div class="ar-persona__details">
+                            <div>
+                                <strong>Need</strong>
+                                <p>
+                                    Linear navigation, explicit information and predictable interactions.
+                                </p>
+                            </div>
+
+                            <div>
+                                <strong>Journey barrier</strong>
+                                <p>
+                                    Decorative elements and ambiguous categories make it difficult to find her way; the cart is lost after sign-up.
+                                </p>
+                            </div>
+
+                            <div>
+                                <strong>Opportunity</strong>
+                                <p>
+                                    Reduce sensory load, use direct language and preserve the cart during sign-up.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- AARAV -->
+                    <article class="ar-persona">
+
+                        <div class="ar-persona__heading">
+                            <span class="ar-persona__avatar">
+                                <img src="iVegan/aarav.png"
+                                    alt=""
+                                    onerror="this.style.display='none';this.parentNode.classList.add('ar-avatar-missing')">
+                            </span>
+                            <div>
+                                <span class="ar-mini">
+                                    INTERNATIONAL STUDENT · NON-NATIVE SPEAKER
+                                </span>
+                                <h3>Aarav</h3>
+                            </div>
+                        </div>
+
+                        <p>
+                            He is looking for vegan products in Italy and wants to be able to understand the site in English as well.
+                        </p>
+
+                        <div class="ar-persona__details">
+                            <div>
+                                <strong>Need</strong>
+                                <p>
+                                    Localised content and terminology that immediately describes products and actions.
+                                </p>
+                            </div>
+
+                            <div>
+                                <strong>Journey barrier</strong>
+                                <p>
+                                    Complete translations are missing; categories such as “Mare e Monti” and “Vegmaggio”, along with checkout fields, may be difficult to understand.
+                                </p>
+                            </div>
+
+                            <div>
+                                <strong>Opportunity</strong>
+                                <p>
+                                    Provide complete language versions, explicit categories and understandable forms.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CARLO -->
+                    <article class="ar-persona">
+
+                        <div class="ar-persona__heading">
+                            <span class="ar-persona__avatar">
+                                <img src="iVegan/carlo.png"
+                                    alt=""
+                                    onerror="this.style.display='none';this.parentNode.classList.add('ar-avatar-missing')">
+                            </span>
+                            <div>
+                                <span class="ar-mini">
+                                    LOW-VISION PERSON · ASSISTIVE TECHNOLOGIES
+                                </span>
+                                <h3>Carlo</h3>
+                            </div>
+                        </div>
+
+                        <p>
+                            He wants to complete the purchase using a keyboard, screen reader and magnification.
+                        </p>
+
+                        <div class="ar-persona__details">
+                            <div>
+                                <strong>Need</strong>
+                                <p>
+                                    Sufficient contrast, keyboard control and feedback that can be read by assistive technologies.
+                                </p>
+                            </div>
+
+                            <div>
+                                <strong>Journey barrier</strong>
+                                <p>
+                                    Difficult-to-read text and controls, elements that cannot be reached with TAB, and incomplete error messages.
+                                </p>
+                            </div>
+
+                            <div>
+                                <strong>Opportunity</strong>
+                                <p>
+                                    Semantic structure, visible focus, accessible labels and a persistent cart.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="ar-caption">
+                    Profiles and needs summarised from the Accessibility Pt. 1 presentation. Images are optional; when used, the portraits are in the iVegan folder.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- 02 JOURNEY AS-IS -->
+        <section id="barriere" class="research-block ar-section--alt">
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+                    <p class="case-label">02 · AS-IS USER JOURNEY</p>
+                    <h2>Where the journey becomes difficult</h2>
+                    <p>
+                        The three scenarios reconstruct comparable activities — search, navigation, cart, account and purchase — and highlight different barriers within the same flow.
+                    </p>
+                </div>
+
+                <div class="ar-journeys">
+
+                    <article class="ar-journey">
+                        <div class="ar-journey__head">
+                            <h3>Alice · cognitive</h3>
+                            <span class="ar-status">AS-IS</span>
+                        </div>
+
+                        <ol>
+                            <li>
+                                <strong>Discovery</strong>
+                                <p>
+                                    Having a separate website and shop requires additional orientation.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Exploration</strong>
+                                <p>
+                                    Unclear categories and dense content increase overload.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Cart</strong>
+                                <p>
+                                    Actions and costs are not always communicated clearly.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Sign-up</strong>
+                                <p>
+                                    The cart may be emptied after creating an account.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Confirmation</strong>
+                                <p>
+                                    The “order placed” message may not immediately clarify the delivery method.
+                                </p>
+                            </li>
+                        </ol>
+                    </article>
+
+                    <article class="ar-journey">
+                        <div class="ar-journey__head">
+                            <h3>Aarav · language</h3>
+                            <span class="ar-status">AS-IS</span>
+                        </div>
+
+                        <ol>
+                            <li>
+                                <strong>Discovery</strong>
+                                <p>
+                                    He cannot find a complete option for browsing the site in English.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Categories</strong>
+                                <p>
+                                    Names such as “Mare e Monti” do not make it clear which products they contain.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Products</strong>
+                                <p>
+                                    He has to translate ingredients and descriptions himself.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Cart</strong>
+                                <p>
+                                    The minimum threshold and shipping conditions are not immediately clear.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Checkout</strong>
+                                <p>
+                                    Forms and instructions may slow down completion.
+                                </p>
+                            </li>
+                        </ol>
+                    </article>
+
+                    <article class="ar-journey">
+                        <div class="ar-journey__head">
+                            <h3>Carlo · visual</h3>
+                            <span class="ar-status">AS-IS</span>
+                        </div>
+
+                        <ol>
+                            <li>
+                                <strong>Access</strong>
+                                <p>
+                                    Navigation depends on magnification and keyboard access.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Categories</strong>
+                                <p>
+                                    Some content is not easy to use with a screen reader.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Products</strong>
+                                <p>
+                                    Controls and confirmations when adding to the cart are not always announced.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Account</strong>
+                                <p>
+                                    Error messages and fields may not be interpreted by assistive tools.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Purchase</strong>
+                                <p>
+                                    Losing the cart and the absence of feedback make the flow discontinuous.
+                                </p>
+                            </li>
+                        </ol>
+                    </article>
+
+                </div>
+
+                <div class="ar-panel ar-callout">
+                    <p class="ar-panel__label">CROSS-CUTTING INSIGHT</p>
+                    <p>
+                        The difficulties are not limited to individual components: a lack of clarity, fragmented channels and incomplete feedback can compromise autonomy throughout the shopping journey.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 03 PAIN POINTS E OPPORTUNITÀ -->
+        <section id="opportunita" class="research-block">
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+                    <p class="case-label">03 · PAIN POINTS &amp; OPPORTUNITIES</p>
+                    <h2>From barrier to design requirement</h2>
+                    <p>
+                        The presentation connects cognitive, language and visual barriers to interface proposals. The pairings summarise redesign directions, not findings from later testing.
+                    </p>
+                </div>
+
+                <div class="ar-comparison">
+
+                    <div class="ar-comparison__row">
+                        <div>
+                            <span>PAIN POINTS</span>
+                            <strong>Sensory overload</strong>
+                            <p>
+                                Animations, dense information and categories that are difficult to interpret.
+                            </p>
+                        </div>
+
+                        <span class="ar-comparison__arrow"
+                            aria-hidden="true">→</span>
+
+                        <div>
+                            <span>PROPOSAL</span>
+                            <strong>Predictable experience</strong>
+                            <p>
+                                Consistent layout, essential content, direct instructions and optional further details.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ar-comparison__row">
+                        <div>
+                            <span>PAIN POINTS</span>
+                            <strong>Language and terminology</strong>
+                            <p>
+                                No English version and abstract commercial terms.
+                            </p>
+                        </div>
+
+                        <span class="ar-comparison__arrow"
+                            aria-hidden="true">→</span>
+
+                        <div>
+                            <span>PROPOSAL</span>
+                            <strong>Understandable content</strong>
+                            <p>
+                                Complete translation, explicit labels and localised forms.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ar-comparison__row">
+                        <div>
+                            <span>PAIN POINTS</span>
+                            <strong>Visual access</strong>
+                            <p>
+                                Low contrast, controls that are difficult to recognise and unannounced interactions.
+                            </p>
+                        </div>
+
+                        <span class="ar-comparison__arrow"
+                            aria-hidden="true">→</span>
+
+                        <div>
+                            <span>PROPOSAL</span>
+                            <strong>Access with assistive technologies</strong>
+                            <p>
+                                Semantic HTML, visible focus, clear labels and feedback that can be announced.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ar-comparison__row">
+                        <div>
+                            <span>PAIN POINTS</span>
+                            <strong>Checkout flow</strong>
+                            <p>
+                                Unclear shipping and a cart that is lost after sign-up.
+                            </p>
+                        </div>
+
+                        <span class="ar-comparison__arrow"
+                            aria-hidden="true">→</span>
+
+                        <div>
+                            <span>PROPOSAL</span>
+                            <strong>Journey continuity</strong>
+                            <p>
+                                Visible totals and thresholds, autocomplete, persistent cart and explicit confirmations.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 NEW JOURNEY -->
+        <section id="new-journey" class="research-block ar-section--alt">
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+                    <p class="case-label">04 · NEW USER JOURNEY</p>
+                    <h2>How the experience could change</h2>
+                    <p>
+                        The new journeys illustrate proposed design scenarios for Alice, Aarav and Carlo. They do not document implemented changes or results measured through usability testing.
+                    </p>
+                </div>
+
+                <div class="ar-journeys">
+
+                    <!-- ALICE -->
+                    <article class="ar-journey ar-journey--new">
+                        <div class="ar-journey__head">
+                            <h3>Alice</h3>
+                            <span class="ar-status">PROPOSAL</span>
+                        </div>
+
+                        <ol>
+                            <li>
+                                <strong>Search</strong>
+                                <p>
+                                    Access to a unified site with clear brand information.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Navigation</strong>
+                                <p>
+                                    Essential layout and descriptive categories.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Products</strong>
+                                <p>
+                                    Transparent information and a recognisable add-to-cart action.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Account</strong>
+                                <p>
+                                    Simplified login, understandable fields and a preserved cart.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Confirmation</strong>
+                                <p>
+                                    Cost and delivery type communicated explicitly.
+                                </p>
+                            </li>
+                        </ol>
+                    </article>
+
+                    <!-- AARAV -->
+                    <article class="ar-journey ar-journey--new">
+                        <div class="ar-journey__head">
+                            <h3>Aarav</h3>
+                            <span class="ar-status">PROPOSAL</span>
+                        </div>
+
+                        <ol>
+                            <li>
+                                <strong>Language</strong>
+                                <p>
+                                    English version available from the homepage.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Catalogue</strong>
+                                <p>
+                                    Categories and product pages translated consistently.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Cart</strong>
+                                <p>
+                                    Totals, order minimums and shipping that are easy to understand.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Checkout</strong>
+                                <p>
+                                    Localised fields and address autocomplete.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Confirmation</strong>
+                                <p>
+                                    Order summary available in the selected language.
+                                </p>
+                            </li>
+                        </ol>
+                    </article>
+
+                    <!-- CARLO -->
+                    <article class="ar-journey ar-journey--new">
+                        <div class="ar-journey__head">
+                            <h3>Carlo</h3>
+                            <span class="ar-status">PROPOSAL</span>
+                        </div>
+
+                        <ol>
+                            <li>
+                                <strong>Discovery</strong>
+                                <p>
+                                    Semantic structure usable with a screen reader.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Exploration</strong>
+                                <p>
+                                    Content that can be magnified and controls reachable by keyboard.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Cart</strong>
+                                <p>
+                                    Accessible feedback and amounts that can be announced.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Account</strong>
+                                <p>
+                                    Form labels and validation compatible with assistive tools.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Order</strong>
+                                <p>
+                                    Unchanged cart and accessible confirmations.
+                                </p>
+                            </li>
+                        </ol>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONCLUSIONI -->
+        <section class="ar-outcome">
+            <div class="research-shell">
+
+                <p class="case-label">RESEARCH OUTPUT</p>
+                <h2>An inclusive foundation for the redesign</h2>
+
+                <div class="ar-outcome__grid">
+
+                    <div>
+                        <span>01</span>
+                        <strong>Three personas</strong>
+                        <p>
+                            Cognitive, language and visual needs represented through three scenarios.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <strong>As-is and new journeys</strong>
+                        <p>
+                            Comparison between observed barriers and proposed journeys.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        <strong>Cross-cutting requirements</strong>
+                        <p>
+                            Readability, clarity, continuity and compatibility with assistive tools.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="research-nav">
+                <p class="case-label research-nav__label">CONTINUE EXPLORING</p>
+
+                <div class="research-nav__links">
+                    <a class="research-nav__link" href="discovery-2.html">
+                        <span class="research-nav__arrow research-nav__arrow--back" aria-hidden="true">←</span>
+                        <span>Discovery 02</span>
+                    </a>
+                    <a class="research-nav__link research-nav__link--next" href="accessibility-2.html">
+                        <span>Accessibility 02</span>
+                        <span class="research-nav__arrow" aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        © 2026 Sara Marotta ·
+        <br class="mobile-break">
+        UX/UI portfolio built with HTML and CSS
+    </footer>
+
+</body>
+</html>
