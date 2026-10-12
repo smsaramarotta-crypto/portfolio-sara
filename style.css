@@ -100,10 +100,10 @@ li {
 }
 
 .header .language-switcher .language-link {
-   display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 4px;
     color: #F5F1E8;
     font-family: Lato, sans-serif;
     font-size: 20px;
