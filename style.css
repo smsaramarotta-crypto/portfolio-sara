@@ -92,40 +92,60 @@ li {
 .header .language-switcher {
     display: flex;
     align-items: center;
+    margin: 0;
     white-space: nowrap;
-}
-
-.header .language-switcher > span {
-    padding: 20px 0;
-    color: #F5F1E8;
-    font-family: Lato, sans-serif;
-    font-size: 20px;
+    background-color: #265649;
 }
 
 .header .language-switcher .language-link {
-    padding: 20px 12px;
+    display: inline-block;
+    padding: 20px 8px;
+    color: #F5F1E8;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    text-decoration: none;
 }
 
 .header .language-switcher .language-link[aria-current="page"] {
     font-weight: 700;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+}
+
+.header .language-switcher .language-link:hover {
+    color: #C09A46;
+    background-color: transparent;
+}
+
+.header .language-switcher .language-link:focus-visible {
+    outline: 3px solid #C09A46;
+    outline-offset: -3px;
+    border-radius: 4px;
+}
+
+.header .language-switcher .language-separator {
+    color: #F5F1E8;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    line-height: 1;
 }
 
 @media (min-width: 48em) {
-    .header .language-switcher > span {
-        color: #0f4a3c;
-    }
-
-    .header .language-switcher .language-link {
-        padding: 20px 10px;
-        color: #0f4a3c;
+    .header .language-switcher {
+        margin-left: 10px;
         background-color: #F5F1E8;
     }
 
+    .header .language-switcher .language-link {
+        padding: 20px 8px;
+        color: #0f4a3c;
+    }
+
     .header .language-switcher .language-link:hover {
-        background-color: #E8DDCB;
+        color: #806224;
+    }
+
+    .header .language-switcher .language-separator {
+        color: #0f4a3c;
     }
 }
 
