@@ -97,7 +97,6 @@ li {
     padding-left: 12px;
     white-space: nowrap;
     background-color: #265649;
-    gap: 0;
 }
 
 .header .language-switcher .language-link {
@@ -126,7 +125,7 @@ li {
     .header .language-switcher {
         justify-content: center;
         margin-right: 48px;
-        padding-left: 0;
+        padding: 0 30px;
         background-color: #F5F1E8;
     }
 
