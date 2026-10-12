@@ -164,18 +164,6 @@ li {
     }
 }
 
-@media (min-width: 48em) {
-    .header .menu > li.language-switcher:has(.language-link[aria-current="page"]),
-    .header .menu > li.language-switcher:hover,
-    .header .menu > li.language-switcher:focus-within {
-        background-color: #E8DDCB !important;
-    }
-
-    .header .menu > li.language-switcher .language-link:hover {
-        background-color: transparent !important;
-    }
-}
-
 .header .menu {
   clear: both;
   max-height: 0;
