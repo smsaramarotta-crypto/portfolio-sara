@@ -130,28 +130,45 @@ li {
     font-family: $font-family-body;
 }
 
+
 .header {
     .language-switcher {
         display: flex;
         align-items: center;
+        margin: 0;
         white-space: nowrap;
+        background-color: $color-green;
 
-        > span {
-            padding: $space-20 0;
+        .language-link {
+            display: inline-block;
+            padding: $space-20 $space-xs;
             color: $color-background;
             font-family: $font-family-body;
             font-size: $font-title-sm;
-        }
-
-        .language-link {
-            padding: $space-20 $space-12;
+            line-height: 1;
+            text-decoration: none;
 
             &[aria-current="page"] {
                 font-weight: $weight-heading;
-                text-decoration: underline;
-                text-decoration-thickness: 2px;
-                text-underline-offset: $space-4;
             }
+
+            &:hover {
+                color: $color-gold;
+                background-color: transparent;
+            }
+
+            &:focus-visible {
+                outline: 3px solid $color-gold;
+                outline-offset: -3px;
+                border-radius: $radius-sm;
+            }
+        }
+
+        .language-separator {
+            color: $color-background;
+            font-family: $font-family-body;
+            font-size: $font-title-sm;
+            line-height: 1;
         }
     }
 }
@@ -159,22 +176,25 @@ li {
 @media (min-width: 48em) {
     .header {
         .language-switcher {
-            > span {
-                color: $color-green-dark;
-            }
+            margin-left: $space-10;
+            background-color: $color-background;
 
             .language-link {
-                padding: $space-20 $space-10;
+                padding: $space-20 $space-xs;
                 color: $color-green-dark;
-                background-color: $color-background;
 
                 &:hover {
-                    background-color: $color-background-alt;
+                    color: $color-gold-dark;
                 }
+            }
+
+            .language-separator {
+                color: $color-green-dark;
             }
         }
     }
 }
+
 
 .header {
     background-color: $color-background;
