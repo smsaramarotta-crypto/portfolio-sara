@@ -176,11 +176,14 @@ li {
 @media (min-width: 48em) {
     .header {
         .language-switcher {
-            margin-left: $space-10;
+            justify-content: center;
+            margin-left: 0;
+            margin-right: $space-xl;
+            padding: 0 30px;
             background-color: $color-background;
 
             .language-link {
-                padding: $space-20 $space-xs;
+                padding: $space-20 6px;
                 color: $color-green-dark;
 
                 &:hover {
