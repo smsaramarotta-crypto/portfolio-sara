@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessibility 02 deep dive for the iVegan case study: WCAG 2.2 audit of Home, PLP, PDP, Cart and Account.">
+
+    <title>Accessibility 02 · WCAG 2.2 audit | Sara Marotta</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo" href="index.html" aria-label="Home">
+            <img src="logo.svg" alt="Sara Marotta logo">
+        </a>
+
+        <nav aria-label="Main navigation">
+            <input
+                class="menu-btn"
+                id="menu-btn"
+                type="checkbox"
+                aria-label="Open or close the navigation menu"
+            >
+
+            <label for="menu-btn" class="menu-icon">
+                <span class="navicon"></span>
+            </label>
+
+            <ul class="menu">
+                <li>
+                <a href="index.html">Home</a>
+                </li>
+
+                <li class="has-submenu">
+                    <input
+                        class="submenu-btn"
+                        type="checkbox"
+                        id="submenu-progetti"
+                    >
+
+                    <label
+                        class="submenu-label"
+                        for="submenu-progetti"
+                    >
+                        Projects
+                        <span class="submenu-arrow"></span>
+                    </label>
+
+                    <ul class="submenu">
+                        <li><a href="ILS.html">Italian Language Studio (ILS)</a></li>
+                        <li><a href="iVegan.html">iVegan</a></li>
+                        <li><a href="visual.html">Visual &amp; Content Design</a></li>
+</ul>
+                </li>
+
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contatti.html">Contact</a></li>
+
+                <li class="language-switcher" aria-label="Language selector">
+                    <a class="language-link language-link--en" href="accessibility-2.html" lang="en" aria-current="page">EN</a>
+                    <span aria-hidden="true">/</span>
+                    <a class="language-link language-link--it" href="accessibility-2-it.html" lang="it">IT</a>
+                </li>
+</ul>
+        </nav>
+    </header>
+
+
+    <main class="case-study research-page research-page--ivegan ar-page ar-page--2">
+
+        <!-- HERO -->
+        <section class="research-hero" aria-labelledby="ar-page-title">
+            <div class="research-shell">
+
+                <a class="research-back" href="iVegan.html#accessibility">
+                    <span aria-hidden="true">←</span> Back to the case study
+                </a>
+
+                <div class="research-hero__grid">
+
+                    <div class="research-hero__copy">
+                        <p class="case-label">ACCESSIBILITY 02 · iVEGAN</p>
+
+                        <h1 id="ar-page-title">
+                            From barriers to accessibility requirements
+                        </h1>
+
+                        <p>
+                            The second part examines the Homepage, product listing, product detail, cart and account areas using WCAG 2.2 as a reference.
+                        </p>
+
+                        <p>
+                            The review combines manual observation, contrast checks, keyboard navigation and analysis of key tasks, with improvement actions organised by area.
+                        </p>
+                    </div>
+
+                    <div class="research-hero__visual r2-hero-visual"
+                        aria-label="Summary of the research method">
+
+                        <p class="r2-hero-visual__eyebrow">FROM ANALYSIS TO ACTION</p>
+
+                        <div class="r2-hero-visual__step">
+                            <span>01</span>
+                            <div>
+                                <strong>Five areas</strong>
+                                <small>
+                                    Home · PLP · PDP · Cart · Account
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="r2-hero-visual__step">
+                            <span>02</span>
+                            <div>
+                                <strong>Manual audit</strong>
+                                <small>
+                                    Contrast, keyboard and WCAG 2.2
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="r2-hero-visual__step">
+                            <span>03</span>
+                            <div>
+                                <strong>Recommendations</strong>
+                                <small>
+                                    Proposed redesign actions
+                                </small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            <nav class="research-scope" aria-label="Research index">
+
+                <a href="#metodo">
+                    <span>01</span>
+                    <strong>Method</strong>
+                    <small>Scope and references</small>
+                </a>
+
+                <a href="#aree">
+                    <span>02</span>
+                    <strong>Areas analysed</strong>
+                    <small>Five site sections</small>
+                </a>
+
+                <a href="#requisiti">
+                    <span>03</span>
+                    <strong>WCAG criteria</strong>
+                    <small>Barriers and principles</small>
+                </a>
+
+                <a href="#interventi">
+                    <span>04</span>
+                    <strong>Proposals</strong>
+                    <small>Actions by area</small>
+                </a>
+
+            </nav>
+            </div>
+        </section>
+
+        <!-- INDICE -->
+        
+
+        <!-- 01 METODO -->
+        <section id="metodo" class="research-block">
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+                    <p class="case-label">01 · METHOD AND SCOPE</p>
+
+                    <h2>A manual audit based on WCAG 2.2</h2>
+
+                    <p>
+                        The project examines five representative areas of the iVegan site and documents issues identified in their use. The presentation classifies the referenced WCAG requirements by level: A, AA and AAA.
+                    </p>
+                </div>
+
+                <div class="ar-method">
+
+                    <article>
+                        <span class="ar-num">01</span>
+                        <h3>Interface observation</h3>
+                        <p>
+                            Review of navigation, naming, content hierarchy and component behaviour.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span class="ar-num">02</span>
+                        <h3>Contrast and perception</h3>
+                        <p>
+                            Review of contrast ratios and the readability of text, labels and controls.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span class="ar-num">03</span>
+                        <h3>Keyboard and tasks</h3>
+                        <p>
+                            Exploration with TAB and evaluation of the cart, checkout and personal-data management.
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="ar-panel ar-callout">
+                    <p class="ar-panel__label">
+                        LIMITATIONS OF THE REVIEW
+                    </p>
+
+                    <p>
+                        At the time of analysis, the site was under maintenance. The presentation explains that the audit is mainly based on observations from the Discovery phases, complemented by the Wayback Machine archive and selected references to the app. It therefore does not constitute a complete certification of the site’s current state.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 02 AREE ANALIZZATE -->
+        <section id="aree" class="research-block ar-section--alt">
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+                    <p class="case-label">02 · AREAS ANALYSED</p>
+
+                    <h2>Five key areas of the e-commerce experience</h2>
+
+                    <p>
+                        The review covers the experience from first access through account management, highlighting a recurring issue and related redesign direction for each section.
+                    </p>
+                </div>
+
+                <!-- NAVIGAZIONE AREE -->
+                <div class="ar-areas-nav"
+                    aria-label="Go to the analysed areas">
+
+                    <a href="#HOME">Homepage</a>
+                    <a href="#PLP">Product Listing Page</a>
+                    <a href="#PDP">Product Details Page</a>
+                    <a href="#CART">Cart</a>
+                    <a href="#ACCOUNT">Account</a>
+
+                </div>
+
+                <div class="ar-area-grid">
+
+                    <!-- HOME -->
+                    <article class="ar-area-card" id="HOME">
+
+                        <div class="ar-area-card__head">
+                            <span>01</span>
+                            <div>
+                                <p class="ar-mini">HOME</p>
+                                <h3>Homepage</h3>
+                            </div>
+                        </div>
+
+                        <p class="ar-area-card__context">
+                            Top bar, menu, hero and informational sections.
+                        </p>
+
+                        <div class="ar-area-card__pair">
+                            <div>
+                                <span>PAIN POINTS</span>
+                                <p>
+                                    Inconsistent contrast and readability; sliders and messages that may interrupt reading; navigation structure that is not always predictable.
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>REDESIGN DIRECTION</span>
+                                <p>
+                                    Increase contrast, slow down or control sliders, and make menus and CTAs recognisable and keyboard accessible.
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- PLP -->
+                    <article class="ar-area-card" id="PLP">
+
+                        <div class="ar-area-card__head">
+                            <span>02</span>
+                            <div>
+                                <p class="ar-mini">PLP</p>
+                                <h3>Product Listing Page</h3>
+                            </div>
+                        </div>
+
+                        <p class="ar-area-card__context">
+                            Categories, filters and product listing.
+                        </p>
+
+                        <div class="ar-area-card__pair">
+                            <div>
+                                <span>PAIN POINTS</span>
+                                <p>
+                                    Categories and subcategories are not always ordered or immediately clear; product pages are inconsistent; information is distributed unevenly.
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>REDESIGN DIRECTION</span>
+                                <p>
+                                    Reorganise categories, make filters more visible, and standardise information and controls across cards.
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- PDP -->
+                    <article class="ar-area-card" id="PDP">
+
+                        <div class="ar-area-card__head">
+                            <span>03</span>
+                            <div>
+                                <p class="ar-mini">PDP</p>
+                                <h3>Product Details Page</h3>
+                            </div>
+                        </div>
+
+                        <p class="ar-area-card__context">
+                            Product detail, availability and shopping actions.
+                        </p>
+
+                        <div class="ar-area-card__pair">
+                            <div>
+                                <span>PAIN POINTS</span>
+                                <p>
+                                    Inconsistent naming and feedback; unclear availability and product information; some interactive areas are too small.
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>REDESIGN DIRECTION</span>
+                                <p>
+                                    Explicit availability states, readable text, recognisable CTAs, and controls with suitable targets and focus.
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- CARRELLO -->
+                    <article class="ar-area-card" id="CART">
+
+                        <div class="ar-area-card__head">
+                            <span>04</span>
+                            <div>
+                                <p class="ar-mini">CART</p>
+                                <h3>Cart</h3>
+                            </div>
+                        </div>
+
+                        <p class="ar-area-card__context">
+                            Summary, discounts, thresholds and checkout.
+                        </p>
+
+                        <div class="ar-area-card__pair">
+                            <div>
+                                <span>PAIN POINTS</span>
+                                <p>
+                                    Costs, minimum spend, free-shipping threshold and vouchers are not always immediately visible; action paths are inconsistent.
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>REDESIGN DIRECTION</span>
+                                <p>
+                                    Clear summary, consistent CTAs, announced checkout states and understandable voucher application.
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- ACCOUNT -->
+                    <article class="ar-area-card" id="ACCOUNT">
+
+                        <div class="ar-area-card__head">
+                            <span>05</span>
+                            <div>
+                                <p class="ar-mini">ACCOUNT</p>
+                                <h3>Account</h3>
+                            </div>
+                        </div>
+
+                        <p class="ar-area-card__context">
+                            Profile, sign-in and discount vouchers.
+                        </p>
+
+                        <div class="ar-area-card__pair">
+                            <div>
+                                <span>PAIN POINTS</span>
+                                <p>
+                                    Forms, required fields and error messages are not always clear; voucher management is unintuitive.
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>REDESIGN DIRECTION</span>
+                                <p>
+                                    Explicit labels, accessible validation, understandable password recovery and recognisable voucher management.
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 CRITERI WCAG -->
+        <section id="requisiti" class="research-block">
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+                    <p class="case-label">03 · WCAG PRINCIPLES</p>
+
+                    <h2>Four principles for reading the pain points</h2>
+
+                    <p>
+                        WCAG organises accessibility around four principles. The presentation uses these references to connect interface observations to verifiable requirements.
+                    </p>
+                </div>
+
+                <div class="ar-principles">
+
+                    <article>
+                        <span>01 · PERCEIVABLE</span>
+                        <h3>Perceivable</h3>
+                        <p>
+                            Contrast, size and information must make content and actions recognisable.
+                        </p>
+                        <small>
+                            Esempio: 1.4.3 · Contrast (Minimum) · AA
+                        </small>
+                    </article>
+
+                    <article>
+                        <span>02 · OPERABLE</span>
+                        <h3>Operable</h3>
+                        <p>
+                            Menus and controls must work with a keyboard and other input methods.
+                        </p>
+                        <small>
+                            Visible focus, logical navigation order and recognisable targets.
+                        </small>
+                    </article>
+
+                    <article>
+                        <span>03 · UNDERSTANDABLE</span>
+                        <h3>Understandable</h3>
+                        <p>
+                            Category names, instructions, errors and status messages must be clear.
+                        </p>
+                        <small>
+                            Consistent labels and information across pages.
+                        </small>
+                    </article>
+
+                    <article>
+                        <span>04 · ROBUST</span>
+                        <h3>Robust</h3>
+                        <p>
+                            Markup and interactions must be interpretable by browsers and assistive technologies.
+                        </p>
+                        <small>
+                            Semantic structure and communication of states.
+                        </small>
+                    </article>
+
+                </div>
+
+                <p class="ar-caption">
+                    The presentation includes the principles and criterion 1.4.3. This analysis does not establish a single score or certify the site’s legal compliance.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- 04 INTERVENTI DI REDESIGN -->
+        <section id="interventi" class="research-block ar-section--alt">
+            <div class="research-shell">
+
+                <div class="research-block__heading">
+                    <p class="case-label">04 · FROM AUDIT TO REDESIGN</p>
+
+                    <h2>Turning barriers into targeted actions</h2>
+
+                    <p>
+                        The directions collected across the different pages converge around several cross-cutting priorities. The visuals summarise proposals from the project, not changes that have already been implemented.
+                    </p>
+                </div>
+
+                <div class="ar-comparison">
+
+                    <!-- CONTRASTO -->
+                    <div class="ar-comparison__row">
+                        <div>
+                            <span>PAIN POINTS</span>
+                            <strong>
+                                Low contrast and difficult-to-read messages
+                            </strong>
+                            <p>
+                                Essential information is not sufficiently perceivable.
+                            </p>
+                        </div>
+
+                        <span class="ar-comparison__arrow"
+                            aria-hidden="true">→</span>
+
+                        <div>
+                            <span>PROPOSAL</span>
+                            <strong>Contrast and hierarchy</strong>
+                            <p>
+                                More readable text and buttons, clear messages and identifiable states.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FOCUS -->
+                    <div class="ar-comparison__row">
+                        <div>
+                            <span>PAIN POINTS</span>
+                            <strong>Inconsistent focus and interactions</strong>
+                            <p>
+                                Menus, cart and controls are difficult to use with TAB.
+                            </p>
+                        </div>
+
+                        <span class="ar-comparison__arrow"
+                            aria-hidden="true">→</span>
+
+                        <div>
+                            <span>PROPOSAL</span>
+                            <strong>Keyboard navigation</strong>
+                            <p>
+                                Logical order, visible focus and reachable components.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- LINGUAGGIO -->
+                    <div class="ar-comparison__row">
+                        <div>
+                            <span>PAIN POINTS</span>
+                            <strong>Unclear naming</strong>
+                            <p>
+                                Categories, labels and availability are not explicit enough.
+                            </p>
+                        </div>
+
+                        <span class="ar-comparison__arrow"
+                            aria-hidden="true">→</span>
+
+                        <div>
+                            <span>PROPOSAL</span>
+                            <strong>Understandable language</strong>
+                            <p>
+                                Direct terms, consistent breadcrumbs and predictable feedback.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FORM E CHECKOUT -->
+                    <div class="ar-comparison__row">
+                        <div>
+                            <span>PAIN POINTS</span>
+                            <strong>Ambiguous forms and costs</strong>
+                            <p>
+                                Required fields, discounts and thresholds are unclear.
+                            </p>
+                        </div>
+
+                        <span class="ar-comparison__arrow"
+                            aria-hidden="true">→</span>
+
+                        <div>
+                            <span>PROPOSAL</span>
+                            <strong>Accessible checkout</strong>
+                            <p>
+                                Recognisable validation, visible summaries and accessible notifications.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ESEMPI INTERFACCIA -->
+                <div class="ar-demo-grid">
+
+                    <!-- FORM -->
+                    <div class="ar-panel ar-interface-demo">
+                        <p class="ar-panel__label">
+                            DESIGN EXAMPLE · FORM
+                        </p>
+
+                        <label for="ar-demo-email">
+                            Email <span>(required)</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="ar-demo-email"
+                            placeholder="name@example.com"
+                            autocomplete="email"
+                            aria-describedby="ar-demo-help"
+                        >
+
+                        <p id="ar-demo-help">
+                            Enter a valid address. Any errors must be communicated in text.
+                        </p>
+
+                        <button
+                            type="button"
+                            onclick="this.nextElementSibling.hidden=false"
+                        >
+                            Show example feedback
+                        </button>
+
+                        <p class="ar-demo-feedback"
+                        role="status"
+                        hidden>
+                            This is an example of explicit feedback. No data is submitted.
+                        </p>
+                    </div>
+
+                    <!-- CARRELLO -->
+                    <div class="ar-panel ar-checkout-demo">
+                        <p class="ar-panel__label">
+                            DESIGN EXAMPLE · CART
+                        </p>
+
+                        <dl>
+                            <div>
+                                <dt>Subtotal</dt>
+                                <dd>€ 36,00</dd>
+                            </div>
+
+                            <div>
+                                <dt>Shipping</dt>
+                                <dd>To be calculated</dd>
+                            </div>
+
+                            <div>
+                                <dt>Free-shipping threshold</dt>
+                                <dd>
+                                    Information visible before checkout
+                                </dd>
+                            </div>
+                        </dl>
+
+                        <p>
+                            Illustrative summary: figures and conditions do not represent iVegan’s actual rates.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONCLUSIONI -->
+        <section class="ar-outcome">
+            <div class="research-shell">
+
+                <p class="case-label">RESEARCH OUTPUT</p>
+                <h2>Directions applicable to the redesign</h2>
+
+                <div class="ar-outcome__grid">
+
+                    <div>
+                        <span>01</span>
+                        <strong>Readability</strong>
+                        <p>
+                            Clearer contrast and hierarchy for essential content.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <strong>Interaction</strong>
+                        <p>
+                            Consistent keyboard access, focus and feedback across key tasks.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        <strong>Comprehension</strong>
+                        <p>
+                            Explicit labels, forms and summaries that are easy to interpret.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="research-nav">
+                    <p class="research-next-label">CONTINUE EXPLORING</p>
+
+                    <div class="research-nav__links">
+                        <a class="research-nav__link" href="accessibility-1.html">
+                            <span class="research-nav__arrow research-nav__arrow--back" aria-hidden="true">←</span>
+                            <span>Accessibility 01</span>
+                        </a>
+                        <a class="research-nav__link research-nav__link--next" href="wireframing-1.html">
+                            <span>Wireframing 01</span>
+                            <span class="research-nav__arrow" aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        © 2026 Sara Marotta ·
+        <br class="mobile-break">
+        UX/UI portfolio built with HTML and CSS
+    </footer>
+
+</body>
+</html>
