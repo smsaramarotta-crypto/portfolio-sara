@@ -91,7 +91,7 @@ li {
 
 .header .language-switcher {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: flex-start;
     margin: 0;
     padding-left: 20px;
