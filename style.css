@@ -146,16 +146,12 @@ li {
     }
 
     .header .language-switcher .language-link {
-        display: flex;
-        align-items: center;
         height: 100%;
         padding: 20px 4px;
         color: #0f4a3c;
     }
 
     .header .language-switcher > span {
-        display: flex;
-        align-items: center;
         color: #0f4a3c;
     }
 }
