@@ -91,15 +91,25 @@ li {
 
 .header .language-switcher {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     margin: 0;
     white-space: nowrap;
     background-color: #265649;
 }
 
+.header .language-switcher > span {
+    display: flex;
+    align-items: center;
+    padding: 0 2px;
+    color: #F5F1E8;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+}
+
 .header .language-switcher .language-link {
-    display: inline-block;
-    padding: 20px 8px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
     color: #F5F1E8;
     font-family: Lato, sans-serif;
     font-size: 20px;
@@ -111,40 +121,16 @@ li {
     font-weight: 700;
 }
 
-.header .language-switcher .language-link:hover {
-    color: #C09A46;
-    background-color: transparent;
-}
-
-.header .language-switcher .language-link:focus-visible {
-    outline: 3px solid #C09A46;
-    outline-offset: -3px;
-    border-radius: 4px;
-}
-
-.header .language-switcher > span {
-    color: #F5F1E8;
-    font-family: Lato, sans-serif;
-    font-size: 20px;
-    line-height: normal;
-}
-
 @media (min-width: 48em) {
     .header .language-switcher {
-        justify-content: center;
-        margin-left: 0;
         margin-right: 48px;
-        padding: 0 30px;
+        padding: 0;
         background-color: #F5F1E8;
     }
 
     .header .language-switcher .language-link {
-        padding: 20px 6px;
+        padding: 20px 30px;
         color: #0f4a3c;
-    }
-
-    .header .language-switcher .language-link:hover {
-        color: #806224;
     }
 
     .header .language-switcher > span {
