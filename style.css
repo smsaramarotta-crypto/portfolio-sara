@@ -91,40 +91,35 @@ li {
 
 .header .language-switcher {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: flex-start;
     margin: 0;
     padding-left: 12px;
     white-space: nowrap;
     background-color: #265649;
+    gap: 0;
 }
 
 .header .language-switcher .language-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 8px;
+    padding: 20px 4px;
     color: #F5F1E8;
     font-family: Lato, sans-serif;
     font-size: 20px;
-    line-height: 1;
+    line-height: normal;
     text-decoration: none;
 }
 
 .header .language-switcher > span {
+    display: flex;
+    align-items: center;
+    padding: 0 1px;
     color: #F5F1E8;
     font-family: Lato, sans-serif;
     font-size: 20px;
-    line-height: 1;
-}
-
-.header .language-switcher .language-link[aria-current="page"] {
-    font-weight: 700;
-}
-
-.header .language-switcher .language-link:hover {
-    color: #C09A46;
-    background-color: transparent;
+    line-height: normal;
 }
 
 @media (min-width: 48em) {
@@ -136,16 +131,12 @@ li {
     }
 
     .header .language-switcher .language-link {
-        padding: 20px 8px;
+        padding: 20px 4px;
         color: #0f4a3c;
     }
 
     .header .language-switcher > span {
         color: #0f4a3c;
-    }
-
-    .header .language-switcher .language-link:hover {
-        color: #806224;
     }
 }
 
