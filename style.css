@@ -89,12 +89,31 @@ li {
   border-radius: 8px;
 }
 
+
 .header .language-switcher {
     display: flex;
     align-items: stretch;
+    justify-content: center;
     margin: 0;
+    padding: 0;
     white-space: nowrap;
     background-color: #265649;
+}
+
+.header .language-switcher .language-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 8px;
+    color: #F5F1E8;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.header .language-switcher .language-link:first-child {
+    padding-left: 20px;
 }
 
 .header .language-switcher > span {
@@ -104,17 +123,6 @@ li {
     color: #F5F1E8;
     font-family: Lato, sans-serif;
     font-size: 20px;
-}
-
-.header .language-switcher .language-link {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    color: #F5F1E8;
-    font-family: Lato, sans-serif;
-    font-size: 20px;
-    line-height: normal;
-    text-decoration: none;
 }
 
 .header .language-switcher .language-link[aria-current="page"] {
@@ -137,6 +145,7 @@ li {
         color: #0f4a3c;
     }
 }
+
 
 .header .menu {
   clear: both;
