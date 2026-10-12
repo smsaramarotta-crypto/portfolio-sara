@@ -103,7 +103,7 @@ li {
     color: #F5F1E8;
     font-family: Lato, sans-serif;
     font-size: 20px;
-    line-height: 1;
+    line-height: normal;
     text-decoration: none;
 }
 
@@ -122,11 +122,11 @@ li {
     border-radius: 4px;
 }
 
-.header .language-switcher .language-separator {
+.header .language-switcher > span {
     color: #F5F1E8;
     font-family: Lato, sans-serif;
     font-size: 20px;
-    line-height: 1;
+    line-height: normal;
 }
 
 @media (min-width: 48em) {
@@ -147,7 +147,7 @@ li {
         color: #806224;
     }
 
-    .header .language-switcher .language-separator {
+    .header .language-switcher > span {
         color: #0f4a3c;
     }
 }
