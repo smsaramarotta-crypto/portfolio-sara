@@ -232,6 +232,16 @@ li {
 .header .submenu a:hover {
   background-color: #0f4a3c;
 }
+
+
+@media (max-width: 767.98px) {
+  .header .language-switcher {
+    padding-left: 12px;
+  }
+}
+
+
+
 @media (min-width: 48em) {
   .header li {
     float: left;
