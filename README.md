@@ -9,15 +9,15 @@ https://smsaramarotta-crypto.github.io/portfolio-sara/
 
 ## Tecnologie
 
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
+- HTML5
+- CSS3
+- Sass / SCSS
+- Bootstrap 5.3
+- Git e GitHub
 - GitHub Pages
 
 ## Modulo di contatto
 
-Il modulo utilizza Google Apps Script per registrare
-le richieste in un foglio Google Sheets privato.
+Il modulo utilizza Google Apps Script come servizio esterno per registrare le richieste in un foglio Google Sheets privato.
 
-Il codice del backend è gestito separatamente dal repository.
+Il backend è gestito separatamente dal repository del portfolio.
