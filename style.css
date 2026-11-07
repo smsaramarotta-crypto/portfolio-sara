@@ -15570,3 +15570,54 @@ body.home-page .home-progetti .progetto-card .progetto-card-back-visual {
     font-size: 17px !important;
   }
 }
+
+/* Portfolio — ombre leggere per card e pulsanti */
+/* Card progetti home: ombra sempre presente, senza alterare il flip */
+.home-page .home-progetti .progetto-card {
+  border-radius: 9px;
+  box-shadow: 0 5px 16px rgba(20, 53, 44, .10), 0 1px 3px rgba(20, 53, 44, .05);
+  transition: box-shadow .24s ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .home-page .home-progetti .progetto-card-wrap:hover .progetto-card {
+    box-shadow: 0 10px 25px rgba(20, 53, 44, .15), 0 2px 6px rgba(20, 53, 44, .06);
+  }
+}
+.home-page .home-progetti .progetto-card:focus-within {
+  box-shadow: 0 7px 22px rgba(20, 53, 44, .15);
+}
+
+/* Pulsanti principali del sito: non modifica font, padding o colori */
+.site-button,
+.btn.btn-primary,
+.home-page .hero-button,
+.home-page .progetto-card-wrap > .progetto-card-direct,
+.contact-preview-content > .hero-button,
+.contact-page .contact-section .btn,
+.cv-page .cv-downloads .cv-download {
+  box-shadow: 0 3px 9px rgba(20, 53, 44, .12), 0 1px 2px rgba(20, 53, 44, .05);
+  transition: box-shadow .22s ease, background-color .22s ease, border-color .22s ease, color .22s ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .site-button:hover,
+  .btn.btn-primary:hover,
+  .home-page .hero-button:hover,
+  .home-page .progetto-card-wrap > .progetto-card-direct:hover,
+  .contact-preview-content > .hero-button:hover,
+  .contact-page .contact-section .btn:hover,
+  .cv-page .cv-downloads .cv-download:hover {
+    box-shadow: 0 5px 13px rgba(20, 53, 44, .18), 0 2px 4px rgba(20, 53, 44, .06);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-page .home-progetti .progetto-card,
+  .site-button,
+  .btn.btn-primary,
+  .home-page .hero-button,
+  .home-page .progetto-card-wrap > .progetto-card-direct,
+  .contact-preview-content > .hero-button,
+  .contact-page .contact-section .btn,
+  .cv-page .cv-downloads .cv-download {
+    transition: none;
+  }
+}
